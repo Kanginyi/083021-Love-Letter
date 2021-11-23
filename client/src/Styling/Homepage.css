@@ -1,3 +1,36 @@
-#bingbong {
+#homepage-container {
     color: pink;
+}
+
+#homepage-container h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+#homepage-divs-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 15px 15px;
+    flex-wrap: wrap;
+}
+
+.homepage-div {
+    border: 3px solid black;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    width: 45%;
+}
+
+.div-links {
+    text-decoration: none;
+}
+
+.homepage-text {
+    font-size: 22px;
+    font-weight: normal;
+    color: green;
 }
