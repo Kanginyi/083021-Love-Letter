@@ -1,8 +1,13 @@
 import React from 'react';
+import "../Styling/Homepage.css"
 
 function Homepage() {
     return (
-        <h1>Bing Bong</h1>
+        <>
+        <div id="bingbong">
+            asd
+        </div>
+        </>
     );
 }
 
