@@ -16,7 +16,7 @@ function Homepage() {
             <div id="homepage-divs-container">
 
                 <div className="homepage-div">
-                    <Link className="div-links" to={"/people"}>People</Link>
+                    <Link className="div-links" to={"/cohort"}>Cohort</Link>
                     <p className="homepage-text">
                         View Instructors and Students
                     </p>
