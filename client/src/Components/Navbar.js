@@ -32,7 +32,7 @@ function Navbar() {
           </li>
 
           <li className="nav-item">
-            <a href="/people" className="nav-link">
+            <a href="/cohort" className="nav-link">
                 <svg
                     aria-hidden="true"
                     focusable="false"
@@ -56,7 +56,7 @@ function Navbar() {
                 ></path> */}
                 </g>
                 </svg>
-                <span className="link-text">People</span>
+                <span className="link-text">Cohort</span>
             </a>
           </li>
 
