@@ -7,7 +7,11 @@ function Homepage() {
     return (
         <>
         <div id="homepage-container">
-            <h1>083021 Cohort</h1>
+            <h1>
+                <u id="homepage-underline">
+                    <span id="h1-color">083021 Cohort</span>
+                </u>
+            </h1>
             
             <div id="homepage-divs-container">
 
