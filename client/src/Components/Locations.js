@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Styling/Location.css"
+import "../Styling/Locations.css"
 
 function Locations() {
     return (
