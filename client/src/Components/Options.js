@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styling/Options.css"
 
 function Options() {
     return (
