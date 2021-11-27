@@ -1,12 +1,56 @@
-import React from 'react';
+import React, {useState} from 'react';
+import CohortInfoCircleItem from './CohortInfoCircleItem';
+import "../Styling/CohortInfoCircle.css"
+
+import {AiFillGithub, AiOutlineNumber, AiFillStar} from "react-icons/ai";
+import {FaSpotify, FaQuestionCircle} from "react-icons/fa";
+import {IoFastFoodOutline} from "react-icons/io5";
+import {MdDescription} from "react-icons/md";
+import {GoLocation} from "react-icons/go"
 
 function CohortInfoCircle({personInfo}) {
-    const renderPerson = personInfo?.map(person => {
-        return <CohortPerson key={person.id} person={person}/>
-    });
+    // const renderPerson = personInfo?.map(person => {
+    //     return <CohortPerson key={person.id} person={person}/>
+    // });
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleSetIsOpen = () => {
+        setIsOpen(prevValue => !prevValue);
+    }
+
+    const menuIcons = [
+        [<AiFillGithub/>, "#3E84E6"], //Github
+        [<IoFastFoodOutline/>, "#15AB88"], //Favorite Food
+        [<MdDescription/>, "#EB5089"], //Hobbies
+        [<GoLocation/>, "#AFD91A"], //Current_Location
+        [<AiOutlineNumber/>, "#F27127"], //Age
+        [<AiFillStar/>, "#07C7F2"], //Rating
+        [<FaQuestionCircle/>, "#9768D1"], //Interesting Fact
+        [<FaSpotify/>, "#F2B705"] //Spotify
+    ];
+
 
     return (
-        <p>pppppppppppppppppppp</p>
+        <div className="page-container">
+            <div className="circular-menu">
+                <div className="menu-button" onClick={handleSetIsOpen}>
+
+                </div>
+                {
+                    menuIcons.map(([icon, color], index) => (
+                        <CohortInfoCircleItem
+                            key={icon}
+                            icon={icon}
+                            color={color}
+                            rotation={360 / menuIcons.length * index}
+                            isOpen={isOpen}
+                            transitionDelay={index * 75}
+                        />
+                    ))
+                }
+            </div>
+        </div>
     );
 }
 
