@@ -330,7 +330,7 @@ xinyi_yao = Student.create(
 
 seneiya_cooke = Student.create(
     name: "Seneiya Cooke",
-    age: 55,
+    age: 21,
     description: "woman",
     song: "Uncover - LOONA",
     current_location: "Maryland",
