@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styling/CohortInfoBox.css"
 
 function CohortInfoBox() {
     return (
