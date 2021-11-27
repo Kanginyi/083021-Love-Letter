@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styling/CohortPerson.css"
 
 function CohortPerson({person}) {
     return (
