@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styling/CohortCarousel.css"
 import Slider from "react-slick";
 
 import CohortPerson from './CohortPerson';
