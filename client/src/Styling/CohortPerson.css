@@ -1,0 +1,20 @@
+.carousel-image-box {
+    border: 2px solid black;
+    border-radius: .75em;
+    padding: 0;
+    margin: 3px;
+}
+
+.carousel-image-box:hover {
+    transform: translateY(-0.75px) translateX(-0.75px);
+    box-shadow: 0px 6px 15px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    opacity: 0.9;
+    mix-blend-mode: unset;
+}
+
+/* .carousel-image-box:active {
+    transform: translateY(-1px);
+    box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
+    opacity: 0.8;
+} */
