@@ -6,18 +6,18 @@ function CohortInfoBox({personInfo}) {
 
     return (
         <div className="card">
-            <div className="card-header">{personInfo[4].name}</div>
+            <div className="card-header">{personInfo[4]?.name}</div>
             <div className="card-body">
                 <img
-                    src={personInfo[4].picture}
-                    alt={personInfo[4].name}
-                    title={personInfo[4].name}
+                    src={personInfo[4]?.picture}
+                    alt={personInfo[4]?.name}
+                    title={personInfo[4]?.name}
                     width="100%"
                 /> <br/>
-                {personInfo[4].description}
+                {personInfo[4]?.description}
             </div>
             <div className="card-footer">
-                {personInfo[4].location_from}
+                {personInfo[4]?.location_from}
             </div>
         </div>
     );
