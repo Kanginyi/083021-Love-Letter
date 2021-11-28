@@ -17,9 +17,13 @@ function Cohort() {
     return (
         <>
             <h1>wtf</h1>
-            <CohortCarousel personInfo={personInfo}/>
-            <CohortInfoBox />
-            <CohortInfoCircle personInfo={personInfo}/>
+            <div>
+                <CohortCarousel personInfo={personInfo}/>
+            </div>
+            <div className="cohort-info-divs">
+                <CohortInfoBox personInfo={personInfo}/>
+                <CohortInfoCircle personInfo={personInfo}/>
+            </div>
         </>
     );
 }
