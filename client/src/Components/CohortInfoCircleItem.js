@@ -32,8 +32,3 @@ export default CohortInfoCircleItem;
 // location_from: "New York City, New York"
 // picture: "https://i.imgur.com/T3Dnjf6.jpg"
 // song: "<iframe src=\"https://open.spotify.com/embed/track/51Ful1v7b81FchIFFTAQ05
-
-//Load these inside of the fill in bbox on the side
-
-// description: "An idiot trying to learn how to not be an idiot."
-// location_from: "New York City, New York"
