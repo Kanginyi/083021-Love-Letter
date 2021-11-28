@@ -31,8 +31,7 @@ function CohortInfoCircle({personInfo}) {
         [<FaQuestionCircle/>, "#9768D1"], //Interesting Fact
         [<FaSpotify/>, "#F2B705"] //Spotify
     ];
-
-
+    
     return (
         <div className="page-container">
             <div className="circular-menu">
