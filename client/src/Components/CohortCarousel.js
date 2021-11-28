@@ -13,8 +13,10 @@ function CohortCarousel({personInfo}) {
 
     return (
         <div>
-            <h1>asdf</h1> 
-            {renderPerson}
+            <h1>asdf</h1>
+            <div>
+                {renderPerson}
+            </div>
         </div>
     );
 }
