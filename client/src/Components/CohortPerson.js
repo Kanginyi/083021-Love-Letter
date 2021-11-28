@@ -5,7 +5,7 @@ function CohortPerson({person}) {
     return (
         <div>
             <h3>Name: {person.name}</h3>
-            <img src={person.picture} alt={person.name} title={person.name} width="200px"/>
+            <img src={person.picture} alt={person.name} title={person.name} width="200px" height="200px"/>
         </div>
     );
 }
