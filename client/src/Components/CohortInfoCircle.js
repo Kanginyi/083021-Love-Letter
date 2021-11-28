@@ -22,14 +22,14 @@ function CohortInfoCircle({personInfo}) {
     }
 
     const menuIcons = [
-        [<AiFillGithub/>, "#3E84E6"], //Github
-        [<IoFastFoodOutline/>, "#15AB88"], //Favorite Food
-        [<MdDescription/>, "#EB5089"], //Hobbies
-        [<GoLocation/>, "#AFD91A"], //Current_Location
-        [<AiOutlineNumber/>, "#F27127"], //Age
-        [<AiFillStar/>, "#07C7F2"], //Rating
-        [<FaQuestionCircle/>, "#9768D1"], //Interesting Fact
-        [<FaSpotify/>, "#F2B705"] //Spotify
+        [<AiFillGithub className="icon-font-size"/>, "#3E84E6"], //Github
+        [<IoFastFoodOutline className="icon-font-size"/>, "#15AB88"], //Favorite Food
+        [<MdDescription className="icon-font-size"/>, "#EB5089"], //Hobbies
+        [<GoLocation className="icon-font-size"/>, "#AFD91A"], //Current_Location
+        [<AiOutlineNumber className="icon-font-size"/>, "#F27127"], //Age
+        [<AiFillStar className="icon-font-size"/>, "#07C7F2"], //Rating
+        [<FaQuestionCircle className="icon-font-size"/>, "#9768D1"], //Interesting Fact
+        [<FaSpotify className="icon-font-size"/>, "#F2B705"] //Spotify
     ];
     
     return (
