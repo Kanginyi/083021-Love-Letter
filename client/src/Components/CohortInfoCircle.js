@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import CohortInfoCircleItem from './CohortInfoCircleItem';
+import CohortOpenCircleItem from './CohortOpenCircleItem';
+import CohortCloseCircleItem from './CohortCloseCircleItem';
 import "../Styling/CohortInfoCircle.css"
 
 import {AiFillGithub, AiOutlineNumber, AiFillStar} from "react-icons/ai";
@@ -35,12 +37,12 @@ function CohortInfoCircle({personInfo}) {
         <div className="page-container">
             <div className="circular-menu">
                 <div className="menu-button" onClick={handleSetIsOpen}>
-
+                    {isOpen ? <CohortCloseCircleItem/> : <CohortOpenCircleItem/>}
                 </div>
                 {
                     menuIcons.map(([icon, color], index) => (
                         <CohortInfoCircleItem
-                            key={icon}
+                            key={index}
                             icon={icon}
                             color={color}
                             rotation={360 / menuIcons.length * index}
