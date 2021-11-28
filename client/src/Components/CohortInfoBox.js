@@ -1,15 +1,34 @@
 import React from 'react';
 import "../Styling/CohortInfoBox.css"
 
-function CohortInfoBox() {
+function CohortInfoBox({personInfo}) {
+    console.log(personInfo);
+
     return (
-        <div>
-            nani the fuck
+        <div className="card">
+            <div className="card-header">{personInfo[4].name}</div>
+            <div className="card-body">
+                <img
+                    src={personInfo[4].picture}
+                    alt={personInfo[4].name}
+                    title={personInfo[4].name}
+                    width="100%"
+                /> <br/>
+                {personInfo[4].description}
+            </div>
+            <div className="card-footer">
+                {personInfo[4].location_from}
+            </div>
         </div>
     );
 }
 
 export default CohortInfoBox;
+
+//Load these inside of the fill in bbox on the side
+
+// description: "An idiot trying to learn how to not be an idiot."
+// location_from: "New York City, New York"
 
 // age: 26
 // current_location: "New York"
