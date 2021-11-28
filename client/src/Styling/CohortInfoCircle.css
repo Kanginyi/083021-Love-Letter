@@ -74,6 +74,10 @@
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
+.icon-font-size {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 767px) {
     .circular-menu {
         height: 75px;
