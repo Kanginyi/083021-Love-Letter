@@ -8,30 +8,73 @@
 
 .circular-menu {
     position: relative;
-    height: 144px;
-    width: 144px;
+    height: 115px;
+    width: 115px;
 }
 
 .menu-button, .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 0;
     top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .menu-button {
-    border-radius: 50%;
     background-color: black;
-    height: 100%;
-    width: 100%;
+    transform: scale(1.01);
     z-index: 100;
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
     transition: transform 350ms ease;
+}
+
+.circular-menu-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 18px;
+    width: 28px;
+}
+
+.circular-menu-icon div {
+    background-color: whitesmoke;
+    height: 3px;
+    width: 100%;
+}
+
+.close-circular-menu {
+    position: relative;
+    height: 27px;
+    width: 27px;
+}
+
+.close-circular-menu div {
+    background-color: whitesmoke;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+}
+
+.close-circular-menu div:first-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-circular-menu div:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .circular-menu {
+        height: 75px;
+        width: 75px;
+    }
 }
