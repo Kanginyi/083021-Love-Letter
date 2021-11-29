@@ -4,10 +4,10 @@ import Slider from "react-slick";
 
 import CohortPerson from './CohortPerson';
 
-function CohortCarousel({personInfo}) {
+function CohortCarousel({personInfo, handleImageClick}) {
     
     const renderPerson = personInfo?.map(person => {
-        return <CohortPerson key={person.id} person={person}/>
+        return <CohortPerson key={person.id} person={person} handleImageClick={handleImageClick}/>
     });
 
 
