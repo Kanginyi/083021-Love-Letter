@@ -21,3 +21,8 @@
 .card-footer {
     margin-top: 1rem;
 }
+
+.card-image {
+    border: 1px solid black;
+    border-radius: .5em;
+}
