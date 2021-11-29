@@ -247,21 +247,21 @@ kevin_lutz = Student.create(
 #     instructor_id: dickhead_mcgee.id
 # )
 
-# nicholas_aguirre = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dickhead_mcgee.id
-# )
+nicholas_aguirre = Student.create(
+    name: "Nicholas Aguirre",
+    age: 24,
+    description: "Loves art, politics, technology, and breakfast tacos!",
+    song: "Liz by Remi Wolf",
+    current_location: "Texas",
+    location_from: "Katy, Texas",
+    interesting_fact: "All my fingers are double jointed",
+    hobbies: "Gaming, Biking, Watching TV and anime, Reading, Coding",
+    picture: "https://i.imgur.com/557jkkN.jpg",
+    favorite_food: "Breakfast Tacos",
+    github: "https://github.com/HeyNeek",
+    flatiron_rating: 8,
+    instructor_id: dickhead_mcgee.id
+)
 
 paul_davidson = Student.create(
     name: "Paul Davidson",
@@ -634,21 +634,21 @@ yewei_chen = Student.create(
     instructor_id: dumb_bitch.id
 )
 
-# xee = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
-# )
+xee = Student.create(
+    name: "Alyxandria Meadows (Xee)",
+    age: 26,
+    description: "Young woman from a non traditional tech background",
+    song: "Miles Morales Theme - Samuel Kim",
+    current_location: "Tennessee",
+    location_from: "Kentucky",
+    interesting_fact: "I love writing and originally wanted to be an author, I have written/ typed two full novel length books that I will never publish",
+    hobbies: "I typically just play video games (Pokemon, LoZ, Stardew Valley),  Recently: (Eastward, Spirit Farer)",
+    picture: "https://i.imgur.com/YXa3Y8Y.png",
+    favorite_food: "Any variation of nachos",
+    github: "github.com/AlyxKM",
+    flatiron_rating: 8,
+    instructor_id: dumb_bitch.id
+)
 
 
 puts "Missing fuckers"
