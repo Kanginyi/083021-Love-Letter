@@ -50,6 +50,7 @@
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
+    cursor: pointer;
 }
 
 .link-text {
