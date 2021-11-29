@@ -1,11 +1,11 @@
 import React from 'react';
 import "../Styling/CohortPerson.css"
 
-function CohortPerson({person}) {
+function CohortPerson({person, handleImageClick}) {
     return (
         <img
             className="carousel-image-box"
-            onClick={() => console.log("stfu")}
+            onClick={(e) => handleImageClick(e.target.alt)}
             src={person.picture}
             alt={person.name}
             title={person.name}
