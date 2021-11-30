@@ -1,32 +1,3 @@
-/* .card {
-    background: white;
-    padding: 1rem;
-    border: none;
-    border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-    width: 20%;
-    height: 50vh;
-    text-align: center;
-}
-
-.card-header {
-    font-size: 1rem;
-    margin-bottom: .5rem;
-}
-
-.card-body {
-    font-size: .9rem;
-}
-
-.card-footer {
-    margin-top: 1rem;
-}
-
-.card-image {
-    border: 1px solid black;
-    border-radius: 1em;
-} */
-
 :root {
     --primary: #FFCE00;
     --secondary: #FE4880;
@@ -35,8 +6,8 @@
 }
 
 .card {
-    margin: 100px auto 0;
-    width: 400px;
+    margin: 50px 10px 0;
+    width: 350px;
     height: 600px;
     perspective: 600px;
 }
@@ -89,7 +60,11 @@
 
 .card-header {
     position: relative;
-    padding: 30px 30px 40px;
+    padding: 10px 10px 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .card-header:after {
@@ -112,15 +87,8 @@
     margin: 0 auto 30px;
     border-radius: 50%;
     background-color: white;
-    border: 5px solid white;
+    border: 5p x solid white;
     object-fit: cover;
-}
-
-.card-header {
-    color: white;
-    font-size: 32px;
-    font-weight: 900;
-    text-align: center;
 }
 
 .card-body {
@@ -137,5 +105,25 @@
 .card-body p {
     color: var(--dark);
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.25;
+    font-weight: 600;
+    color: black;
+}
+
+#card-personal-description {
+    animation: colorchange 10s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: var(--secondary)
+    }
+
+    50% {
+        color: var(--primary)
+    }
+    
+    100% {
+        color: var(--secondary)
+    }
 }
