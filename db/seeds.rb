@@ -506,21 +506,21 @@ devin_mullin = Student.create(
 #     instructor_id: dumb_bitch.id
 # )
 
-# jon_courtier = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
-# )
+jon_courtier = Student.create(
+    name: "Jon Courtier",
+    age: 30,
+    description: "I'm a comic artist and programmer, who happens to be a queer, brown autistic.",
+    song: "Passenger - Noah Kahan",
+    current_location: "New York",
+    location_from: "Upstate NY",
+    interesting_fact: "I have an encyclopedic knowledge of all things Steven Universe.",
+    hobbies: "Drawing, Reading, Writing, Video games, Wasting time on YouTube.",
+    picture: "https://i.imgur.com/Y4IbK4J.png",
+    favorite_food: "Pasta",
+    github: "https://github.com/QwertyJon25",
+    flatiron_rating: 7,
+    instructor_id: dumb_bitch.id
+)
 
 mary_aninzo = Student.create(
     name: "Mary Aninzo",
