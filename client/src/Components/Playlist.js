@@ -7,7 +7,7 @@ import {IoMusicalNoteOutline, IoMusicalNotesOutline, IoMusicalNoteSharp, IoMusic
 function Playlist() {
     return (
         <>
-            <h1 className="align-text-center"><GiMusicalScore/>Cohort Playlist<GiMusicalNotes/></h1>
+            <h1 className="align-text-center text-shadow">Cohort Playlist</h1>
             <iframe
                 className="playlist-border"
                 title="Cohort Playlist"
@@ -20,8 +20,8 @@ function Playlist() {
             >
             </iframe>
             <div id="smaller-playlist-container">
-                <div id="section-a-playlist" className="smaller-playlist">
-                    <h3 className="align-text-center"><IoMusicalNoteOutline/>Section A Playlist<IoMusicalNotesOutline/></h3>
+                <div id="section-a-playlist" className="smaller-playlist text-shadow">
+                    <h3 className="align-text-center">Section A Playlist</h3>
                     <iframe
                         className="playlist-border"
                         title="Section A Playlist"
@@ -34,10 +34,11 @@ function Playlist() {
                     >
                     </iframe>
                 </div>
-                <div id="section-b-playlist" className="smaller-playlist">
-                    <h3 className="align-text-center"><IoMusicalNoteSharp/>Section B Playlist<IoMusicalNotesSharp/></h3>
+                <div id="section-b-playlist" className="smaller-playlist text-shadow">
+                    <h3 className="align-text-center">Section B Playlist</h3>
                     <iframe
                         className="playlist-border"
+                        title="Section B Playlist"
                         src="https://open.spotify.com/embed/playlist/2aYXKq795DAU7KR0dDyKJ7?utm_source=generator"
                         width="100%"
                         height="330"
@@ -51,7 +52,5 @@ function Playlist() {
         </>
     );
 }
-
-// Create 3 playlists, one for section a, b, and total
 
 export default Playlist;
