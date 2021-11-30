@@ -4,6 +4,9 @@ import CohortOpenCircleItem from './CohortOpenCircleItem';
 import CohortCloseCircleItem from './CohortCloseCircleItem';
 import "../Styling/CohortInfoCircle.css"
 
+// *THIS IS A TEST, DOUNLE CHECK THIS SHIT LATER
+import ModalGithub from './ModalGithub';
+
 import {AiFillGithub, AiOutlineNumber, AiFillStar} from "react-icons/ai";
 import {FaSpotify, FaQuestionCircle} from "react-icons/fa";
 import {IoFastFoodOutline} from "react-icons/io5";
@@ -21,6 +24,14 @@ function CohortInfoCircle({personInfo}) {
         setIsOpen(prevValue => !prevValue);
     }
 
+    // Create states for each of the individuals modals and fuck around with that shit yout ustpid fuck
+    const [openModal, setOpenModal] = useState(false);
+
+    const handleSetOpenModal = () => {
+        setOpenModal(prevValue => !prevValue);
+    }
+
+
     const menuIcons = [
         [<AiFillGithub className="icon-font-size"/>, "#3E84E6"], //Github
         [<IoFastFoodOutline className="icon-font-size"/>, "#15AB88"], //Favorite Food
@@ -33,6 +44,8 @@ function CohortInfoCircle({personInfo}) {
     ];
     
     return (
+        <>
+        {openModal && <ModalGithub openModal={openModal} setOpenModal={setOpenModal}/>}
         <div className="page-container">
             <div className="circular-menu">
                 <div className="menu-button" onClick={handleSetIsOpen}>
@@ -42,6 +55,8 @@ function CohortInfoCircle({personInfo}) {
                     menuIcons.map(([icon, color], index) => (
                         <CohortInfoCircleItem
                             key={index}
+                            openModal={openModal}
+                            handleSetOpenModal={handleSetOpenModal}
                             icon={icon}
                             color={color}
                             rotation={360 / menuIcons.length * index}
@@ -52,6 +67,7 @@ function CohortInfoCircle({personInfo}) {
                 }
             </div>
         </div>
+        </>
     );
 }
 
