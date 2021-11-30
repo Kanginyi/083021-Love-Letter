@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import "../Styling/CohortInfoBox.css"
 
+import {FaRegSmileBeam} from "react-icons/fa"
+
 function CohortInfoBox({personInfo, clickedName}) {
     const choosePerson = personInfo?.find(person => person.name === clickedName)
 
@@ -46,12 +48,24 @@ function CohortInfoBox({personInfo, clickedName}) {
                 <div className="card-face card-face-back">
                     <div className="card-content">
                         <div className="card-header">
-                            <h2>{clickedName !== "" ? choosePerson?.name : "Click an Image"}</h2>
-                            <img className="card-image" src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"} alt={choosePerson?.name} title={choosePerson?.name} width="100%"/>
+                            <h2>
+                                {clickedName !== "" ? choosePerson?.name : "Click an Image"}
+                            </h2>
+                            <img
+                                className="card-image"
+                                src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"}
+                                alt={choosePerson?.name}
+                                title={choosePerson?.name}
+                                width="100%"
+                            />
                         </div>
                         <div className="card-body">
-                            <p>{clickedName !== "" ? choosePerson?.description : ""}</p>
-                            <p>{clickedName !== "" ? `From: ${choosePerson?.location_from}` : ""}</p>
+                            <p id="card-location-from">
+                                {clickedName !== "" ? `From: ${choosePerson?.location_from}` : ""}
+                            </p>
+                            <p id="card-personal-description">
+                                {clickedName !== "" ? choosePerson?.description : ""}
+                            </p>
                         </div>
                     </div>
                 </div>
