@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Navbar from "./Components/Navbar";
 import Homepage from "./Components/Homepage";
 import Cohort from "./Components/Cohort";
@@ -9,6 +9,19 @@ import Options from "./Components/Options";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
+  const [personInfo, setPersonInfo] = useState([]);
+  const [clickedName, setClickedName] = useState("");
+
+  useEffect(() => {
+      fetch("/students")
+          .then(resp => resp.json())
+          .then(data => setPersonInfo(data));
+  }, []);
+
+  const handleImageClick = (name) => {
+      setClickedName(name);
+  }
+
   return (
     <>
       <Router>
@@ -16,9 +29,19 @@ function App() {
         <div id="main-content">
           <Routes>
             <Route path="/" element={<Homepage/>}/>
-            <Route path="cohort" element={<Cohort/>}/>
+            <Route path="cohort" element={
+              <Cohort
+                personInfo={personInfo}
+                handleImageClick={handleImageClick}
+                clickedName={clickedName}
+              />
+              }/>
             <Route path="playlist" element={<Playlist/>}/>
-            <Route path="locations" element={<Locations/>}/>
+            <Route path="locations" element={
+              <Locations
+                personInfo={personInfo}
+              />
+            }/>
             <Route path="options" element={<Options/>}/>
           </Routes>
         </div>
