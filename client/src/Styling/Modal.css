@@ -1,0 +1,52 @@
+.modals {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* z-index: 10001; Use this shit to bump it over the things */
+}
+
+.modals-box {
+    width: 350px;
+    height: 225px;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+    background: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    z-index: 100;
+}
+
+.modals-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5px;
+    color: #141414;
+}
+
+.modals-content p {
+    margin-bottom: 1rem;
+}
+
+.modals-content button {
+    padding: 10px 24px;
+    background: #141414;
+    color: white;
+    border: none;
+    border-radius: .25em;
+
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    z-index: 100;
+}
+
