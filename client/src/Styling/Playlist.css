@@ -1,5 +1,7 @@
 .align-text-center {
     text-align: center;
+    /* font-family: "Avenir Next Condensed", sans-serif; */
+    text-transform: uppercase;
 }
 
 #smaller-playlist-container {
@@ -21,6 +23,11 @@
 .playlist-border {
     border: 1px solid hidden;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.8);
+}
+
+.text-shadow {
+    color: #000000;
+    text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 8px 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 700px) {
