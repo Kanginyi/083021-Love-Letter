@@ -4,14 +4,14 @@ import LocationsCircleItem from './LocationsCircleItem';
 import "../Styling/Locations.css"
 
 function Locations({personInfo}) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [openImage, setOpenImage] = useState(false);
 
-    const handleSetIsOpen = () => {
-        setIsOpen(prevValue => !prevValue);
+    const handleSetOpenImage = () => {
+        setOpenImage(prevValue => !prevValue);
     }
 
     const peopleBubbles = personInfo?.map(person => {
-        return <LocationsPeople key={person.name} picture={person.picture} name={person.name} location={person.current_location} isOpen={isOpen}/>
+        return <LocationsPeople key={person.name} picture={person.picture} name={person.name} location={person.current_location} openImage={openImage}/>
     })
 
     // Location Arrays
@@ -24,13 +24,13 @@ function Locations({personInfo}) {
     const locationTX = personInfo?.filter(person => person.current_location === "Texas");
     const locationVA = personInfo?.filter(person => person.current_location === "Virginia");
 
-    const virginiaHoes = locationVA.map((person, index) => {
+    const virginiaPeople = locationVA.map((person, index) => {
         return (
             <LocationsCircleItem
-                handleSetIsOpen={handleSetIsOpen}
+                name={person.name}
                 picture={person.picture}
                 rotation = {360 / locationVA.length * index}
-                isOpen={isOpen}
+                openImage={openImage}
                 transitionDelay={index * 75}
             />
         )
@@ -45,7 +45,12 @@ function Locations({personInfo}) {
         <>
         <div id="united-state-map-container">
             {peopleBubbles}
-            {virginiaHoes}
+            <div>
+                <div className="locations-button" onClick={handleSetOpenImage}>
+                    {openImage ? "Close" : "Open"}
+                </div>
+                {virginiaPeople}
+            </div>
             <img
                 id="united-states-map"
                 src="https://i.imgur.com/GGFrGLr.png"
