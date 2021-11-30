@@ -1,17 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import LocationsPeople from './LocationsPeople';
-import LocationsCircleItem from './LocationsCircleItem';
 import "../Styling/Locations.css"
 
 function Locations({personInfo}) {
-    const [openImage, setOpenImage] = useState(false);
-
-    const handleSetOpenImage = () => {
-        setOpenImage(prevValue => !prevValue);
-    }
-
     const peopleBubbles = personInfo?.map(person => {
-        return <LocationsPeople key={person.name} picture={person.picture} name={person.name} location={person.current_location} openImage={openImage}/>
+        return <LocationsPeople key={person.name} picture={person.picture} name={person.name} location={person.current_location}/>
     })
 
     // Location Arrays
@@ -25,33 +18,10 @@ function Locations({personInfo}) {
     const locationTX = personInfo?.filter(person => person.current_location === "Texas");
     const locationVA = personInfo?.filter(person => person.current_location === "Virginia");
 
-    const virginiaPeople = locationVA.map((person, index) => {
-        return (
-            <LocationsCircleItem
-                name={person.name}
-                picture={person.picture}
-                rotation = {360 / locationVA.length * index}
-                openImage={openImage}
-                transitionDelay={index * 75}
-            />
-        )
-    })
-
-    // const virginiaHoes = locationVA.map(person => {
-    //     return <img src={person.picture} alt={person.name}/>
-    // })
-    // console.log(virginiaHoes)
-
     return (
         <>
         <div id="united-state-map-container">
             {peopleBubbles}
-            <div>
-                <div className="locations-button" onClick={handleSetOpenImage}>
-                    {openImage ? "Close" : "Open"}
-                </div>
-                {virginiaPeople}
-            </div>
             <img
                 id="united-states-map"
                 src="https://i.imgur.com/GGFrGLr.png"
