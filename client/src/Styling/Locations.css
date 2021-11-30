@@ -22,7 +22,7 @@
     width: 70px;
     height: 70px;
     z-index: 5;
-    position: absolute;
+    position: relative;
 }
 
 /* .locations-button {
@@ -43,11 +43,9 @@
 } */
 
 /* States ClassNames */
-.Georgia {
-    /* left: 75%;
-    top: 62%; */
-    left: 1443px;
-    top: 615px;
+/* .Georgia {
+    left: 75%;
+    top: 62%;
 }
 
 .Illinois {
@@ -88,4 +86,4 @@
 .Virginia {
     left: 81%;
     top: 43%;
-}
+} */
