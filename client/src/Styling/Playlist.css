@@ -1,20 +1,11 @@
-#playlist-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-
-#playlist-container h1, h3 {
+.align-text-center {
     text-align: center;
 }
 
 #smaller-playlist-container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -23,6 +14,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
-    margin: 20px;
+    /* margin: 5px; */
+    width: 49.5%;
+}
+
+.playlist-border {
+    border: 1px solid hidden;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 700px) {
+    .smaller-playlist {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        width: 100%;
+    }
 }
