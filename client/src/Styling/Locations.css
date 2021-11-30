@@ -2,14 +2,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     width: 100%;
     height: 100vh;
 }
 
 #united-states-map {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     padding: 0;
     margin: 0;
+    position: fixed;
+    object-fit: contain;
+    z-index: -1;
+}
+
+.locations-people {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    position: absolute;
+}
+
+/* States ClassNames */
+.Georgia {
+    left: 75%;
+    top: 62%;
+}
+
+.Illinois {
+    left: 65.5%;
+    top: 37%;
+}
+
+.Maryland {
+    left: 82.5%;
+    top: 35.5%;
+}
+
+.Michigan {
+    left: 71%;
+    top: 26%;
+}
+
+.NewYork {
+    left: 83%;
+    top: 22%;
+}
+
+.Tennessee {
+    left: 70.3%;
+    top: 52.5%;
+}
+
+.Texas {
+    left: 52%;
+    top: 70%;
+}
+
+.Virginia {
+    left: 81%;
+    top: 43%;
 }
