@@ -13,21 +13,46 @@ function CohortInfoBox({personInfo, clickedName}) {
 
     // Ribbon thing on youtube
 
+    const flipCard = () => {
+        const card = document.querySelector(".card-inner");
+        card.classList.toggle("is-flipped");
+    }
+
     return (
-        <div className="card">
-            <div className="card-header">{clickedName !== "" ? choosePerson?.name : "Bingus Bongus"}</div>
-            <div className="card-body">
-                <img
-                    className="card-image"
-                    src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"}
-                    alt={choosePerson?.name}
-                    title={choosePerson?.name}
-                    width="100%"
-                /> <br/>
-                {clickedName !== "" ? choosePerson?.description : "Shiet"}
-            </div>
-            <div className="card-footer">
-                From: {clickedName !== "" ? choosePerson?.location_from : "???"}
+        // <div className="card">
+        //     <div className="card-header">{clickedName !== "" ? choosePerson?.name : "Click an Image"}</div>
+        //     <div className="card-body">
+        //         <img
+        //             className="card-image"
+        //             src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"}
+        //             alt={choosePerson?.name}
+        //             title={choosePerson?.name}
+        //             width="100%"
+        //         /> <br/>
+        //         {clickedName !== "" ? choosePerson?.description : "Please?"}
+        //     </div>
+        //     <div className="card-footer">
+        //         From: {clickedName !== "" ? choosePerson?.location_from : "???"}
+        //     </div>
+        // </div>
+
+        <div className="card" onClick={flipCard}>
+            <div className="card-inner">
+                <div className="card-face card-face-front">
+                    <h2>Developer Card</h2>
+                </div>
+                <div className="card-face card-face-back">
+                    <div className="card-content">
+                        <div className="card-header">
+                            <img className="card-image" src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"} alt={choosePerson?.name} title={choosePerson?.name} width="100%"/>
+                            <h2>{clickedName !== "" ? choosePerson?.name : "Click an Image"}</h2>
+                        </div>
+                        <div className="card-body">
+                            <h3>pp</h3>
+                            <p>{clickedName !== "" ? choosePerson?.description : "Please?"}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
