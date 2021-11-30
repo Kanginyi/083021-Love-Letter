@@ -18,6 +18,8 @@ function CohortInfoBox({personInfo, clickedName}) {
         card.classList.toggle("is-flipped");
     }
 
+    // Add a thing where it'll erase the front part of the card when you send it to the back
+
     return (
         // <div className="card">
         //     <div className="card-header">{clickedName !== "" ? choosePerson?.name : "Click an Image"}</div>
@@ -39,17 +41,17 @@ function CohortInfoBox({personInfo, clickedName}) {
         <div className="card" onClick={flipCard}>
             <div className="card-inner">
                 <div className="card-face card-face-front">
-                    <h2>Developer Card</h2>
+                    <h2>Click Me!</h2>
                 </div>
                 <div className="card-face card-face-back">
                     <div className="card-content">
                         <div className="card-header">
-                            <img className="card-image" src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"} alt={choosePerson?.name} title={choosePerson?.name} width="100%"/>
                             <h2>{clickedName !== "" ? choosePerson?.name : "Click an Image"}</h2>
+                            <img className="card-image" src={clickedName !== "" ? choosePerson?.picture : "https://i.imgur.com/gaxXG7T.jpg"} alt={choosePerson?.name} title={choosePerson?.name} width="100%"/>
                         </div>
                         <div className="card-body">
-                            <h3>pp</h3>
-                            <p>{clickedName !== "" ? choosePerson?.description : "Please?"}</p>
+                            <p>{clickedName !== "" ? choosePerson?.description : ""}</p>
+                            <p>{clickedName !== "" ? `From: ${choosePerson?.location_from}` : ""}</p>
                         </div>
                     </div>
                 </div>
