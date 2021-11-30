@@ -1,8 +1,9 @@
 import React from 'react';
 
-function CohortInfoCircleItem({icon, color, rotation, isOpen, transitionDelay}) {
+function CohortInfoCircleItem({handleSetOpenModal, openModal, icon, color, rotation, isOpen, transitionDelay}) {
     return (
         <div
+            onClick={handleSetOpenModal}
             className="menu-item"
             style={{
                 backgroundColor: color,
