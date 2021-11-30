@@ -20,7 +20,10 @@ function Cohort({personInfo, handleImageClick, clickedName}) {
                     personInfo={personInfo}
                     clickedName={clickedName}
                 />
-                <CohortInfoCircle personInfo={personInfo}/>
+                <CohortInfoCircle
+                    personInfo={personInfo}
+                    clickedName={clickedName}
+                />
             </div>
         </>
     );
