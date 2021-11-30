@@ -7,20 +7,20 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Seeding Instructors >:^("
-# adam_johnson = Instructor.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     years_worked:
-# )
+adam_johnson = Instructor.create(
+    name: "Adam Johnson",
+    age: 28,
+    description: "Anime thot",
+    song: "Extra - Baby Keem",
+    current_location: "New York",
+    location_from: "Maine",
+    interesting_fact: "I play trumpet",
+    hobbies: "Gunpla, Video games, Jazz",
+    picture: "https://media-exp1.licdn.com/dms/image/C4E03AQEejOwJNedRGQ/profile-displayphoto-shrink_400_400/0/1579183758618?e=1643846400&v=beta&t=iJVMSa9tz9c1naOsYjIk4s-QYrI8QS8vjzUmp7Rch2s",
+    favorite_food: "Donuts",
+    github: "https://github.com/adamwjo",
+    years_worked: 1
+)
 
 # greg_dwyer = Instructor.create(
 #     name: ,
@@ -36,21 +36,6 @@ puts "Seeding Instructors >:^("
 #     github: ,
 #     years_worked:
 # )
-
-dickhead_mcgee = Instructor.create(
-    name: "Dickhead McGee",
-    age: 69,
-    description: "Fucking loser fuck",
-    song: "Idiot - Dumbbitch",
-    current_location: "Texas",
-    location_from: "Fairfax, Virginia",
-    interesting_fact: "I'm actually a dumb bastard",
-    hobbies: "dumb, fucking, cunt",
-    picture: "https://ih1.redbubble.net/image.403079332.1072/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg",
-    favorite_food: "McDonald's",
-    github: "https://www.google.com/",
-    years_worked: 2
-)
 
 dumb_bitch = Instructor.create(
     name: "Dumb Bitch",
@@ -82,7 +67,7 @@ brice_jokung = Student.create(
     favorite_food: "Fried Plantains, Stew and Steak",
     github: "https://github.com/delwis2000",
     flatiron_rating: 7.5,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 charlie_gaereminck = Student.create(
@@ -98,7 +83,7 @@ charlie_gaereminck = Student.create(
     favorite_food: "New York Strip Steak",
     github: "https://github.com/ggaereminck",
     flatiron_rating: 9,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 cody_chaffin = Student.create(
@@ -109,12 +94,12 @@ cody_chaffin = Student.create(
     current_location: "Texas",
     location_from: "Virginia",
     interesting_fact: "I watch/read a lot of informational videos, posts, and facts so most of my friends and family call me a walking Google search for random facts",
-    hobbies: "Gaming, Blacksmithing, Building epoxy tables, Watching movies,  Smoking cigars",
+    hobbies: "Gaming, Blacksmithing, Building epoxy tables, Watching movies, Smoking cigars",
     picture: "https://i.imgur.com/rydK3ef.jpg",
     favorite_food: "Sweet Spicy Chili Doritos",
     github: "https://github.com/CodyChaffin",
     flatiron_rating: 10,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 # david_evangelista = Student.create(
@@ -130,7 +115,7 @@ cody_chaffin = Student.create(
 #     favorite_food: ,
 #     github: ,
 #     flatiron_rating: ,
-#     instructor_id: dickhead_mcgee.id
+#     instructor_id: adam_johnson.id
 # )
 
 dilshan_mudali = Student.create(
@@ -146,7 +131,7 @@ dilshan_mudali = Student.create(
     favorite_food: "Rice and Curry",
     github: "https://github.com/dilshanmudali",
     flatiron_rating: 8,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 eric_yi = Student.create(
@@ -162,7 +147,7 @@ eric_yi = Student.create(
     favorite_food: "Sushi, Korean BBQ, Noodles",
     github: "https://github.com/Kanginyi",
     flatiron_rating: 9,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 hashem_gray = Student.create(
@@ -178,7 +163,7 @@ hashem_gray = Student.create(
     favorite_food: "Ribeye Steak",
     github: "https://github.com/Hgray1109",
     flatiron_rating: 8,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 jon_pilarski = Student.create(
@@ -196,7 +181,7 @@ jon_pilarski = Student.create(
     favorite_food: "Rice",
     github: "https://github.com/jonpilarski777",
     flatiron_rating: 9,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 # joshua_allford = Student.create(
@@ -212,14 +197,14 @@ jon_pilarski = Student.create(
 #     favorite_food: ,
 #     github: ,
 #     flatiron_rating: ,
-#     instructor_id: dickhead_mcgee.id
+#     instructor_id: adam_johnson.id
 # )
 
 kevin_lutz = Student.create(
     name: "Kevin Lutz",
     age: 35,
     description: "Always down for adventure and I love learning about any topic",
-    song: "Cruise- Florida Georgia Line",
+    song: "Cruise - Florida Georgia Line",
     current_location: "Georgia",
     location_from: "Atlanta, Georgia",
     interesting_fact: "Have visited 14 countries and speak German",
@@ -228,7 +213,7 @@ kevin_lutz = Student.create(
     favorite_food: "Lasagna",
     github: "https://github.com/kevinlutz",
     flatiron_rating: 9,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 # matt_blank = Student.create(
@@ -244,14 +229,14 @@ kevin_lutz = Student.create(
 #     favorite_food: ,
 #     github: ,
 #     flatiron_rating: ,
-#     instructor_id: dickhead_mcgee.id
+#     instructor_id: adam_johnson.id
 # )
 
 nicholas_aguirre = Student.create(
     name: "Nicholas Aguirre",
     age: 24,
     description: "Loves art, politics, technology, and breakfast tacos!",
-    song: "Liz by Remi Wolf",
+    song: "Liz - Remi Wolf",
     current_location: "Texas",
     location_from: "Katy, Texas",
     interesting_fact: "All my fingers are double jointed",
@@ -260,7 +245,7 @@ nicholas_aguirre = Student.create(
     favorite_food: "Breakfast Tacos",
     github: "https://github.com/HeyNeek",
     flatiron_rating: 8,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 paul_davidson = Student.create(
@@ -276,7 +261,7 @@ paul_davidson = Student.create(
     favorite_food: "Indian",
     github: "https://github.com/pashovski",
     flatiron_rating: 1,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 quang_do = Student.create(
@@ -292,7 +277,7 @@ quang_do = Student.create(
     favorite_food: "Barbeque",
     github: "https://github.com/QD11",
     flatiron_rating: 8,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 sam_lee = Student.create(
@@ -308,7 +293,7 @@ sam_lee = Student.create(
     favorite_food: "Korean",
     github: "https://github.com/samlee1097",
     flatiron_rating: 9,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 xinyi_yao = Student.create(
@@ -324,7 +309,7 @@ xinyi_yao = Student.create(
     favorite_food: "Noodles, Pizza, But not together",
     github: "https://github.com/xinyiyao823",
     flatiron_rating: 6.9,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 
@@ -341,7 +326,7 @@ seneiya_cooke = Student.create(
     favorite_food: "Sushi",
     github: "https://github.com/seneiya0",
     flatiron_rating: 8.73,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
 joseph_fulkerson = Student.create(
@@ -357,40 +342,40 @@ joseph_fulkerson = Student.create(
     favorite_food: "Sushi",
     github: "https://github.com/josephafulkerson",
     flatiron_rating: 11,
-    instructor_id: dickhead_mcgee.id
+    instructor_id: adam_johnson.id
 )
 
-# mohammad_hasan = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dickhead_mcgee.id
-# )
+mohammad_hasan = Student.create(
+    name: "Mohammad Hasan",
+    age: 26,
+    description: "Ambivert",
+    song: "FWMGAB - French Montana",
+    current_location: "New York",
+    location_from: "Bangladesh",
+    interesting_fact: "I can speak English, Bengali, Hindi, Urdu, and Arabic",
+    hobbies: "Video games, Sports, Swimming, Cycling",
+    picture: "https://i.imgur.com/2lttnHZ.png",
+    favorite_food: "Mexican, Thai",
+    github: "https://github.com/MHasan159",
+    flatiron_rating: 8,
+    instructor_id: adam_johnson.id
+)
 
-# alan_cinsavich = Student.create(
-#     name: "Alan L. Cinsavich",
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: "Maryland",
-#     location_from: "Maryland",
-#     interesting_fact: "I really enjoy photography",
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dickhead_mcgee.id
-# )
+alan_cinsavich = Student.create(
+    name: "Alan L. Cinsavich",
+    age: 69,
+    description: "I'm finally back to my favorite pre-covid profession: photography",
+    song: "Photograph - Nickelback",
+    current_location: "Maryland",
+    location_from: "Maryland",
+    interesting_fact: "I used to be in an acapella group in university!",
+    hobbies: "Photography, Running through the forest, Enjoying my furniture",
+    picture: "https://i.imgur.com/bt6C3tR.png",
+    favorite_food: "Pasta, Cheetos",
+    github: "https://github.com/", # Get his actual GitHub link somehow you bitch
+    flatiron_rating: 6.9,
+    instructor_id: adam_johnson.id
+)
 
 
 puts "Seeding Section B Students >:^("
@@ -586,21 +571,21 @@ patrick_wu = Student.create(
     instructor_id: dumb_bitch.id
 )
 
-# pranay_sankineni = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
-# )
+pranay_sankineni = Student.create(
+    name: "Pranay Sankineni",
+    age: 28,
+    description: "I am a hard-working and driven individual who isn't afraid to face a challenge.",
+    song: "What A Beautiful Name - Hillsong",
+    current_location: "New Jersey",
+    location_from: "India",
+    interesting_fact: "I love to cook.",
+    hobbies: "Cooking, Gaming, Driving, Swimming, Traveling",
+    picture: "https://i.imgur.com/AG7DVrG.jpg",
+    favorite_food: "Roasted Chicken, Lamb, Steak",
+    github: "https://github.com/pranayrao475",
+    flatiron_rating: 9,
+    instructor_id: dumb_bitch.id
+)
 
 scott_donnan = Student.create(
     name: "Scott Donnan",
