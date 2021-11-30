@@ -19,6 +19,7 @@ function Locations({personInfo}) {
     const locationIL = personInfo?.filter(person => person.current_location === "Illinois");
     const locationMD = personInfo?.filter(person => person.current_location === "Maryland");
     const locationMI = personInfo?.filter(person => person.current_location === "Michigan");
+    const locationNJ = personInfo?.filter(person => person.current_location === "New Jersey");
     const locationNY = personInfo?.filter(person => person.current_location === "New York");
     const locationTN = personInfo?.filter(person => person.current_location === "Tennessee");
     const locationTX = personInfo?.filter(person => person.current_location === "Texas");
