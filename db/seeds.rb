@@ -270,7 +270,7 @@ quang_do = Student.create(
     description: "asian boi",
     song: "Feel Special - Twice",
     current_location: "Texas",
-    location_from: "Born in Japan",
+    location_from: "Yokohama, Japan",
     interesting_fact: "I was an aeronautical engineer at Texas A&M before coming to Flatiron",
     hobbies: "I like to sleep",
     picture: "https://i.imgur.com/P6B1PYk.png",
