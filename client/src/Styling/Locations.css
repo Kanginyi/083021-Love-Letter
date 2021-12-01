@@ -8,8 +8,8 @@
 } */
 
 #united-states-map {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     padding: 0;
     margin: 0;
     position: fixed;
@@ -17,90 +17,17 @@
     z-index: -1;
 }
 
-.locations-people {
+.locations-states {
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    z-index: 5;
-    position: relative;
-}
-
-/* .locations-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    transform: scale(1.01);
-    z-index: 10;
-} */
-
-/* States ClassNames */
-/* .Georgia {
-    left: 75%;
-    top: 62%;
-}
-
-.Illinois {
-    left: 65.5%;
-    top: 37%;
-}
-
-.Maryland {
-    left: 82.5%;
-    top: 35.5%;
-}
-
-.Michigan {
-    left: 71%;
-    top: 26%;
-}
-
-.NewJersey {
-    left: 85%;
-    top: 33%;
-}
-
-.NewYork {
-    left: 83%;
-    top: 22%;
-}
-
-.Tennessee {
-    left: 70.3%;
-    top: 52.5%;
-}
-
-.Texas {
-    left: 52%;
-    top: 70%;
-}
-
-.Virginia {
-    left: 81%;
-    top: 43%;
-} */
-
-.locations-va {
-    background: black;
-    color: white;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    z-index: 5;
-    position: relative;
     display: flex;
     justify-content: center;
+    z-index: 5;
     align-items: center;
     font-size: 24px;
     cursor: pointer;
+    position: fixed;
 }
 
 .locations-background {
@@ -113,6 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 18;
 }
 
 .locations-modal-box {
@@ -122,9 +50,9 @@
     background: white;
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     position: relative;
-    z-index: 10;
+    z-index: 19;
     border-radius: 10px;
 }
 
@@ -153,13 +81,90 @@
     background: #141414;
     color: white;
     border: none;
-
     position: absolute;
     top: 20px;
     right: 20px;
     width: 30px;
     height: 30px;
     padding: 0;
-    z-index: 10;
+    z-index: 20;
     cursor: pointer;
+}
+
+.locations-modal-list {
+    list-style: none;
+}
+
+.locations-modal-image {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* States ClassNames */
+#georgia {
+    left: 75%;
+    top: 62%;
+    background: rgb(255, 171, 185);
+    color: black;
+}
+
+#illinois {
+    left: 65.5%;
+    top: 37%;
+    background: rgb(223, 219, 11);
+    color: black;
+}
+
+#maryland {
+    left: 82.5%;
+    top: 35.5%;
+    background: rgb(173, 0, 173);
+    color: white;
+}
+
+#michigan {
+    left: 71%;
+    top: 26%;
+    background: blue;
+    color: pink;
+}
+
+#new-jersey {
+    left: 85%;
+    top: 33%;
+    background:rgb(0, 181, 194);
+    color: black;
+}
+
+#new-york {
+    left: 83%;
+    top: 22%;
+    background: black;
+    color: white;
+}
+
+#tennessee {
+    left: 70.3%;
+    top: 52.5%;
+    background: rgb(0, 175, 0);
+    color: black;
+}
+
+#texas {
+    left: 52%;
+    top: 70%;
+    background: maroon;
+    color: white;
+}
+
+#virginia {
+    left: 81%;
+    top: 43%;
+    background: rgb(255, 166, 0);
+    color: black;
 }
