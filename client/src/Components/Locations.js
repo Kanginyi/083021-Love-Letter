@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import LocationsPeople from './LocationsPeople';
 import "../Styling/Locations.css"
 
+import LocationsTestModal from './LocationsTestModal';
+
 function Locations({personInfo}) {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(prevValue => !prevValue);
+    }
+
     const peopleBubbles = personInfo?.map(person => {
         return <LocationsPeople key={person.name} picture={person.picture} name={person.name} location={person.current_location}/>
     })
@@ -20,8 +28,12 @@ function Locations({personInfo}) {
 
     return (
         <>
-        <div id="united-state-map-container">
-            {peopleBubbles}
+        <LocationsTestModal showModal={showModal} setShowModal={setShowModal}/>
+        <div id="united-states-map-container">
+            <div className="locations-va" onClick={openModal}>
+                VA
+            </div>
+
             <img
                 id="united-states-map"
                 src="https://i.imgur.com/GGFrGLr.png"
