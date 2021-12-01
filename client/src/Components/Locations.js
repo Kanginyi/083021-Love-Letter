@@ -1,36 +1,74 @@
 import React, {useState} from 'react';
-import LocationsPeople from './LocationsPeople';
+import LocationsModal from './LocationsModal';
 import "../Styling/Locations.css"
-
-import LocationsTestModal from './LocationsTestModal';
 
 function Locations({personInfo}) {
     const [showModal, setShowModal] = useState(false);
+    const [renderPeople, setRenderPeople] = useState("");
 
-    const openModal = () => {
+    const openModal = e => {
+        const matchLocation = personInfo?.filter(person => {
+            if (person.current_location.includes(" ")) {
+                const spacedState = person.current_location.replace(" ", "-");
+                if (spacedState.toLowerCase() === e.target.id.toLowerCase()) {
+                    return person;
+                }
+            } else if (person.current_location.toLowerCase() === e.target.id.toLowerCase()) {
+                return person;
+            }
+        });
+
+        setRenderPeople(matchLocation);
+
         setShowModal(prevValue => !prevValue);
     }
 
-    const peopleBubbles = personInfo?.map(person => {
-        return <LocationsPeople key={person.name} picture={person.picture} name={person.name} location={person.current_location}/>
-    })
-
-    // Location Arrays
-    const locationGA = personInfo?.filter(person => person.current_location === "Georgia");
-    const locationIL = personInfo?.filter(person => person.current_location === "Illinois");
-    const locationMD = personInfo?.filter(person => person.current_location === "Maryland");
-    const locationMI = personInfo?.filter(person => person.current_location === "Michigan");
-    const locationNJ = personInfo?.filter(person => person.current_location === "New Jersey");
-    const locationNY = personInfo?.filter(person => person.current_location === "New York");
-    const locationTN = personInfo?.filter(person => person.current_location === "Tennessee");
-    const locationTX = personInfo?.filter(person => person.current_location === "Texas");
-    const locationVA = personInfo?.filter(person => person.current_location === "Virginia");
-
     return (
         <>
-        <LocationsTestModal showModal={showModal} setShowModal={setShowModal}/>
+        <LocationsModal showModal={showModal} setShowModal={setShowModal} personInfo={personInfo} renderPeople={renderPeople}/>
         <div id="united-states-map-container">
-            <div className="locations-va" onClick={openModal}>
+            {/* Georgia */}
+            <div id="georgia" className="locations-states" onClick={openModal}>
+                GA
+            </div>
+
+            {/* Illinois */}
+            <div id="illinois" className="locations-states" onClick={openModal}>
+                IL
+            </div>
+
+            {/* Maryland */}
+            <div id="maryland" className="locations-states" onClick={openModal}>
+                MD
+            </div>
+
+            {/* Michigan */}
+            <div id="michigan" className="locations-states" onClick={openModal}>
+                MI
+            </div>
+
+            {/* New Jersey */}
+            <div id="new-jersey" className="locations-states" onClick={openModal}>
+                NJ
+            </div>
+
+            {/* New York */}
+            <div id="new-york" className="locations-states" onClick={openModal}>
+                NY
+            </div>
+
+            {/* Tennessee */}
+            <div id="tennessee" className="locations-states" onClick={openModal}>
+                TN
+            </div>
+
+            {/* Texas */}
+            <div id="texas" className="locations-states" onClick={openModal}>
+                TX
+            </div>
+
+            {/* Virginia */}
+            <div id="virginia" className="locations-states" onClick={openModal}>
                 VA
             </div>
 
@@ -45,10 +83,3 @@ function Locations({personInfo}) {
 }
 
 export default Locations;
-
-{/* <img
-id={nameID}
-className={`locations-people ${location}`}
-src={picture}
-alt={name}
-/> */}
