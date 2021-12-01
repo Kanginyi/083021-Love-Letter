@@ -17,19 +17,6 @@
     z-index: -1;
 }
 
-.locations-states {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    z-index: 5;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    position: fixed;
-}
-
 .locations-background {
     width: 100%;
     height: 100%;
@@ -72,10 +59,6 @@
     color: #141414;
 }
 
-.locations-modal-content p{
-    margin-bottom: 1rem;
-}
-
 .locations-modal-content button{
     padding: 10px 24px;
     background: #141414;
@@ -105,12 +88,36 @@
     align-items: center;
 }
 
-/* States ClassNames */
+.locations-states {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.75);
+}
+
+.locations-states:hover {
+    transform: scale(1.2);
+    z-index: 6;
+}
+
+.locations-states:active {
+    opacity: 0.7;
+}
+
+/* States Bubbles */
 #georgia {
     left: 75%;
     top: 62%;
     background: rgb(255, 171, 185);
     color: black;
+    animation: georgiaflash 3.75s infinite;
 }
 
 #illinois {
@@ -118,6 +125,7 @@
     top: 37%;
     background: rgb(223, 219, 11);
     color: black;
+    animation: illinoisflash 3.75s infinite;
 }
 
 #maryland {
@@ -125,13 +133,15 @@
     top: 35.5%;
     background: rgb(173, 0, 173);
     color: white;
+    animation: marylandflash 3.75s infinite;
 }
 
 #michigan {
     left: 71%;
     top: 26%;
-    background: blue;
-    color: pink;
+    background: navy;
+    color: white;
+    animation: michiganflash 4.5s infinite;
 }
 
 #new-jersey {
@@ -139,6 +149,7 @@
     top: 33%;
     background:rgb(0, 181, 194);
     color: black;
+    animation: newjerseyflash 4.5s infinite;
 }
 
 #new-york {
@@ -146,6 +157,7 @@
     top: 22%;
     background: black;
     color: white;
+    animation: newyorkflash 3s infinite;
 }
 
 #tennessee {
@@ -153,6 +165,7 @@
     top: 52.5%;
     background: rgb(0, 175, 0);
     color: black;
+    animation: tennesseeflash 4.5s infinite;
 }
 
 #texas {
@@ -160,6 +173,7 @@
     top: 70%;
     background: maroon;
     color: white;
+    animation: texasflash 3s infinite;
 }
 
 #virginia {
@@ -167,4 +181,144 @@
     top: 43%;
     background: rgb(255, 166, 0);
     color: black;
+    animation: virginiaflash 3s infinite;
+}
+
+/* States Keyframes */
+/* 3s Flashes */
+@keyframes newyorkflash {
+    93% {
+        background: black;
+    }
+    95% {
+        background: linear-gradient(to top right, white, white, black);
+    }
+    97% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, black, black, white);
+    }
+}
+
+@keyframes texasflash {
+    93% {
+        background: maroon;
+    }
+    95% {
+        background: linear-gradient(to top right, white, white, maroon);
+    }
+    97% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, maroon, maroon, white);
+    }
+}
+
+@keyframes virginiaflash {
+    93% {
+        background: rgb(255, 166, 0);
+    }
+    95% {
+        background: linear-gradient(to top right, white, white, rgb(255, 166, 0));
+    }
+    97% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(255, 166, 0), rgb(255, 166, 0), white);
+    }
+}
+
+/* 3.75 Flashes */
+@keyframes georgiaflash {
+    96% {
+        background: rgb(255, 171, 185);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(255, 171, 185));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(255, 171, 185), rgb(255, 171, 185), white);
+    }
+}
+
+@keyframes illinoisflash {
+    96% {
+        background: rgb(223, 219, 11);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(223, 219, 11));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(223, 219, 11), rgb(223, 219, 11), white);
+    }
+}
+
+@keyframes marylandflash {
+    96% {
+        background: rgb(173, 0, 173);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(173, 0, 173));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(173, 0, 173), rgb(173, 0, 173), white);
+    }
+}
+
+/* 4.5s Flashes */
+@keyframes michiganflash {
+    96% {
+        background: navy;
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, navy);
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, navy, navy, white);
+    }
+}
+
+@keyframes newjerseyflash {
+    96% {
+        background: rgb(0, 181, 194);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(0, 181, 194));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(0, 181, 194), rgb(0, 181, 194), white);
+    }
+}
+
+@keyframes tennesseeflash {
+    96% {
+        background: rgb(0, 175, 0);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(0, 175, 0));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(0, 175, 0), rgb(0, 175, 0), white);
+    }
 }
