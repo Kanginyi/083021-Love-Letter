@@ -3,7 +3,9 @@ import "../Styling/Options.css"
 
 function Options() {
     return (
-        <h1>fuck off</h1>
+        <>
+            <h1>what the hail</h1>
+        </>
     );
 }
 
