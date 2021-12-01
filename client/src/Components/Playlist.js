@@ -1,9 +1,6 @@
 import React from 'react';
 import "../Styling/Playlist.css"
 
-import {GiMusicalNotes, GiMusicalScore} from "react-icons/gi"
-import {IoMusicalNoteOutline, IoMusicalNotesOutline, IoMusicalNoteSharp, IoMusicalNotesSharp} from "react-icons/io5"
-
 function Playlist() {
     return (
         <>
