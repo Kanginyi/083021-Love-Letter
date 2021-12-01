@@ -74,7 +74,7 @@ function Locations({personInfo}) {
 
             <img
                 id="united-states-map"
-                src="https://i.imgur.com/GGFrGLr.png"
+                src="https://i.imgur.com/ZB9oo5D.png"
                 alt="United States Map"   
             />
         </div>
