@@ -1,19 +1,19 @@
 import React from 'react';
 
-function LocationsPeople({picture, name, location}) {
-    const nameArray = name.split(" ");
-    const nameID = nameArray.join("");
-
-    const locationArray = location.split(" ");
-    const locationClass = locationArray.join("");
-    
+function LocationsPeople({name, picture, location}) {
     return (
-        <img
-            id={nameID}
-            className={`locations-people ${locationClass}`}
-            src={picture}
-            alt={name}
-        />
+        <>
+        <li className="locations-modal-list">
+            <img
+                className="locations-modal-image"
+                src={picture}
+                alt={name}
+                title={name}
+            />
+            <span>{name}</span>
+            <span>Originally From: {location}</span>
+        </li>
+        </>
     );
 }
 
