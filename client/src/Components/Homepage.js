@@ -37,9 +37,9 @@ function Homepage() {
                 </div>
 
                 <div className="homepage-div">
-                    <Link className="div-links" to={"/options"}>Options</Link>
+                    <Link className="div-links" to={"/charts"}>Charts</Link>
                     <p className="homepage-text">
-                        Choose some options here!
+                        View some charts here!
                     </p>
                 </div>
 
