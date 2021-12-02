@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function LocationsPeople({name, picture, location}) {
     return (
         <>
@@ -8,10 +9,11 @@ function LocationsPeople({name, picture, location}) {
                 className="locations-modal-image"
                 src={picture}
                 alt={name}
-                title={name}
             />
-            <span>{name}</span>
-            <span>Originally From: {location}</span>
+            <p><b>{name}</b><br/>
+                Originally From:<br/>
+                {location}
+            </p>
         </li>
         </>
     );
