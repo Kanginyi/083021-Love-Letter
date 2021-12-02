@@ -1,8 +1,9 @@
 import React, {useRef, useEffect, useCallback} from 'react';
 import LocationsPeople from './LocationsPeople';
 import {useSpring, animated} from "react-spring";
+import {FixedSizeList as List} from "react-window";
 
-function LocationsModal({showModal, setShowModal, personInfo, renderPeople}) {
+function LocationsModal({showModal, setShowModal, renderPeople}) {
     // Using this to close the modal when clicking outside of the modal
     const modalRef = useRef();
     const closeModal = e => {
@@ -38,16 +39,22 @@ function LocationsModal({showModal, setShowModal, personInfo, renderPeople}) {
             <div className="locations-background" ref={modalRef} onClick={closeModal}>
                 <animated.div style={animation}>
                 <div className="locations-modal-box">
-                    <ul>
-                    {renderPeople?.map(person => {
-                        return <LocationsPeople
-                            key={person?.name}
-                            name={person?.name}
-                            picture={person?.picture}
-                            location={person?.location_from}
+                    <h1>
+                        {renderPeople[0]?.current_location} (Population: {renderPeople?.length})
+                    </h1>
+                    <hr/>
+
+                    <ul className="locations-modal-ul">
+                        {renderPeople?.map(person => {
+                            return <LocationsPeople 
+                                key={person?.name}
+                                name={person?.name}
+                                picture={person?.picture}
+                                location={person?.location_from}
                             />
-                    })}
+                        })}
                     </ul>
+
                 <div className="locations-modal-content">
                     <button onClick={() => setShowModal(false)}>X</button>
                 </div>
@@ -61,5 +68,3 @@ function LocationsModal({showModal, setShowModal, personInfo, renderPeople}) {
 }
 
 export default LocationsModal;
-
-// IMPORT DATA
