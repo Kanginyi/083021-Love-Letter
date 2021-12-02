@@ -5,11 +5,12 @@ import "../Styling/Locations.css"
 function Locations({personInfo}) {
     const [showModal, setShowModal] = useState(false);
     const [renderPeople, setRenderPeople] = useState("");
+    // const [stateClass, setStateClass] = useState("");
 
     const openModal = e => {
         const matchLocation = personInfo?.filter(person => {
-            if (person.current_location.includes(" ")) {
-                const spacedState = person.current_location.replace(" ", "-");
+            if (person?.current_location.includes(" ")) {
+                const spacedState = person?.current_location.replace(" ", "-");
                 if (spacedState.toLowerCase() === e.target.id.toLowerCase()) {
                     return person;
                 }
@@ -25,7 +26,7 @@ function Locations({personInfo}) {
 
     return (
         <>
-        <LocationsModal showModal={showModal} setShowModal={setShowModal} personInfo={personInfo} renderPeople={renderPeople}/>
+        <LocationsModal showModal={showModal} setShowModal={setShowModal} renderPeople={renderPeople} openModal={openModal}/>
         <div id="united-states-map-container">
             {/* Georgia */}
             <div id="georgia" className="locations-states" onClick={openModal}>
