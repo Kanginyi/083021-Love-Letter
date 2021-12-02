@@ -630,7 +630,7 @@ xee = Student.create(
     hobbies: "I typically just play video games (Pokemon, LoZ, Stardew Valley),  Recently: (Eastward, Spirit Farer)",
     picture: "https://i.imgur.com/YXa3Y8Y.png",
     favorite_food: "Any variation of nachos",
-    github: "github.com/AlyxKM",
+    github: "https://github.com/AlyxKM",
     flatiron_rating: 8,
     instructor_id: dumb_bitch.id
 )
