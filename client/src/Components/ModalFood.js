@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/Modal.css"
 
-function ModalFood({personFood, openFood, setOpenFood}) {
+function ModalFood({personFood, openModal, setOpenModal}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openFood) {
-            setOpenFood(false);
+        if (e.key === "Escape" && openModal) {
+            setOpenModal(false);
         }
-    }, [openFood, setOpenFood]);
+    }, [openModal, setOpenModal]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -26,15 +26,15 @@ function ModalFood({personFood, openFood, setOpenFood}) {
 
     return (
         <>
-            {openFood ?
+            {openModal ?
                 <div className="modals">
-                    <div className="modals-box">
+                    <div id="modals-favorite-foods" className="modals-box">
                         <div className="modals-content">
                             <h2>Favorite Food</h2>
                             <ul>
                                 {listFoods}
                             </ul>
-                            <button onClick={() => setOpenFood(false)}>X</button>
+                            <button onClick={() => setOpenModal(false)}>X</button>
                         </div>
                     </div>
                 </div>

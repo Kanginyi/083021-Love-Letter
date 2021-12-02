@@ -22,7 +22,7 @@ function ModalGithub({personGithub, openModal, setOpenModal}) {
         <>
             {openModal ?
                 <div className="modals">
-                    <div className="modals-box">
+                    <div id="modals-github-link" className="modals-box">
                         <div className="modals-content">
                             <h2>GitHub Link</h2>
                             <p><a href={personGithub} target="_blank">{personGithub}</a></p>
