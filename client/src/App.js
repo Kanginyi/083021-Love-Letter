@@ -4,7 +4,7 @@ import Homepage from "./Components/Homepage";
 import Cohort from "./Components/Cohort";
 import Playlist from "./Components/Playlist";
 import Locations from "./Components/Locations";
-import Options from "./Components/Options";
+import Charts from "./Components/Charts";
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -41,8 +41,12 @@ function App() {
               <Locations
                 personInfo={personInfo}
               />
-            }/>
-            <Route path="options" element={<Options/>}/>
+              }/>
+            <Route path="charts" element={
+              <Charts
+                personInfo={personInfo}
+              />
+              }/>
           </Routes>
         </div>
       </Router>
