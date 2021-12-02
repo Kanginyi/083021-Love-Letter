@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/Modal.css"
 
-function ModalGithub({personGithub, openGithub, setOpenGithub}) {
+function ModalGithub({personGithub, openModal, setOpenModal}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openGithub) {
-            setOpenGithub(false);
+        if (e.key === "Escape" && openModal) {
+            setOpenModal(false);
         }
-    }, [openGithub, setOpenGithub]);
+    }, [openModal, setOpenModal]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -20,13 +20,13 @@ function ModalGithub({personGithub, openGithub, setOpenGithub}) {
 
     return (
         <>
-            {openGithub ?
+            {openModal ?
                 <div className="modals">
                     <div className="modals-box">
                         <div className="modals-content">
                             <h2>GitHub Link</h2>
                             <p><a href={personGithub} target="_blank">{personGithub}</a></p>
-                            <button onClick={() => setOpenGithub(false)}>X</button>
+                            <button onClick={() => setOpenModal(false)}>X</button>
                         </div>
                     </div>
                 </div>
