@@ -12,7 +12,7 @@
     height: 225px;
     border-radius: 12px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-    background: white;
+    background: white; /* Take out the background and figure that shhit out */
     color: black;
     display: grid;
     grid-template-columns: 1fr;
@@ -50,3 +50,16 @@
     z-index: 100;
 }
 
+/* Modals colors and positions */
+#modals-github-link {
+    position: absolute;
+    left: 572px;
+    background: linear-gradient(to top right, rgb(62, 132, 230), rgb(62, 132, 230), white);
+}
+
+#modals-favorite-foods {
+    position: absolute;
+    top: 115px;
+    left: 520px;
+    background: linear-gradient(to top right, rgb(242, 183, 5), rgb(242, 183, 5), white);
+}
