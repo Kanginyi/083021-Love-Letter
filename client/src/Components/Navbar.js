@@ -135,26 +135,27 @@ function Navbar() {
           </li> */}
 
           <li className="nav-item">
-            <a href="/charts" className="nav-link">
+            <a href="/comments" className="nav-link">
               <svg
                 aria-hidden="true"
                 focusable="false"
-                data-prefix="fas"
-                data-icon="chart-pie"
+                data-prefix="far"
+                data-icon="comment"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 544 512"
-                className="svg-inline--fa fa-chart-pie fa-w-17"  
+                viewBox="0 0 512 512"
+                className="svg-inline--fa fa-comment fa-w-16"
               >
               <g className="fa-group">
               <path
                 fill="currentColor"
-                d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"
+                d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z"
                 className="fa-primary"
               ></path>
+
               </g>
               </svg>
-              <span className="link-text">Charts</span>
+              <span className="link-text">Comments</span>
             </a>
           </li>
 
