@@ -14,6 +14,15 @@ function ModalFood({personFood, openFood, setOpenFood}) {
     }, [escPress])
 
     // Create a function that makes it so the thing is separates based on comma, render into list
+    console.log(personFood);
+
+    const foodArray = personFood?.split(", ");
+
+    const listFoods = foodArray?.map(food => {
+        return <li key={food}>{food}</li>
+    })
+
+    console.log(listFoods);
 
     return (
         <>
@@ -22,7 +31,9 @@ function ModalFood({personFood, openFood, setOpenFood}) {
                     <div className="modals-box">
                         <div className="modals-content">
                             <h2>Favorite Food</h2>
-                            <p>{personFood}</p>
+                            <ul>
+                                {listFoods}
+                            </ul>
                             <button onClick={() => setOpenFood(false)}>X</button>
                         </div>
                     </div>
