@@ -1,5 +1,6 @@
 import React from 'react';
 import "../Styling/Charts.css"
+import ChartsAges from './ChartsAges';
 
 function Charts({personInfo}) {
     // where originially from, age, flatiron rating, currently live, hobbies, food
@@ -15,7 +16,10 @@ function Charts({personInfo}) {
 
     return (
         <>
-            <h1>what the hail</h1>
+            <div className="chart-background">
+                <div className="chart-title">Ages</div>
+                <ChartsAges ageInformation={ageInformation}/>
+            </div>
         </>
     );
 }
