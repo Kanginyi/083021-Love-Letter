@@ -78,6 +78,11 @@ function Locations({personInfo}) {
                 VA
             </div>
 
+            {/* United Kingdom */}
+            <div id="buckinghamshire" className="locations-states" onClick={openModal}>
+                UK
+            </div>
+
             <img
                 id="united-states-map"
                 src="https://i.imgur.com/ZB9oo5D.png"
