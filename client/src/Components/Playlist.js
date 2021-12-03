@@ -1,7 +1,109 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "../Styling/Playlist.css"
 
 function Playlist() {
+    // This is going to see which like/dislike is clicked
+    const [isClicked, setIsClicked] = useState(1);
+
+    const [likes, setLikes] = useState(0);
+
+    useEffect(() => {
+        fetch("/playlist/likes")
+            .then(resp => resp.json())
+            .then(data => setLikes(data.likes));
+    }, [])
+
+    const [dislikes, setDislikes] = useState(0);
+
+    useEffect(() => {
+        fetch("/playlist/likes")
+            .then(resp => resp.json())
+            .then(data => setDislikes(data.dislikes));
+    }, [])
+
+
+    const handleLikes = () => {
+        fetch("/playlist/likes", {
+            method: "PATCH",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({likes: likes})
+        })
+            .then(resp => resp.json())
+            .then(data => setLikes(() => data.likes))
+
+        if (isClicked === 3) {
+            fetch("/playlist/minus_dislikes", {
+                method: "PATCH",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({dislikes: dislikes})
+            })
+                .then(resp => resp.json())
+                .then(data => setDislikes(data.dislikes))
+        }
+
+        setIsClicked(2);
+    }
+
+    const handleDislikes = () => {
+        fetch("/playlist/dislikes", {
+            method: "PATCH",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({dislikes: dislikes})
+        })
+            .then(resp => resp.json())
+            .then(data => setDislikes(() => data.dislikes))
+
+        if (isClicked === 2) {
+            fetch("/playlist/minus_likes", {
+                method: "PATCH",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({likes: likes})
+            })
+                .then(resp => resp.json())
+                .then(data => setLikes(data.likes))
+        }
+
+        setIsClicked(3);
+    }
+
+    const noPressed = <>
+                        <button
+                            onClick={handleLikes}
+                        >{likes} Likes
+                        </button>
+
+                        <button
+                            onClick={handleDislikes}
+                        >{dislikes} Dislikes
+                        </button>
+                    </>
+
+    const likesPressed = <>
+                    <button
+                        disabled="disabled"
+                        onClick={handleLikes}
+                    >{likes} Likes
+                    </button>
+
+                    <button
+                        onClick={handleDislikes}
+                    >{dislikes} Dislikes
+                    </button>
+                </>
+
+    const dislikesPressed = <>
+                    <button
+                        onClick={handleLikes}
+                    >{likes} Likes
+                    </button>
+
+                    <button
+                        disabled="disabled"
+                        onClick={handleDislikes}
+                    >{dislikes} Dislikes
+                    </button>
+                </>
+
     return (
         <>
             <h1 className="align-text-center text-shadow">Cohort Playlist</h1>
@@ -16,9 +118,16 @@ function Playlist() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             >
             </iframe>
+            <div className="playlist-buttons-container">
+                    {isClicked === 1 ? noPressed :
+                     isClicked === 2 ? likesPressed :
+                     dislikesPressed}
+
+            </div>
             <div id="smaller-playlist-container">
                 <div id="section-a-playlist" className="smaller-playlist text-shadow">
                     <h3 className="align-text-center">Section A Playlist</h3>
+                    <button>Section A is Better</button><br/>
                     <iframe
                         className="playlist-border"
                         title="Section A Playlist"
@@ -33,6 +142,7 @@ function Playlist() {
                 </div>
                 <div id="section-b-playlist" className="smaller-playlist text-shadow">
                     <h3 className="align-text-center">Section B Playlist</h3>
+                    <button>Section B is Better</button><br/>
                     <iframe
                         className="playlist-border"
                         title="Section B Playlist"
