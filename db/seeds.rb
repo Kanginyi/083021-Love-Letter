@@ -184,21 +184,21 @@ jon_pilarski = Student.create(
     instructor_id: adam_johnson.id
 )
 
-# joshua_allford = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: adam_johnson.id
-# )
+joshua_allford = Student.create(
+    name: "Josh Allford",
+    age: 30,
+    description: "Basement dweller extraordinaire",
+    song: "Nomu - Good Kid",
+    current_location: "Buckinghamshire",
+    location_from: "United Kingdom",
+    interesting_fact: "I've climbed Mt Fuji",
+    hobbies: "Gaming, Cooking, Travelling",
+    picture: "https://i.imgur.com/aovcQ8f.png",
+    favorite_food: "Wings of all kind",
+    github: "https://github.com/Nanook123",
+    flatiron_rating: 8,
+    instructor_id: adam_johnson.id
+)
 
 kevin_lutz = Student.create(
     name: "Kevin Lutz",
@@ -411,21 +411,21 @@ alex_mandalar = Student.create(
     instructor_id: dumb_bitch.id
 )
 
-# ben_yang = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
-# )
+ben_yang = Student.create(
+    name: "Ben Yang",
+    age: 23,
+    description: "I was born and raised in the state of Connecticut. I graduated from Rutgers University in May 2020 during the middle of the pandemic with a degree in Information Technology & Informatics and a minor in Economics.",
+    song: "Yonaguni - Bad Bunny",
+    current_location: "Connecticut",
+    location_from: "Connecticut",
+    interesting_fact: "I am fluent in 3 languages; English, Cantonese, and Spanish.",
+    hobbies: "Sports, Traveling, Working Out, Culture Study, Outdoor Activities",
+    picture: "https://i.imgur.com/bkttfPw.png",
+    favorite_food: "Sushi",
+    github: "https://github.com/byang1998",
+    flatiron_rating: 8.5,
+    instructor_id: dumb_bitch.id
+)
 
 # chris_aguirre = Student.create(
 #     name: ,
