@@ -39,3 +39,13 @@
         width: 100%;
     }
 }
+
+.playlist-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-buttons-container button {
+    width: 30%;
+}
