@@ -68,24 +68,29 @@ function Playlist() {
 
     const noPressed = <>
                         <button
+                            className="like-button-hover"
                             onClick={handleLikes}
-                        >{likes} Likes
+                        >I like this
                         </button>
 
                         <button
+                            className="dislike-button-hover"
                             onClick={handleDislikes}
-                        >{dislikes} Dislikes
+                        >I don't like this
                         </button>
                     </>
 
     const likesPressed = <>
                     <button
+                        id="like-pressed"
+                        className="like-button-hover"
                         disabled="disabled"
                         onClick={handleLikes}
                     >{likes} Likes
-                    </button>
+                    </button> 
 
                     <button
+                        className="dislike-button-hover"
                         onClick={handleDislikes}
                     >{dislikes} Dislikes
                     </button>
@@ -93,11 +98,14 @@ function Playlist() {
 
     const dislikesPressed = <>
                     <button
+                        className="like-button-hover"
                         onClick={handleLikes}
                     >{likes} Likes
                     </button>
 
                     <button
+                        id="dislike-pressed"
+                        className="dislike-button-hover"
                         disabled="disabled"
                         onClick={handleDislikes}
                     >{dislikes} Dislikes
@@ -107,6 +115,13 @@ function Playlist() {
     return (
         <>
             <h1 className="align-text-center text-shadow">Cohort Playlist</h1>
+
+            <div className="playlist-buttons-container">
+                    {isClicked === 1 ? noPressed :
+                     isClicked === 2 ? likesPressed :
+                     dislikesPressed}
+            </div>
+                <br/>
             <iframe
                 className="playlist-border"
                 title="Cohort Playlist"
@@ -118,16 +133,10 @@ function Playlist() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             >
             </iframe>
-            <div className="playlist-buttons-container">
-                    {isClicked === 1 ? noPressed :
-                     isClicked === 2 ? likesPressed :
-                     dislikesPressed}
 
-            </div>
             <div id="smaller-playlist-container">
                 <div id="section-a-playlist" className="smaller-playlist text-shadow">
                     <h3 className="align-text-center">Section A Playlist</h3>
-                    <button>Section A is Better</button><br/>
                     <iframe
                         className="playlist-border"
                         title="Section A Playlist"
@@ -142,7 +151,6 @@ function Playlist() {
                 </div>
                 <div id="section-b-playlist" className="smaller-playlist text-shadow">
                     <h3 className="align-text-center">Section B Playlist</h3>
-                    <button>Section B is Better</button><br/>
                     <iframe
                         className="playlist-border"
                         title="Section B Playlist"
