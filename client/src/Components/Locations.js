@@ -28,6 +28,11 @@ function Locations({personInfo}) {
         <>
         <LocationsModal showModal={showModal} setShowModal={setShowModal} renderPeople={renderPeople} openModal={openModal}/>
         <div id="united-states-map-container">
+            {/* Connecticut */}
+            <div id="connecticut" className="locations-states" onClick={openModal}>
+                CT
+            </div>
+
             {/* Georgia */}
             <div id="georgia" className="locations-states" onClick={openModal}>
                 GA
