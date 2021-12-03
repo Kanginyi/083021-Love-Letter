@@ -148,9 +148,17 @@
 }
 
 /* States Bubbles */
+#connecticut {
+    left: 87%;
+    top: 25.5%;
+    background: rgb(0, 175, 0);
+    color: black;
+    animation: connecticutflash 3.75s infinite;
+}
+
 #georgia {
-    left: 75%;
-    top: 62%;
+    left: 75.2%;
+    top: 63%;
     background: rgb(255, 171, 185);
     color: black;
     animation: georgiaflash 3.75s infinite;
@@ -183,7 +191,7 @@
 #new-jersey {
     left: 85%;
     top: 33%;
-    background:rgb(0, 181, 194);
+    background: rgb(245, 0, 0);
     color: black;
     animation: newjerseyflash 4.5s infinite;
 }
@@ -199,7 +207,7 @@
 #tennessee {
     left: 70.3%;
     top: 52.5%;
-    background: rgb(0, 175, 0);
+    background: rgb(0, 181, 194);
     color: black;
     animation: tennesseeflash 4.5s infinite;
 }
@@ -268,6 +276,21 @@
 }
 
 /* 3.75 Flashes */
+@keyframes connecticutflash {
+    96% {
+        background: rgb(0, 175, 0);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(0, 175, 0));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(0, 175, 0), rgb(0, 175, 0), white);
+    }
+}
+
 @keyframes georgiaflash {
     96% {
         background: rgb(255, 171, 185);
@@ -331,6 +354,21 @@
 
 @keyframes newjerseyflash {
     96% {
+        background: rgb(245, 0, 0);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(245, 0, 0));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(245, 0, 0), rgb(245, 0, 0), white);
+    }
+}
+
+@keyframes tennesseeflash {
+    96% {
         background: rgb(0, 181, 194);
     }
     97% {
@@ -341,20 +379,5 @@
     }
     99% {
         background: linear-gradient(to top right, rgb(0, 181, 194), rgb(0, 181, 194), white);
-    }
-}
-
-@keyframes tennesseeflash {
-    96% {
-        background: rgb(0, 175, 0);
-    }
-    97% {
-        background: linear-gradient(to top right, white, white, rgb(0, 175, 0));
-    }
-    98% {
-        background: white;
-    }
-    99% {
-        background: linear-gradient(to top right, rgb(0, 175, 0), rgb(0, 175, 0), white);
     }
 }
