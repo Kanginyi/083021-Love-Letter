@@ -228,6 +228,15 @@
     animation: virginiaflash 3s infinite;
 }
 
+#buckinghamshire {
+    justify-content: left;
+    left: 98.3%;
+    top: 4%;
+    background: rgb(160, 160, 255);
+    color: black;
+    animation: ukflash 3s infinite;
+}
+
 /* States Keyframes */
 /* 3s Flashes */
 @keyframes newyorkflash {
@@ -272,6 +281,21 @@
     }
     99% {
         background: linear-gradient(to top right, rgb(255, 166, 0), rgb(255, 166, 0), white);
+    }
+}
+
+@keyframes ukflash {
+    93% {
+        background: rgb(160, 160, 255);
+    }
+    95% {
+        background: linear-gradient(to bottom left, white, white, rgb(160, 160, 255));
+    }
+    97% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to bottom left, rgb(160, 160, 255), rgb(160, 160, 255), white);
     }
 }
 
