@@ -636,11 +636,13 @@ xee = Student.create(
 )
 
 
-puts "Missing fuckers"
+puts "J-CREW"
 # jui_hsu = ":("
 # jason_brown = ":("
 # jose_lanza = ":("
 # justin_sohn = ":("
+
+playlist = Playlist.create(likes: 68, dislikes: 5);
 
 
 
