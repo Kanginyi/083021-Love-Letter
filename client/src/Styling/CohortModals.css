@@ -67,13 +67,19 @@
 #modals-hobbies {
     position: absolute;
     top: 210px;
-    left: 200px;
+    left: 190px;
     background: linear-gradient(to top right, #EB5089, #EB5089, white);
 }
 
 #modals-current-location {
     position: absolute;
     top: 115px;
-    left: -140px;
+    left: -150px;
     background: linear-gradient(to top right, #AFD91A, #AFD91A, white);
+}
+
+#modals-age {
+    position: absolute;
+    left: -205px;
+    background: linear-gradient(to top right, #F27127, #F27127, white);
 }
