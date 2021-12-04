@@ -13,7 +13,7 @@ function ModalHobbies({personHobbies, openModal, setOpenModal}) {
         return () => document.removeEventListener("keydown", escPress);
     }, [escPress])
 
-    // Create a function that separates each food into an li for the list
+    // Create a function that separates each hobby into an li for the list
     const hobbiesArray = personHobbies?.split(", ");
 
     const listHobbies = hobbiesArray?.map(hobby => {
