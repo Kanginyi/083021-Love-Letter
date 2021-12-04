@@ -1,7 +1,6 @@
 import React, {useRef, useEffect, useCallback} from 'react';
 import LocationsPeople from './LocationsPeople';
 import {useSpring, animated} from "react-spring";
-import {FixedSizeList as List} from "react-window";
 
 function LocationsModal({showModal, setShowModal, renderPeople}) {
     // Using this to close the modal when clicking outside of the modal
