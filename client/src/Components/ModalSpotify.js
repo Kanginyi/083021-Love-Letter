@@ -22,7 +22,7 @@ function ModalSpotify({personSpotify, openModal, setOpenModal}) {
                             <h2>Song</h2>
                             <iframe
                                 src={personSpotify}
-                                width="100%"
+                                width="80%"
                                 height="80"
                                 frameBorder="0"
                                 allowfullscreen=""
