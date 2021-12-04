@@ -85,6 +85,8 @@ function CohortInfoCircle({personInfo, clickedName}) {
         {openModal && <ModalHobbies personHobbies={personHobbies} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Location */}
         {openModal && <ModalLocation personLocation={personLocation} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {/* Age */}
+        {openModal && <ModalAge personAge={personAge} openModal={openModal} setOpenModal={setOpenModal}/>}
 
 
         <div className="page-container">
