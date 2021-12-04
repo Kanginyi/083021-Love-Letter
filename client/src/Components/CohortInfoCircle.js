@@ -91,7 +91,8 @@ function CohortInfoCircle({personInfo, clickedName}) {
         {openModal && <ModalRating personRating={personRating} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Fact */}
         {openModal && <ModalFact personFact={personFact} openModal={openModal} setOpenModal={setOpenModal}/>}
-
+        {/* Spotify */}
+        {openModal && <ModalSpotify personSpotify={personSpotify} openModal={openModal} setOpenModal={setOpenModal}/>}
 
         <div className="page-container">
             <div className="circular-menu">
