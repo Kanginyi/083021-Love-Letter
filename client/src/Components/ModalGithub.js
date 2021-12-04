@@ -1,5 +1,5 @@
 import React, {useEffect, useCallback} from "react";
-import "../Styling/Modal.css"
+import "../Styling/CohortModals.css"
 
 function ModalGithub({personGithub, openModal, setOpenModal}) {
     const escPress = useCallback(e => {
