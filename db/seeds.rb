@@ -102,21 +102,21 @@ cody_chaffin = Student.create(
     instructor_id: adam_johnson.id
 )
 
-# david_evangelista = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
-#     instructor_id: adam_johnson.id
-# )
+david_evangelista = Student.create(
+    name: "David Evangelista",
+    age: 27,
+    description: "Dude who likes speedrunning videos games, grinding, and planning projects.",
+    song: "Sheldon Jones(Dont Forget Me) - Mick",
+    current_location: "New York",
+    location_from: "NYC QUEENS BABY! (Family is from Phillipines)",
+    interesting_fact: "I have the world record for a meme speedrunning game, Sesame Street Fighter, in the Elmo Glitchless category",
+    hobbies: "Playing guitar, Gaming, Speedrunning videogames, Live streaming",
+    picture: "https://i.imgur.com/ISe5WoJ.png",
+    favorite_food: "Dinuguon",
+    github: "https://github.com/SKmuffinEXE",
+    flatiron_rating: 10,
+    instructor_id: adam_johnson.id
+)
 
 dilshan_mudali = Student.create(
     name: "Dilshan Mudali",
@@ -217,18 +217,18 @@ kevin_lutz = Student.create(
 )
 
 # matt_blank = Student.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
+#     name: "Matt Blank",
+#     age: 29,
+#     description: "Guy who is bad at describing himself",
+#     song: "Do Better - Say Anything",
+#     current_location: "New York",
+#     location_from: "New York",
+#     interesting_fact: "Sean Kingston sang on 2 of my beats",
+#     hobbies: "Playing guitar, Video games, Lifting weights",
 #     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     flatiron_rating: ,
+#     favorite_food: "Pizza",
+#     github: "github.com/about3lank",
+#     flatiron_rating: 9,
 #     instructor_id: adam_johnson.id
 # )
 
@@ -642,7 +642,7 @@ puts "J-CREW"
 # jose_lanza = ":("
 # justin_sohn = ":("
 
-playlist = Playlist.create(likes: 68, dislikes: 5);
+playlist = Playlist.create(likes: 68, dislikes: 2);
 
 
 
