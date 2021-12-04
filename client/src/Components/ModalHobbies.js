@@ -20,8 +20,6 @@ function ModalHobbies({personHobbies, openModal, setOpenModal}) {
         return <li key={hobby}>{hobby}</li>
     })
 
-    console.log(listHobbies);
-
     return (
         <>
             {openModal ?
