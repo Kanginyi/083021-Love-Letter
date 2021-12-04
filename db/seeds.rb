@@ -138,7 +138,7 @@ eric_yi = Student.create(
     name: "Eric Yi",
     age: 26,
     description: "An idiot trying to learn how to not be an idiot. :^)",
-    song: '<iframe src="https://open.spotify.com/embed/track/51Ful1v7b81FchIFFTAQ05?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>',
+    song: "https://open.spotify.com/embed/track/51Ful1v7b81FchIFFTAQ05?utm_source=generator&theme=0",
     current_location: "New York",
     location_from: "Queens, New York",
     interesting_fact: "I have a polydactyl cat named Henri who has 7 fingers on both of his front two paws!",
