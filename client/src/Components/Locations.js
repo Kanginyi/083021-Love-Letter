@@ -5,7 +5,6 @@ import "../Styling/Locations.css"
 function Locations({personInfo}) {
     const [showModal, setShowModal] = useState(false);
     const [renderPeople, setRenderPeople] = useState("");
-    // const [stateClass, setStateClass] = useState("");
 
     const openModal = e => {
         const matchLocation = personInfo?.filter(person => {
