@@ -10,11 +10,9 @@
 .modals-box {
     width: 350px;
     height: 225px;
-    border-radius: 12px;
-    box-shadow: 0 5px 16px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 5px 16px 4px rgba(0, 0, 0, 0.3);
     color: black;
-    display: grid;
-    grid-template-columns: 1fr;
     position: relative;
     z-index: 100;
 }
@@ -24,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1.5px;
     color: #141414;
 }
 
