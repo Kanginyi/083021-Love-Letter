@@ -7,18 +7,6 @@
     height: 100vh;
 } */
 
-@media (max-width: 700px) {
-    #united-states-map {
-        width: 95%;
-        height: 95%;
-        padding: 0;
-        margin: 0;
-        position: fixed;
-        object-fit: contain;
-        z-index: -1;
-    }
-}
-
 #united-states-map {
     width: 95%;
     height: 95%;
@@ -69,8 +57,9 @@
 }
 
 .locations-modal-ul {
-    max-height: 380px;
+    max-height: 390px;
     overflow: scroll;
+    z-index: 21;
 }
 
 .locations-modal-ul::-webkit-scrollbar {
@@ -105,9 +94,9 @@
     align-items: center;
 }
 
-.locations-modal-list img:hover {
-    transform: scale(3);
-}
+/* .locations-modal-list img:hover {
+    transform: scale(2);
+} */
 
 .locations-modal-content button{
     padding: 10px 24px;
