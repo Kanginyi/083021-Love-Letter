@@ -13,16 +13,12 @@ function ModalFood({personFood, openModal, setOpenModal}) {
         return () => document.removeEventListener("keydown", escPress);
     }, [escPress])
 
-    // Create a function that makes it so the thing is separates based on comma, render into list
-    console.log(personFood);
-
+    // Create a function that separates each food into an li for the list
     const foodArray = personFood?.split(", ");
 
     const listFoods = foodArray?.map(food => {
         return <li key={food}>{food}</li>
     })
-
-    console.log(listFoods);
 
     return (
         <>
