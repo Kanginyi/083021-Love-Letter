@@ -58,7 +58,7 @@ function CohortInfoCircle({personInfo, clickedName}) {
 
 
         console.log(e.target.id);
-
+        
         setOpenModal(prevValue => !prevValue);
     }
     // Here we're going to change this openModal thing to handle ALL of the modal clicks and then take over which one with the onclick function
@@ -81,6 +81,8 @@ function CohortInfoCircle({personInfo, clickedName}) {
         {openModal && <ModalGithub personGithub={personGithub} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Food */}
         {openModal && <ModalFood personFood={personFood} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {/* Hobbies */}
+        {openModal && <ModalHobbies personHobbies={personHobbies} openModal={openModal} setOpenModal={setOpenModal}/>}
 
 
         <div className="page-container">
