@@ -108,7 +108,7 @@ david_evangelista = Student.create(
     description: "Dude who likes speedrunning videos games, grinding, and planning projects.",
     song: "Sheldon Jones(Dont Forget Me) - Mick",
     current_location: "New York",
-    location_from: "NYC QUEENS BABY! (Family is from Phillipines)",
+    location_from: "NYC QUEENS BABY!",
     interesting_fact: "I have the world record for a meme speedrunning game, Sesame Street Fighter, in the Elmo Glitchless category",
     hobbies: "Playing guitar, Gaming, Speedrunning videogames, Live streaming",
     picture: "https://i.imgur.com/ISe5WoJ.png",
