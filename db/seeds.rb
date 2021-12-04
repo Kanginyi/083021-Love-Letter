@@ -10,7 +10,7 @@ puts "Seeding Instructors >:^("
 adam_johnson = Instructor.create(
     name: "Adam Johnson",
     age: 28,
-    description: "Anime thot",
+    description: "Anime thot.",
     song: "Extra - Baby Keem",
     current_location: "New York",
     location_from: "Maine",
@@ -57,7 +57,7 @@ puts "Seeding Section A Students >:^)"
 brice_jokung = Student.create(
     name: "Brice Jokung",
     age: 34,
-    description: "Fun, social, Entrepreneurial Mindset, Family man!",
+    description: "Fun, Social, Entrepreneurial Mindset, Family man!",
     song: "All of Me - John Legend",
     current_location: "Maryland",
     location_from: "Cameroon, Africa",
@@ -73,7 +73,7 @@ brice_jokung = Student.create(
 charlie_gaereminck = Student.create(
     name: "Charlie Gaereminck",
     age: 28,
-    description: "Love my two dogs, Rusty and Freya",
+    description: "Love my two dogs, Rusty and Freya.",
     song: "Say You Won't Let Go - James Arthur",
     current_location: "Michigan",
     location_from: "Detroit, Michigan",
@@ -106,7 +106,7 @@ david_evangelista = Student.create(
     name: "David Evangelista",
     age: 27,
     description: "Dude who likes speedrunning videos games, grinding, and planning projects.",
-    song: "Sheldon Jones(Dont Forget Me) - Mick",
+    song: "Sheldon Jones (Dont Forget Me) - Mick",
     current_location: "New York",
     location_from: "NYC QUEENS BABY!",
     interesting_fact: "I have the world record for a meme speedrunning game, Sesame Street Fighter, in the Elmo Glitchless category",
@@ -137,10 +137,10 @@ dilshan_mudali = Student.create(
 eric_yi = Student.create(
     name: "Eric Yi",
     age: 26,
-    description: "An idiot trying to learn how to not be an idiot.",
+    description: "An idiot trying to learn how to not be an idiot. :^)",
     song: '<iframe src="https://open.spotify.com/embed/track/51Ful1v7b81FchIFFTAQ05?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>',
     current_location: "New York",
-    location_from: "New York City, New York",
+    location_from: "Queens, New York",
     interesting_fact: "I have a polydactyl cat named Henri who has 7 fingers on both of his front two paws!",
     hobbies: "Video games, Reading, Walking around with my cat",
     picture: "https://i.imgur.com/T3Dnjf6.jpg",
@@ -153,7 +153,7 @@ eric_yi = Student.create(
 hashem_gray = Student.create(
     name: "Hashem Sowande Gray",
     age: 30,
-    description: "My mom likes me",
+    description: "My mom likes me.",
     song: "Tiny Cities - Flume",
     current_location: "New York",
     location_from: "Massachusetts",
@@ -169,8 +169,8 @@ hashem_gray = Student.create(
 jon_pilarski = Student.create(
     name: "Jon Pilarski",
     age: 28,
-    description: "Reformed Finance Bro who is grateful for opportunity to 
-    build software products that will define what tomorrow looks like",
+    description: "Reformed finance bro who is grateful for opportunity to 
+    build software products that will define what tomorrow looks like.",
     song: "We Gon Make It (feat. Meek Mill) - Cordae",
     current_location: "Illinois",
     location_from: "Chicago, Illinois",
@@ -187,10 +187,10 @@ jon_pilarski = Student.create(
 joshua_allford = Student.create(
     name: "Josh Allford",
     age: 30,
-    description: "Basement dweller extraordinaire",
+    description: "Basement dweller extraordinaire.",
     song: "Nomu - Good Kid",
     current_location: "Buckinghamshire",
-    location_from: "United Kingdom",
+    location_from: "The United Kingdom",
     interesting_fact: "I've climbed Mt Fuji",
     hobbies: "Gaming, Cooking, Travelling",
     picture: "https://i.imgur.com/aovcQ8f.png",
@@ -203,7 +203,7 @@ joshua_allford = Student.create(
 kevin_lutz = Student.create(
     name: "Kevin Lutz",
     age: 35,
-    description: "Always down for adventure and I love learning about any topic",
+    description: "Always down for adventure and I love learning about any topic.",
     song: "Cruise - Florida Georgia Line",
     current_location: "Georgia",
     location_from: "Atlanta, Georgia",
@@ -251,7 +251,7 @@ nicholas_aguirre = Student.create(
 paul_davidson = Student.create(
     name: "Paul Davidson",
     age: 39,
-    description: "Rap game Alan Cinsavich",
+    description: "Rap game Alan Cinsavich.",
     song: "Books Are Fun - Barney the Dinosaur",
     current_location: "New York",
     location_from: "Washington DC",
@@ -267,7 +267,7 @@ paul_davidson = Student.create(
 quang_do = Student.create(
     name: "Quang Do",
     age: 26,
-    description: "asian boi",
+    description: "asian boi.",
     song: "Feel Special - Twice",
     current_location: "Texas",
     location_from: "Yokohama, Japan",
@@ -283,7 +283,7 @@ quang_do = Student.create(
 sam_lee = Student.create(
     name: "Sam Lee",
     age: 24,
-    description: "I am a 24 year old Asian male",
+    description: "I am a 24 year old Asian male.",
     song: "At My Worst - Pink Sweat$",
     current_location: "Virginia",
     location_from: "USA USA USA",
@@ -299,7 +299,7 @@ sam_lee = Student.create(
 xinyi_yao = Student.create(
     name: "Xinyi Yao",
     age: 24,
-    description: "Wife, corgi mama, chill af, introverted sometimes, thoughtful with a smart mouth and I love to EAT",
+    description: "Wife, corgi mama, chill af, sometimes introverted, thoughtful, has a smart mouth and I love to EAT!",
     song: "Astronaut in the Ocean - Masked Wolf",
     current_location: "Texas",
     location_from: "Wuhan, China",
@@ -316,7 +316,7 @@ xinyi_yao = Student.create(
 seneiya_cooke = Student.create(
     name: "Seneiya Cooke",
     age: 21,
-    description: "woman",
+    description: "woman.",
     song: "Uncover - LOONA",
     current_location: "Maryland",
     location_from: "Washington DC",
@@ -332,7 +332,7 @@ seneiya_cooke = Student.create(
 joseph_fulkerson = Student.create(
     name: "Joseph Fulkerson",
     age: 26,
-    description: "Software engineering student or something",
+    description: "Software engineering student or something.",
     song: "Oceans - Hillsong",
     current_location: "Tennessee",
     location_from: "Tennessee",
@@ -348,7 +348,7 @@ joseph_fulkerson = Student.create(
 mohammad_hasan = Student.create(
     name: "Mohammad Hasan",
     age: 26,
-    description: "Ambivert",
+    description: "Ambivert.",
     song: "FWMGAB - French Montana",
     current_location: "New York",
     location_from: "Bangladesh",
@@ -364,10 +364,10 @@ mohammad_hasan = Student.create(
 alan_cinsavich = Student.create(
     name: "Alan L. Cinsavich",
     age: 69,
-    description: "I'm finally back to my favorite pre-covid profession: photography",
+    description: "I'm finally back to my favorite pre-covid profession: photography.",
     song: "Photograph - Nickelback",
     current_location: "Maryland",
-    location_from: "Maryland",
+    location_from: "Columbia, Maryland",
     interesting_fact: "I used to be in an acapella group in university!",
     hobbies: "Photography, Running through the forest, Enjoying my furniture",
     picture: "https://i.imgur.com/bt6C3tR.png",
@@ -542,7 +542,7 @@ matt_law = Student.create(
 nicholas_ruzicka = Student.create(
     name: "Nicholas Ruzicka",
     age: 31,
-    description: "A guy who is trying to escape sales",
+    description: "A guy who is trying to escape sales.",
     song: "Lord Pretty Flacko Jodye 2 - A$AP Rocky",
     current_location: "New York",
     location_from: "Cupertino, California",
@@ -558,10 +558,10 @@ nicholas_ruzicka = Student.create(
 patrick_wu = Student.create(
     name: "Patrick Wu",
     age: 27,
-    description: "I like animals, anti-humor, and alliteration",
+    description: "I like animals, anti-humor, and alliteration.",
     song: "Cloudy Sky - Tundra Beats",
     current_location: "Maryland",
-    location_from: "American Born Chinese",
+    location_from: "America",
     interesting_fact: "Bboyed in high school",
     hobbies: "Golf, Video games, Bass heavy con",
     picture: "https://i.imgur.com/0CDrQUF.png",
@@ -590,7 +590,7 @@ pranay_sankineni = Student.create(
 scott_donnan = Student.create(
     name: "Scott Donnan",
     age: 36,
-    description: "Father of 3, Husband, Gaming Enthusiast",
+    description: "Father of 3, Husband, Gaming Enthusiast.",
     song: "Heat Above - Greta Van Fleet",
     current_location: "Texas",
     location_from: "Texas",
@@ -622,7 +622,7 @@ yewei_chen = Student.create(
 xee = Student.create(
     name: "Alyxandria Meadows (Xee)",
     age: 26,
-    description: "Young woman from a non traditional tech background",
+    description: "Young woman from a non traditional tech background.",
     song: "Miles Morales Theme - Samuel Kim",
     current_location: "Tennessee",
     location_from: "Kentucky",
