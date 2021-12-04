@@ -7,7 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 
-
+  /* background: url("https://j.gifs.com/G65MKL.gif"); */
+  /* background: linear-gradient(-45deg, blue, black, red); */
   background: linear-gradient(-45deg, #CCFFFF, white, #FFCCCC);
   animation: gradient 15s ease infinite;
   background-size: 1000%;
