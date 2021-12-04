@@ -88,4 +88,5 @@
     position: absolute;
     bottom: 113px;
     left: -150px;
+    background: linear-gradient(to top right, #07C7F2, #07C7F2, white);
 }
