@@ -13,6 +13,8 @@ function ModalRating({personRating, openModal, setOpenModal}) {
         return () => document.removeEventListener("keydown", escPress);
     }, [escPress])
 
+    console.log(personRating);
+
     return (
         <>
             {openModal ?
@@ -21,7 +23,7 @@ function ModalRating({personRating, openModal, setOpenModal}) {
                         <div className="modals-content">
                             <h2>Flatiron Rating</h2>
                             <p>
-                                {personRating}/10
+                                {personRating ? `${personRating}/10` : ""}
                             </p>
                             <button onClick={() => setOpenModal(false)}>X</button>
                         </div>
