@@ -66,8 +66,8 @@
 
 #modals-hobbies {
     position: absolute;
-    top: 210px;
-    left: 190px;
+    top: 215px;
+    left: 185px;
     background: linear-gradient(to top right, #EB5089, #EB5089, white);
 }
 
@@ -89,4 +89,11 @@
     bottom: 113px;
     left: -150px;
     background: linear-gradient(to top right, #07C7F2, #07C7F2, white);
+}
+
+#modals-interesting-fact {
+    position: absolute;
+    bottom: 220px;
+    left: 185px;
+    background: linear-gradient(to top right, #9768D1, #9768D1, white);
 }
