@@ -83,6 +83,8 @@ function CohortInfoCircle({personInfo, clickedName}) {
         {openModal && <ModalFood personFood={personFood} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Hobbies */}
         {openModal && <ModalHobbies personHobbies={personHobbies} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {/* Location */}
+        {openModal && <ModalLocation personLocation={personLocation} openModal={openModal} setOpenModal={setOpenModal}/>}
 
 
         <div className="page-container">
