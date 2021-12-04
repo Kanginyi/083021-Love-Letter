@@ -59,7 +59,7 @@
 
 #modals-favorite-foods {
     position: absolute;
-    top: 115px;
+    top: 113px;
     left: 520px;
     background: linear-gradient(to top right, #F2B705, #F2B705, white);
 }
@@ -73,7 +73,7 @@
 
 #modals-current-location {
     position: absolute;
-    top: 115px;
+    top: 113px;
     left: -150px;
     background: linear-gradient(to top right, #AFD91A, #AFD91A, white);
 }
@@ -82,4 +82,10 @@
     position: absolute;
     left: -205px;
     background: linear-gradient(to top right, #F27127, #F27127, white);
+}
+
+#modals-flatiron-rating {
+    position: absolute;
+    bottom: 113px;
+    left: -150px;
 }
