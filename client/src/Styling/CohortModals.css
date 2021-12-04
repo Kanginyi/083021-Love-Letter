@@ -63,3 +63,10 @@
     left: 520px;
     background: linear-gradient(to top right, rgb(242, 183, 5), rgb(242, 183, 5), white);
 }
+
+#modals-hobbies {
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    background: linear-gradient(to top right, rgb(235, 80, 137), rgb(235, 80, 137), white);
+}
