@@ -11,8 +11,7 @@
     width: 350px;
     height: 225px;
     border-radius: 12px;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-    background: white; /* Take out the background and figure that shhit out */
+    box-shadow: 0 5px 16px 4px rgba(0, 0, 0, 0.2);
     color: black;
     display: grid;
     grid-template-columns: 1fr;
@@ -86,7 +85,7 @@
 
 #modals-flatiron-rating {
     position: absolute;
-    bottom: 113px;
+    bottom: 112px;
     left: -150px;
     background: linear-gradient(to top right, #07C7F2, #07C7F2, white);
 }
@@ -96,4 +95,11 @@
     bottom: 220px;
     left: 185px;
     background: linear-gradient(to top right, #9768D1, #9768D1, white);
+}
+
+#modals-spotify-song {
+    position: absolute;
+    bottom: 112px;
+    left: 520px;
+    background: linear-gradient(to top right, #15AB88, #15AB88, white);
 }
