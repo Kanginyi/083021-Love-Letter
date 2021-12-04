@@ -54,19 +54,26 @@
 #modals-github-link {
     position: absolute;
     left: 572px;
-    background: linear-gradient(to top right, rgb(62, 132, 230), rgb(62, 132, 230), white);
+    background: linear-gradient(to top right, #3E84E6, #3E84E6, white);
 }
 
 #modals-favorite-foods {
     position: absolute;
     top: 115px;
     left: 520px;
-    background: linear-gradient(to top right, rgb(242, 183, 5), rgb(242, 183, 5), white);
+    background: linear-gradient(to top right, #F2B705, #F2B705, white);
 }
 
 #modals-hobbies {
     position: absolute;
     top: 210px;
     left: 200px;
-    background: linear-gradient(to top right, rgb(235, 80, 137), rgb(235, 80, 137), white);
+    background: linear-gradient(to top right, #EB5089, #EB5089, white);
+}
+
+#modals-current-location {
+    position: absolute;
+    top: 115px;
+    left: -140px;
+    background: linear-gradient(to top right, #AFD91A, #AFD91A, white);
 }
