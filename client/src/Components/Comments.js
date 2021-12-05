@@ -13,6 +13,16 @@ function Comments() {
             .then(data => setCommentData(data))
     }, []);
 
+    const renderComments = commentData?.map(comment => {
+        return <CommentsCard
+            firstName={comment.first_name}
+            lastName={comment.last_name}
+            comment={comment.comment}
+            time={comment.created_at}
+        />
+    })
+
+    //  Comments Form
     const [newComment, setNewComment] = useState({
         first_name: "",
         last_name: "",
@@ -39,8 +49,22 @@ function Comments() {
         });
     }
 
+    // Comments Search Filter
+    const [searchValue, setSearchValue] = useState("");
+
+    const search = e => {
+        setSearchValue(e.target.value);
+    }
+
+    const filterComments = searchValue === "" ? renderComments : renderComments?.filter(comment => {
+        console.log(comment);
+        return comment?.props?.firstName.toLowerCase()?.includes(searchValue.toLowerCase()) || comment?.props?.lastName.toLowerCase()?.includes(searchValue.toLowerCase())});
+
     return (
         <>
+        <label> Search Comments: <br/>
+            <input onChange={search} type="text" id="comments-search-bar" name="search" placeholder="Search"></input>
+        </label>
 
         {/* Submission Form */}
         <div>
@@ -108,16 +132,7 @@ function Comments() {
 
             {/* Where the comments are rendered */}
             <section className="comment-list">
-                {
-                    commentData?.map(comment => {
-                        return <CommentsCard
-                            firstName={comment.first_name}
-                            lastName={comment.last_name}
-                            comment={comment.comment}
-                            time={comment.created_at}
-                        />
-                    })
-                }
+                {filterComments}
             </section>
         </>
     );
