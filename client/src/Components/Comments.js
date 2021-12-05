@@ -60,9 +60,7 @@ function Comments() {
         setSearchValue(e.target.value);
     }
 
-    const filterComments = searchValue === "" ? renderComments : renderComments?.filter(comment => {
-        console.log(comment);
-        return comment?.props?.firstName.toLowerCase()?.includes(searchValue.toLowerCase()) || comment?.props?.lastName.toLowerCase()?.includes(searchValue.toLowerCase())});
+    const filterComments = searchValue === "" ? renderComments : renderComments?.filter(comment => comment?.props?.firstName.toLowerCase()?.includes(searchValue.toLowerCase()) || comment?.props?.lastName.toLowerCase()?.includes(searchValue.toLowerCase()));
 
     return (
         <>
@@ -73,7 +71,7 @@ function Comments() {
 
             <div className="comment-form-parent">
                 <div className="container">
-                    <h2>Add a Comment!</h2>
+                    <h2 id="typing-demo">Add a Comment :^)</h2>
                     <div className="row100">
                         <div className="col">
                             <div className="inputBox">
@@ -140,7 +138,9 @@ function Comments() {
                     type="text"
                     id="comments-search-bar"
                     name="search"
-                    placeholder="Search Comments">
+                    placeholder="Search Comments"
+                    autoComplete="off"
+                >
                 </input>
             </label>
         </div>
