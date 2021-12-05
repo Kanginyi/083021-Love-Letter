@@ -42,11 +42,7 @@ function App() {
                 personInfo={personInfo}
               />
               }/>
-            <Route path="comments" element={
-              <Comments
-                personInfo={personInfo}
-              />
-              }/>
+            <Route path="comments" element={<Comments/>}/>
           </Routes>
         </div>
       </Router>
