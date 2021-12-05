@@ -3,7 +3,7 @@ import CommentsCard from './CommentsCard';
 import "../Styling/Comments.css";
 
 
-function Comments() {
+function Comments({currentUser}) {
     // Fetch comments information
     const [commentData, setCommentData] = useState([]);
 
@@ -18,15 +18,20 @@ function Comments() {
             firstName={comment.first_name}
             lastName={comment.last_name}
             comment={comment.comment}
+            likes={comment.likes}
+            dislikes={comment.dislikes}
             time={comment.created_at}
         />
     })
 
     //  Comments Form
     const [newComment, setNewComment] = useState({
+        user_id: currentUser.id,
         first_name: "",
         last_name: "",
-        comment: ""
+        comment: "",
+        likes: 0,
+        dislikes: 0
     });
 
     const handleChange = e => {
@@ -60,80 +65,94 @@ function Comments() {
         console.log(comment);
         return comment?.props?.firstName.toLowerCase()?.includes(searchValue.toLowerCase()) || comment?.props?.lastName.toLowerCase()?.includes(searchValue.toLowerCase())});
 
+    console.log(commentData)
+
     return (
         <>
-        <label> Search Comments: <br/>
-            <input onChange={search} type="text" id="comments-search-bar" name="search" placeholder="Search"></input>
-        </label>
-
         {/* Submission Form */}
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} autoComplete="off">
             <section>
 
-            <div className="container">
-                <h2>Add a Comment!</h2>
-                <div className="row100">
-                    <div className="col">
-                        <div className="inputBox">
-                        <input
-                            type="text"
-                            name="first_name"
-                            required="required"
-                            value={newComment.first_name}
-                            onChange={handleChange}
-                        />
-                        <span className="text">First Name</span>
-                        <span className="line"></span>
-                        </div>
-                    </div>
-
-                    <div className="col">
-                        <div className="inputBox">
-                        <input
-                        type="text"
-                        name="last_name"
-                        required="required"
-                        value={newComment.last_name}
-                        onChange={handleChange}
-                        />
-                        <span className="text">Last Name</span>
-                        <span className="line"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="row100">
-                    <div className="col">
-                        <div className="inputBox textarea">
-                            <textarea
-                                style={{resize: "none"}}
+            <div className="comment-form-parent">
+                <div className="container">
+                    <h2>Add a Comment!</h2>
+                    <div className="row100">
+                        <div className="col">
+                            <div className="inputBox">
+                            <input
+                                type="text"
+                                name="first_name"
                                 required="required"
-                                onChange={(handleChange)}
-                                name="comment"
-                                value={newComment.comment}
-                            ></textarea>
-                            <span className="text">Comment</span>
+                                value={newComment.first_name}
+                                onChange={handleChange}
+                            />
+                            <span className="text">First Name</span>
                             <span className="line"></span>
+                            </div>
+                        </div>
+
+                        <div className="col">
+                            <div className="inputBox">
+                            <input
+                            type="text"
+                            name="last_name"
+                            required="required"
+                            value={newComment.last_name}
+                            onChange={handleChange}
+                            />
+                            <span className="text">Last Name</span>
+                            <span className="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row100">
+                        <div className="col">
+                            <div className="inputBox textarea">
+                                <textarea
+                                    style={{resize: "none"}}
+                                    required="required"
+                                    onChange={(handleChange)}
+                                    name="comment"
+                                    value={newComment.comment}
+                                ></textarea>
+                                <span className="text">Comment</span>
+                                <span className="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row100">
+                        <div id="new-contract-button" className="col">
+                            <button type="submit">Post Your Comment</button>
                         </div>
                     </div>
                 </div>
-
-                <div className="row100">
-                    <div id="new-contract-button" className="col">
-                        <button type="submit">Post Your Comment</button>
-                    </div>
-                </div>
-
             </div>
+
             </section>
             </form>
-            </div>
+        </div><br/>
 
-            {/* Where the comments are rendered */}
-            <section className="comment-list">
-                {filterComments}
-            </section>
+        {/* Search Bar */}
+        <div id="comments-search-container">
+            <label>
+                <input
+                    onChange={search}
+                    type="text"
+                    id="comments-search-bar"
+                    name="search"
+                    placeholder="Search Comments">
+                </input>
+            </label>
+        </div>
+
+        {/* Where the comments are rendered */}
+        <section className="comment-list">
+            {filterComments}
+        </section>
+
         </>
     );
 }
