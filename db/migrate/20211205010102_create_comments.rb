@@ -4,8 +4,8 @@ class CreateComments < ActiveRecord::Migration[6.1]
       t.string :first_name
       t.string :last_name
       t.text :comment
-      t.integer :likes
-      t.integer :dislikes
+      t.integer :likes, null: false, default: 0
+      t.integer :dislikes, null: false, default: 0
     
 
       t.timestamps
