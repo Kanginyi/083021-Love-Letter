@@ -28,7 +28,7 @@
 }
 
 .menu-button {
-    background-color: black;
+    background-color: whitesmoke;
     transform: scale(1.01);
     z-index: 100;
 }
@@ -46,7 +46,7 @@
 }
 
 .circular-menu-icon div {
-    background-color: whitesmoke;
+    background-color: black;
     height: 3px;
     width: 100%;
 }
@@ -58,7 +58,7 @@
 }
 
 .close-circular-menu div {
-    background-color: whitesmoke;
+    background-color: black;
     position: absolute;
     height: 3px;
     width: 100%;
