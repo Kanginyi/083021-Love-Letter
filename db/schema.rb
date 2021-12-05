@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2021_12_05_010102) do
     t.string "first_name"
     t.string "last_name"
     t.text "comment"
-    t.integer "likes"
-    t.integer "dislikes"
+    t.integer "likes", default: 0, null: false
+    t.integer "dislikes", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
