@@ -33,8 +33,44 @@ class CommentsController < ApplicationController
         end
     end
 
+    # # Handle Likes
+    # def get_likes
+    #     comment = Comment.first
+    #     render json: comment
+    # end
+
+    # def increment_likes
+    #     comment = Comment.find_by(id: params[:id])
+    #     comment.update(likes: comment.likes + 1)
+    #     render json: comment
+    # end
+
+    # def increment_dislikes
+    #     comment = Comment.find_by(id: params[:id])
+    #     comment.update(dislikes: comment.dislikes + 1)
+    #     render json: comment
+    # end
+
+    # def decrement_likes
+    #     comment = Comment.find_by(id: params[:id])
+    #     comment.update(likes: comment.likes - 1)
+    #     render json: comment
+    # end
+
+    # def decrement_dislikes
+    #     comment = Comment.find_by(id: params[:id])
+    #     comment.update(dislikes: comment.dislikes - 1)
+    #     render json: comment
+    # end
+
     private
     def comment_params 
-        params.permit(:first_name, :last_name, :comment)
+        params.permit(:first_name, :last_name, :comment, :likes, :dislikes)
     end
 end
+
+  # patch "comments/likes", to "comments#increment_likes"
+  # patch "comments/dislikes", to "comments#increment_dislikes"
+
+  # patch "comments/minus_likes", to "comments#decrement_likes"
+  # patch "comments/minus_dislikes", to "comments#decrement_likes"
