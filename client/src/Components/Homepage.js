@@ -1,9 +1,21 @@
 import React from 'react';
 import "../Styling/Homepage.css"
+import Login from './Login';
 
 import {Link} from "react-router-dom";
+import Signup from './Signup';
 
-function Homepage() {
+function Homepage({currentUser, setCurrentUser}) {
+    // Add this to you navbar, functionality for your session delete
+    // function logout (){
+    //     fetch("/logout", { method: "DELETE" }).then((r) => {
+    //       if (r.ok) {
+    //         setCurrentUser(null);
+    //         window.location.reload();
+    //       }
+    //     })
+    //   }
+    
     return (
         <>
         <div id="homepage-container">
@@ -44,6 +56,9 @@ function Homepage() {
                 </div>
 
             </div>
+
+            <Login setCurrentUser={setCurrentUser} />
+            <Signup setCurrentUser={setCurrentUser} />
 
         </div>
         </>
