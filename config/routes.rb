@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
   
-  resources :comments, only: [:index, :show, :create, :destroy]
+  resources :comments
   resources :students, only: [:index, :show]
   resources :instructors, only: [:index, :show]
+
+  #get "comments/likes", to "comments#get_likes"
+
+  # patch "comments/likes", to "comments#increment_likes"
+  # patch "comments/dislikes", to "comments#increment_dislikes"
+
+  # patch "comments/minus_likes", to "comments#decrement_likes"
+  # patch "comments/minus_dislikes", to "comments#decrement_likes"
 
   get "playlist/likes", to: "playlist#get_likes"
 
