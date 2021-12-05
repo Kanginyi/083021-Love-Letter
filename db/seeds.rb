@@ -637,57 +637,90 @@ xee = Student.create(
 puts "Seeding Playlist"
 playlist = Playlist.create(likes: 68, dislikes: 2);
 
+puts "Creating user"
+shmeric = User.create(username: "shmeric", password: "seneiyacooke")
+
 puts "Seeding Comments"
 Comment.create([
     {
+        user_id: 1,
         first_name: "Alan",
         last_name: "Cinsavich",
-        comment: "I'm cute af"
+        comment: "I'm cute af",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Schmeric",
         last_name: "Shmee",
-        comment: "Where is my cat, Mr. Henri :^("
+        comment: "Where is my cat, Mr. Henri :^(",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Mister",
         last_name: "Barley",
-        comment: "I am a tall, handsome dumbass"
+        comment: "I am a tall, handsome dumbass",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Beneeya",
         last_name: "Cookies",
-        comment: "woman"
+        comment: "woman",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Paul",
         last_name: "Daviddaughter",
-        comment: "I'm the Pastor of Muppets"
+        comment: "I'm the Pastor of Muppets",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Dilshan Mutant",
         last_name: "Ninja Turtle",
-        comment: "I like myself"
+        comment: "I like myself",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Quankerooskies",
         last_name: "Donuts",
-        comment: "I'm the best coder here"
+        comment: "I'm the best coder here",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Samothy",
         last_name: "Lee",
-        comment: "I'm a kindboi"
+        comment: "I'm a kindboi",
+        likes: 3,
+        dislikes: 7 
     },
     {
+        user_id: 1,
         first_name: "Xinyeezy",
         last_name: "Weezy",
-        comment: "Corgi butts"
+        comment: "Corgi butts",
+        likes: 13,
+        dislikes: 5
     },
     {
+        user_id: 1,
         first_name: "Badam",
         last_name: "Bohnson",
-        comment: "Bingo Bango Bongo"
+        comment: "Bingo Bango Bongo",
+        likes: 3,
+        dislikes: 7
     },
 ])
 
