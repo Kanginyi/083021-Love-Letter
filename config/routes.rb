@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :comments, only: [:index, :show, :create]
   resources :students, only: [:index, :show]
   resources :instructors, only: [:index, :show]
 
