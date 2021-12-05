@@ -9,7 +9,7 @@ class CreateComments < ActiveRecord::Migration[6.1]
       t.integer :dislikes
     
 
-      t.timestamps
+      t.timestamp
     end
   end
 end
