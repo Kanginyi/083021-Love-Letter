@@ -156,7 +156,7 @@
   height: 100px;
   padding: 10px 0;
 }
-
+ 
 .container .row100 .col .inputBox textarea:focus ~ .line, 
 .container .row100 .col .inputBox textarea:valid ~ .line {
   height: 100%;
@@ -199,29 +199,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: -50px;
 }
 
 #comments-search-bar {
   /* look for a fontfamily */
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  height: 30px;
+  width: 250px;
 }
-
-/* Change the color of the text on the comment form  */
-/* .comments-card-header h2 {
-    animation: namegradient 5s infinite;
-}
-
-@keyframes namegradient {
-    0% {
-        color: #FE4880;
-    }
-
-    50% {
-        color: #FFCE00;
-    }
-    
-    100% {
-        color: #FE4880;
-    }
-} */
