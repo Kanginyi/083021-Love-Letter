@@ -684,6 +684,11 @@ Comment.create([
         last_name: "Weezy",
         comment: "Corgi butts"
     },
+    {
+        first_name: "Badam",
+        last_name: "Bohnson",
+        comment: "Bingo Bango Bongo"
+    },
 ])
 
 puts "J-CREW"
