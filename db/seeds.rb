@@ -634,13 +634,65 @@ xee = Student.create(
     instructor_id: dumb_bitch.id
 )
 
+puts "Seeding Playlist"
+playlist = Playlist.create(likes: 68, dislikes: 2);
+
+puts "Seeding Comments"
+Comment.create([
+    {
+        first_name: "Alan",
+        last_name: "Cinsavich",
+        comment: "I'm cute af"
+    },
+    {
+        first_name: "Schmeric",
+        last_name: "Shmee",
+        comment: "Where is my cat, Mr. Henri :^("
+    },
+    {
+        first_name: "Mister",
+        last_name: "Barley",
+        comment: "I am a tall, handsome dumbass"
+    },
+    {
+        first_name: "Beneeya",
+        last_name: "Cookies",
+        comment: "woman"
+    },
+    {
+        first_name: "Paul",
+        last_name: "Daviddaughter",
+        comment: "I'm the Pastor of Muppets"
+    },
+    {
+        first_name: "Dilshan Mutant",
+        last_name: "Ninja Turtle",
+        comment: "I like myself"
+    },
+    {
+        first_name: "Quankerooskies",
+        last_name: "Donuts",
+        comment: "I'm the best coder here"
+    },
+    {
+        first_name: "Samothy",
+        last_name: "Lee",
+        comment: "I'm a kindboi"
+    },
+    {
+        first_name: "Xinyeezy",
+        last_name: "Weezy",
+        comment: "Corgi butts"
+    },
+])
+
 puts "J-CREW"
 # jui_hsu = ":("
 # jason_brown = ":("
 # jose_lanza = ":("
 # justin_sohn = ":("
 
-playlist = Playlist.create(likes: 68, dislikes: 2);
+
 
 
 
