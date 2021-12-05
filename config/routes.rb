@@ -1,15 +1,8 @@
 Rails.application.routes.draw do
   
-  resources :users, only: [:index, :show, :create]
   resources :comments, only: [:index, :show, :create, :destroy]
   resources :students, only: [:index, :show]
   resources :instructors, only: [:index, :show]
-
-  get "/me", to: "users#show"
-  post "/signup", to: "users#create"
-
-  post "/login", to: "sessions#create"
-  delete "/logout", to: "sessions#destroy"
 
   get "playlist/likes", to: "playlist#get_likes"
 
