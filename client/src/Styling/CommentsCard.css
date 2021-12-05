@@ -26,7 +26,7 @@
     position: relative;
     flex-direction: column;
     height: 350px;
-    width: 400px;
+    width: 200px;
     min-width: 250px;
     padding: 1.5rem;
 
@@ -42,8 +42,7 @@
 
 .comments-card:hover {
     transform: translateY(-1rem);
-    animation: hovercard 6s infinite;
-    background:rgba(255, 255, 255, 0.4);
+    background:rgba(255, 255, 255, 0.5);
 }
 
 /* Select all siblings AFTER the hovered card*/
@@ -55,7 +54,11 @@
     margin-left: -130px;
 }
 
-@keyframes hovercard {
+/* .comments-card-header h2 {
+    animation: namegradient 5s infinite;
+}
+
+@keyframes namegradient {
     0% {
         color: #FE4880;
     }
@@ -67,8 +70,4 @@
     100% {
         color: #FE4880;
     }
-}
-
-.comments-card-header h2 {
-    color: white;
-}
+} */
