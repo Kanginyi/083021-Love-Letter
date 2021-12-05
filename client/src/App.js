@@ -23,22 +23,6 @@ function App() {
       setClickedName(name);
   }
 
-  // Bingus aminugs
-  const [currentUser, setCurrentUser] = useState([]);
-
-  useEffect(() => {
-    fetch('/me', {
-      credentials: 'include'
-    })
-      .then(res => {
-        if (res.ok) {
-          res.json().then((user) => {
-            setCurrentUser(user)
-          })
-        }
-      })
-  }, [])
-
   return (
     <>
       <Router>
@@ -47,8 +31,6 @@ function App() {
           <Routes>
             <Route path="/" element={
               <Homepage
-                currentUser={currentUser}
-                setCurrentUser={setCurrentUser}
               />
               }/>
             <Route path="cohort" element={
@@ -64,7 +46,7 @@ function App() {
                 personInfo={personInfo}
               />
               }/>
-            <Route path="comments" element={<Comments currentUser={currentUser}/>}/>
+            <Route path="comments" element={<Comments/>}/>
           </Routes>
         </div>
       </Router>
