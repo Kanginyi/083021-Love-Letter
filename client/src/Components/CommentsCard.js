@@ -8,8 +8,10 @@ function CommentsCard({firstName, lastName, comment, likes, dislikes, time}) {
                 <h2>{firstName} {lastName}</h2>
                 <p>{comment}</p>
                 <p>{time}</p>
-                <button>{likes} Likes</button>
-                <button>{dislikes} Dislikes</button>
+                <div className="comments-card-button-container">
+                    <button>{likes} Likes</button>
+                    <button>{dislikes} Dislikes</button>
+                </div>
             </header>
         </article>
     );
