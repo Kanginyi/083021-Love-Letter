@@ -3,7 +3,7 @@ import CommentsCard from './CommentsCard';
 import "../Styling/Comments.css";
 
 
-function Comments({currentUser}) {
+function Comments() {
     // Fetch comments information
     const [commentData, setCommentData] = useState([]);
 
@@ -26,7 +26,6 @@ function Comments({currentUser}) {
 
     //  Comments Form
     const [newComment, setNewComment] = useState({
-        user_id: currentUser.id,
         first_name: "",
         last_name: "",
         comment: "",
@@ -64,8 +63,6 @@ function Comments({currentUser}) {
     const filterComments = searchValue === "" ? renderComments : renderComments?.filter(comment => {
         console.log(comment);
         return comment?.props?.firstName.toLowerCase()?.includes(searchValue.toLowerCase()) || comment?.props?.lastName.toLowerCase()?.includes(searchValue.toLowerCase())});
-
-    console.log(commentData)
 
     return (
         <>
