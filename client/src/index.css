@@ -18,12 +18,10 @@ body {
   box-sizing: border-box;
 
   background: url("https://j.gifs.com/G65MKL.gif");
+  /* backgr */
   /* background: linear-gradient(-45deg, blue, black, red); */
-  /* background: linear-gradient(-45deg, #CCFFFF, white, #FFCCCC);
-  animation: gradient 15s ease infinite;
-  background-size: 1000%;
-  width: 98vw;
-  height: 100%; */
+  /* background: linear-gradient(-45deg, #CCFFFF, white, #FFCCCC); */
+  animation: gradient 120s ease infinite;
 }
 
 @keyframes gradient {
