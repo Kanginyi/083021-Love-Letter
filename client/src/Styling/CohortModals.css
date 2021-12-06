@@ -15,6 +15,10 @@
     color: black;
     position: relative;
     z-index: 100;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
 }
 
 .modals-content {
@@ -23,13 +27,15 @@
     justify-content: center;
     align-items: center;
     color: #141414;
+    width: 80%;
+    height: 50%;
 }
 
 .modals-content p {
     margin-bottom: 1rem;
 }
 
-.modals-content button {
+.modals-box button {
     padding: 10px 24px;
     background: #141414;
     color: white;
@@ -76,7 +82,7 @@
 
 #modals-age {
     position: absolute;
-    left: -205px;
+    left: -202px;
     background: linear-gradient(to top right, #F27127, #F27127, white);
 }
 
