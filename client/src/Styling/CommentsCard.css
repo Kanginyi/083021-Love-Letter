@@ -4,6 +4,7 @@
     padding: 3rem;
     color: white;
     overflow-x: scroll;
+    margin-top: 48px;
 }
 
 .comment-list::-webkit-scrollbar {
@@ -79,14 +80,3 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-
-/* .comments-card-header div {
-    /* justify-self: flex-end; */
-    /* align-content: flex-end;
-    justify-content: flex-end;
-    align-self: flex-end;
-}
-
-/* .comments-card-button-container {
-    display: flex;
-} */
