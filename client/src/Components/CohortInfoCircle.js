@@ -78,21 +78,21 @@ function CohortInfoCircle({personInfo, clickedName}) {
     return (
         <>
         {/* Github */}
-        {openModal && <ModalGithub personGithub={personGithub} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalGithub personGithub={personGithub} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Food */}
-        {openModal && <ModalFood personFood={personFood} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalFood personFood={personFood} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Hobbies */}
-        {openModal && <ModalHobbies personHobbies={personHobbies} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalHobbies personHobbies={personHobbies} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Location */}
-        {openModal && <ModalLocation personLocation={personLocation} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalLocation personLocation={personLocation} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Age */}
-        {openModal && <ModalAge personAge={personAge} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalAge personAge={personAge} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Rating */}
-        {openModal && <ModalRating personRating={personRating} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalRating personRating={personRating} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Fact */}
-        {openModal && <ModalFact personFact={personFact} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalFact personFact={personFact} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Spotify */}
-        {openModal && <ModalSpotify personSpotify={personSpotify} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalSpotify personSpotify={personSpotify} openModal={openModal} setOpenModal={setOpenModal}/>}
 
         <div className="page-container">
             <div className="circular-menu">
