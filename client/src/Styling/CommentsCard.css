@@ -26,9 +26,10 @@
     display: flex; 
     position: relative;
     flex-direction: column;
-    height: 350px;
-    width: 250px;
-    min-width: 250px;
+    height: 400px;
+    width: 300px;
+    min-height: 400px;
+    min-width: 300px;
     padding: 1.5rem;
 
     border-radius: 16px;
@@ -76,6 +77,7 @@
 .comments-card-header {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* .comments-card-header div {
