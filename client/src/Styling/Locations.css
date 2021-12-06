@@ -171,7 +171,7 @@
 
 #michigan {
     left: 71.2%;
-    top: 24.5%;
+    top: 25%;
     background: navy;
     color: white;
     animation: michiganflash 4.5s infinite;
@@ -179,7 +179,7 @@
 
 #new-jersey {
     left: 85%;
-    top: 33%;
+    top: 32%;
     background: rgb(245, 0, 0);
     color: black;
     animation: newjerseyflash 4.5s infinite;
