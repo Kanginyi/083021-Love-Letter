@@ -45,7 +45,7 @@ function LocationsModal({showModal, setShowModal, renderPeople}) {
 
                     <ul className="locations-modal-ul">
                         {renderPeople?.map(person => {
-                            return <LocationsPeople 
+                            return <LocationsPeople
                                 key={person?.name}
                                 name={person?.name}
                                 picture={person?.picture}
