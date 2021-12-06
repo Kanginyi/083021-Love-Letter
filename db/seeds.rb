@@ -216,21 +216,21 @@ kevin_lutz = Student.create(
     instructor_id: adam_johnson.id
 )
 
-# matt_blank = Student.create(
-#     name: "Matt Blank",
-#     age: 29,
-#     description: "Guy who is bad at describing himself",
-#     song: "https://open.spotify.com/embed/track/2naCQzUdZSGcdVKwHOX7m2?utm_source=generator&theme=0",
-#     current_location: "New York",
-#     location_from: "New York",
-#     interesting_fact: "Sean Kingston sang on 2 of my beats",
-#     hobbies: "Playing guitar, Video games, Lifting weights",
-#     picture: ,
-#     favorite_food: "Pizza",
-#     github: "github.com/about3lank",
-#     flatiron_rating: 9,
-#     instructor_id: adam_johnson.id
-# )
+matt_blank = Student.create(
+    name: "Matt Blank",
+    age: 29,
+    description: "Guy who is bad at describing himself",
+    song: "https://open.spotify.com/embed/track/2naCQzUdZSGcdVKwHOX7m2?utm_source=generator&theme=0",
+    current_location: "New York",
+    location_from: "New York",
+    interesting_fact: "Sean Kingston sang on 2 of my beats",
+    hobbies: "Playing guitar, Video games, Lifting weights",
+    picture: "https://i.imgur.com/iJZjEHn.jpg",
+    favorite_food: "Pizza",
+    github: "github.com/about3lank",
+    flatiron_rating: 9,
+    instructor_id: adam_johnson.id
+)
 
 nicholas_aguirre = Student.create(
     name: "Nicholas Aguirre",
