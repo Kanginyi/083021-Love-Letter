@@ -20,7 +20,7 @@ function Comments() {
             comment={comment.comment}
             likes={comment.likes}
             dislikes={comment.dislikes}
-            time={comment.created_at}
+            time={Date(comment.created_at)}
         />
     })
 
