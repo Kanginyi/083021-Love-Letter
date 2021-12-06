@@ -13,7 +13,7 @@ function CohortCarousel({personInfo, handleImageClick}) {
 
     return (
         <div>
-            <h1>asdf</h1>
+            <h1 style={{textAlign: "center", color: "white"}}>Bing Bong</h1>
             <div>
                 {renderPerson}
             </div>
