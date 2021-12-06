@@ -45,7 +45,7 @@
 
 .modals-content li::marker {
     transition: 0.5s;
-    content: "⭐";
+    content: "✔";
 }
 
 .modals-box button {
