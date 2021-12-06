@@ -80,10 +80,6 @@
     list-style: none;
 }
 
-#main-content > div.locations-background > div > div > ul > li:nth-child(even) {
-    background: linear-gradient(60deg, rgb(100, 100, 100), rgb(180, 180, 180), white);  
-}
-
 .locations-modal-image {
     box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.8);
     border-radius: 50%;
@@ -393,4 +389,8 @@
     99% {
         background: linear-gradient(to top right, rgb(0, 181, 194), rgb(0, 181, 194), white);
     }
+}
+
+#main-content > div.locations-background > div > div > ul > li:nth-child(even) {
+    background: linear-gradient(60deg, rgb(100, 100, 100), rgb(180, 180, 180), white);  
 }
