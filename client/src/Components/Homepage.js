@@ -1,51 +1,64 @@
 import React from 'react';
 import "../Styling/Homepage.css"
 
-import {Link} from "react-router-dom";
-
 function Homepage() {
     return (
         <>
-        <div id="homepage-container">
-            <h1>
-                <u id="homepage-underline">
-                    <span id="h1-color">083021 Cohort</span>
-                </u>
-            </h1>
-            
-            <div id="homepage-divs-container">
+			<div id="homepage-container">
+				<div id="homepage-title-background">
+					<h1 id="homepage-transparent-title">
+						WELCOME TO SE 083021
+					</h1>
+				</div>
+			</div>
 
-                <div className="homepage-div">
-                    <Link className="div-links" to={"/cohort"}>Cohort</Link>
-                    <p className="homepage-text">
-                        View Instructors and Students
-                    </p>
-                </div>
+            <div className="content">
 
-                <div className="homepage-div">
-                    <Link className="div-links" to={"/locations"}>Locations</Link>
-                    <p className="homepage-text">
-                        Check out where everyone in our cohort is located.
-                    </p>
-                </div>
+                <div className="grid">
+					<figure className="effect-cohort">
+						<img src="https://i.imgur.com/IxD5rWY.jpg" alt="Flatiron School students at work"/>
+						<figcaption>
+							<h2>Cohort <span>Members</span></h2>
+							<p>Learn more about the people in our cohort.</p>
+							<a href="/cohort"></a>
+						</figcaption>
+					</figure>
+				</div>
 
-                <div className="homepage-div">
-                    <Link className="div-links" to={"/playlist"}>Playlist</Link>
-                    <p className="homepage-text">
-                        Check out our cohort playlist!
-                    </p>
-                </div>
+				<div className="grid">
+					<figure className="effect-locations">
+						<img src="https://i.imgur.com/drvQ1lp.png" alt="Planning a trip over a map"/>
+						<figcaption>
+							<h2>Current <span>Locations</span></h2>
+							<p>View where we were while studying.</p>
+							<a href="/locations">View more</a>
+						</figcaption>
+					</figure>
+				</div>
 
-                <div className="homepage-div">
-                    <Link className="div-links" to={"/comments"}>Comments</Link>
-                    <p className="homepage-text">
-                        View some comments here!
-                    </p>
-                </div>
+				<div className="grid">
+					<figure className="effect-spotify">
+						<img src="https://i.imgur.com/BGHp8M1.png" alt="Image of a Spotify Playlist"/>
+						<figcaption>
+							<h2>Spotify <span>Playlist</span></h2>
+							<p>Music curated by the cohort members.<br/><br/>Enjoy!</p>
+							<a href="/playlist"></a>
+						</figcaption>
+					</figure>
+				</div>
 
-            </div>
+                <div className="grid">
+					<figure className="effect-comments">
+						<img src="https://i.imgur.com/cxnrc2V.png" alt="A group of friends laughing over something"/>
+						<figcaption>
+							<h2>Comments <span>Board</span></h2>
+							<p>Add and view comments left by cohort members.</p>
+							<a href="/comments"></a>
+						</figcaption>
+					</figure>
+				</div>
 
-        </div>
+			</div>
         </>
     );
 }
