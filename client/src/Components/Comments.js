@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import CommentsCard from './CommentsCard';
 import "../Styling/Comments.css";
 
+import {BsArrowDownCircle} from "react-icons/bs";
+
 
 function Comments() {
     // Fetch comments information
@@ -143,11 +145,17 @@ function Comments() {
                 >
                 </input>
             </label>
+
             <h2>Shift + Scroll to Look Through The Comments</h2><br/>
+            
+        </div>
+
+        <div id="click-here-for-comments">
+            <a href="#show-comments" title="Let's read some comments"><BsArrowDownCircle/></a>
         </div>
 
         {/* Where the comments are rendered */}
-        <section className="comment-list">
+        <section id="show-comments" className="comment-list">
             {filterComments}
         </section>
 
