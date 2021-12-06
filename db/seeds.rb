@@ -305,7 +305,7 @@ xinyi_yao = Student.create(
     location_from: "Wuhan, China",
     interesting_fact: "I was born with two thumbs on my left hand",
     hobbies: "Watching tv/movies, Cooking, Baking, Tennis",
-    picture: "https://i.imgur.com/FaqREvQ.png",
+    picture: "https://i.imgur.com/JzLP37j.jpg",
     favorite_food: "Noodles, Pizza, But not together",
     github: "https://github.com/xinyiyao823",
     flatiron_rating: 6.9,
@@ -644,43 +644,43 @@ Comment.create([
         first_name: "Alan",
         last_name: "Cinsavich",
         comment: "I'm cute af",
-        likes: 3,
-        dislikes: 7 
+        likes: 68,
+        dislikes: 3 
     },
     {
         first_name: "Schmeric",
         last_name: "Shmee",
         comment: "Where is my cat, Mr. Henri :^(",
-        likes: 3,
-        dislikes: 7 
+        likes: 10,
+        dislikes: 10 
     },
     {
         first_name: "Mister",
         last_name: "Barley",
         comment: "I am a tall, handsome dumbass",
-        likes: 3,
+        likes: 11,
         dislikes: 7 
     },
     {
         first_name: "Beneeya",
         last_name: "Cookies",
         comment: "woman",
-        likes: 3,
-        dislikes: 7 
+        likes: 6,
+        dislikes: 8
     },
     {
         first_name: "Paul",
         last_name: "Daviddaughter",
         comment: "I'm the Pastor of Muppets",
         likes: 3,
-        dislikes: 7 
+        dislikes: 3 
     },
     {
         first_name: "Dilshan Mutant",
         last_name: "Ninja Turtle",
         comment: "I like myself",
-        likes: 3,
-        dislikes: 7 
+        likes: 1,
+        dislikes: 2
     },
     {
         first_name: "Quankerooskies",
@@ -693,8 +693,8 @@ Comment.create([
         first_name: "Samothy",
         last_name: "Lee",
         comment: "I'm a kindboi",
-        likes: 3,
-        dislikes: 7 
+        likes: 14,
+        dislikes: 4
     },
     {
         first_name: "Xinyeezy",
@@ -707,8 +707,15 @@ Comment.create([
         first_name: "Badam",
         last_name: "Bohnson",
         comment: "Bingo Bango Bongo",
-        likes: 3,
-        dislikes: 7
+        likes: 9,
+        dislikes: 1
+    },
+    {
+        first_name: "Mister",
+        last_name: "Henri",
+        comment: "Meow",
+        likes: 10,
+        dislikes: 2
     },
 ])
 
@@ -717,9 +724,6 @@ puts "J-CREW"
 # jason_brown = ":("
 # jose_lanza = ":("
 # justin_sohn = ":("
-
-
-
 
 
 puts "Done seeding data!"
