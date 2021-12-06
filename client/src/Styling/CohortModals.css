@@ -48,6 +48,15 @@
     content: "✔";
 }
 
+.modals-content a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+.modals-content a:visited {
+    color: white;
+}
+
 .modals-box button {
     padding: 10px 24px;
     background: #141414;
