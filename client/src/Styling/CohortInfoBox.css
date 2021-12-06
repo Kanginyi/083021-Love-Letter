@@ -91,6 +91,10 @@
     object-fit: cover;
 }
 
+.card-image:hover {
+    transform: scale(2.5);
+}
+
 .card-body {
     padding: 30px;
 }
