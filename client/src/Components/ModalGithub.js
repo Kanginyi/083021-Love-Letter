@@ -25,7 +25,11 @@ function ModalGithub({personGithub, openModal, setOpenModal}) {
                     <div id="modals-github-link" className="modals-box">
                         <h2>GitHub Link</h2>
                         <div className="modals-content">
-                            <p><a href={personGithub} target="_blank">{personGithub}</a></p>
+                            <p>
+                                <a href={personGithub} target="_blank" title="Take me to Github!">          
+                                    {personGithub}
+                                </a>
+                            </p>
                             <button onClick={() => setOpenModal(false)}>X</button>
                         </div>
                     </div>
