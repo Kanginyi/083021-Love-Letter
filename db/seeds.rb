@@ -529,7 +529,7 @@ matt_law = Student.create(
     song: "https://open.spotify.com/embed/track/1Cc6rFGKZnUR6FFePuuXqB?utm_source=generator&theme=0",
     current_location: "New York",
     location_from: "Bronx, New York",
-    interesting_fact: "I wore the same t-shirt for every code challenge except for the first one, aka the one I didn't pass the first time it was given. It's now considered my lucky shirt. The shirt say 'Tell me what you want, what you really, really, really want' on it, which is one more 'really' than the Spice Girls song.",
+    interesting_fact: "I wore the same t-shirt for every code challenge except the first, aka the one I didn't pass the first time. It's now my lucky shirt! The shirt says 'Tell me what you want, what you really, really, really want' on it, which is one more 'really' than the Spice Girls song.",
     hobbies: "Running, Playing music, Listening to music, Phish, Poker",
     picture: "https://avatars.githubusercontent.com/u/41380326?v=4",
     favorite_food: "Chicken and Broccoli with Garlic Sauce",
