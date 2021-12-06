@@ -1,18 +1,22 @@
 import React from 'react';
 import "../Styling/CohortInfoBox.css"
 
-function CohortInfoBox({personInfo, clickedName}) {
+function CohortInfoBox({personInfo, clickedName, handleImageClick}) {
     const choosePerson = personInfo?.find(person => person.name === clickedName)
 
     const flipCard = () => {
         const card = document.querySelector(".card-inner");
         card.classList.toggle("is-flipped");
+
+        // if (clickedName) {
+        //     handleImageClick("")
+        // }
     }
 
     // Add a thing where it'll erase the front part of the card when you send it to the back
 
     return (
-        <div className="card" onClick={flipCard}>
+        <div id="show-person-card" className="card" onClick={flipCard}>
             <div className="card-inner">
                 <div className="card-face card-face-front">
                     <h2>Click Me!</h2>
