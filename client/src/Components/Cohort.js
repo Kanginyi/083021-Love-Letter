@@ -19,6 +19,7 @@ function Cohort({personInfo, handleImageClick, clickedName}) {
                 <CohortInfoBox
                     personInfo={personInfo}
                     clickedName={clickedName}
+                    handleImageClick={handleImageClick}
                 />
                 <CohortInfoCircle
                     personInfo={personInfo}
