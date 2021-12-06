@@ -3,6 +3,8 @@ import "../Styling/CohortPerson.css"
 
 function CohortPerson({person, handleImageClick}) {
     return (
+        <>
+        <a href="#show-person-card">
         <img
             className="carousel-image-box"
             onClick={(e) => handleImageClick(e.target.alt)}
@@ -12,6 +14,8 @@ function CohortPerson({person, handleImageClick}) {
             width="150px"
             height="150px"
         />
+        </a>
+        </>
     );
 }
 
