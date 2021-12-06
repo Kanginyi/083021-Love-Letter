@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
 }
 
 #comment-form-section {
@@ -200,8 +201,9 @@
   align-items: center;
   flex-direction: column;
   color: white;
-  margin-top: 10px;
+  margin-top: 63px;
   margin-bottom: -50px;
+  text-align: center;
 }
 
 #comments-search-bar {
@@ -209,4 +211,16 @@
   border-radius: 20px;
   height: 30px;
   width: 250px;
+}
+
+#click-here-for-comments {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 1860px;
+  bottom: 90px;
+}
+
+#click-here-for-comments a, #click-here-for-comments a:link, #click-here-for-comments:visited {
+  color: white;
 }
