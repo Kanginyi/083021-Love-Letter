@@ -594,7 +594,7 @@ scott_donnan = Student.create(
     current_location: "Texas",
     location_from: "Texas",
     interesting_fact: "I was a music major in college",
-    hobbies: "Video Games, Table top games, Reading (mostly fantasy novels like 'Lord of the Rings'), Crossfit",
+    hobbies: "Video Games, Table top games, Crossfit, Reading (mostly fantasy novels like 'Lord of the Rings')",
     picture: "https://i.imgur.com/zy4dcmj.png",
     favorite_food: "Ice cream",
     github: "https://github.com/ScottDonnan",
