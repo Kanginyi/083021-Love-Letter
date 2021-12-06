@@ -20,7 +20,7 @@ function Homepage() {
 						<figcaption>
 							<h2>Cohort <span>Members</span></h2>
 							<p>Learn more about the people in our cohort.</p>
-							<a href="/cohort"></a>
+							<a href="/cohort">Cohort</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -31,18 +31,18 @@ function Homepage() {
 						<figcaption>
 							<h2>Current <span>Locations</span></h2>
 							<p>View where we were while studying.</p>
-							<a href="/locations">View more</a>
+							<a href="/locations">Locations</a>
 						</figcaption>
 					</figure>
 				</div>
 
 				<div className="grid">
 					<figure className="effect-spotify">
-						<img src="https://i.imgur.com/BGHp8M1.png" alt="Image of a Spotify Playlist"/>
+						<img src="https://i.imgur.com/BGHp8M1.png" alt="Spotify Playlists"/>
 						<figcaption>
 							<h2>Spotify <span>Playlist</span></h2>
 							<p>Music curated by the cohort members.<br/><br/>Enjoy!</p>
-							<a href="/playlist"></a>
+							<a href="/playlist">Spotify</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -53,7 +53,7 @@ function Homepage() {
 						<figcaption>
 							<h2>Comments <span>Board</span></h2>
 							<p>Add and view comments left by cohort members.</p>
-							<a href="/comments"></a>
+							<a href="/comments">Comments</a>
 						</figcaption>
 					</figure>
 				</div>
