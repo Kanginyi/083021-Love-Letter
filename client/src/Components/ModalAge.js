@@ -18,13 +18,13 @@ function ModalAge({personAge, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-age" className="modals-box">
-                        <div className="modals-content">
                             <h2>Age</h2>
+                        <div className="modals-content">
                             <p>
                                 {personAge}
                             </p>
-                            <button onClick={() => setOpenModal(false)}>X</button>
                         </div>
+                        <button onClick={() => setOpenModal(false)}>X</button>
                     </div>
                 </div>
             : null}

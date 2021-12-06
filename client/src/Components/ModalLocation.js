@@ -18,8 +18,8 @@ function ModalLocation({personLocation, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-current-location" className="modals-box">
+                        <h2>Current Location</h2>
                         <div className="modals-content">
-                            <h2>Current Location</h2>
                             <p>
                                 {personLocation}
                             </p>

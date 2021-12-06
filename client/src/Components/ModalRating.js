@@ -20,8 +20,8 @@ function ModalRating({personRating, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-flatiron-rating" className="modals-box">
+                        <h2>Flatiron Rating</h2>
                         <div className="modals-content">
-                            <h2>Flatiron Rating</h2>
                             <p>
                                 {personRating ? `${personRating}/10` : ""}
                             </p>

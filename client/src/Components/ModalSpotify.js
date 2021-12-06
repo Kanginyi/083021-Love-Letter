@@ -18,8 +18,8 @@ function ModalSpotify({personSpotify, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-spotify-song" className="modals-box">
+                        <h2>Song</h2>
                         <div className="modals-content">
-                            <h2>Song</h2>
                             <iframe
                                 src={personSpotify}
                                 title="Spotify Modal"

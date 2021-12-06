@@ -25,8 +25,8 @@ function ModalFood({personFood, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-favorite-foods" className="modals-box">
+                        <h2>Favorite Food</h2>
                         <div className="modals-content">
-                            <h2>Favorite Food</h2>
                             <ul>
                                 {listFoods}
                             </ul>

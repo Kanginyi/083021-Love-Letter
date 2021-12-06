@@ -18,8 +18,8 @@ function ModalFact({personFact, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-interesting-fact" className="modals-box">
+                        <h2>Interesting Fact</h2>
                         <div className="modals-content">
-                            <h2>Interesting Fact</h2>
                             <p>
                                 {personFact}
                             </p>

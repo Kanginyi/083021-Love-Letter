@@ -25,8 +25,8 @@ function ModalHobbies({personHobbies, openModal, setOpenModal}) {
             {openModal ?
                 <div className="modals">
                     <div id="modals-hobbies" className="modals-box">
+                        <h2>Hobbies</h2>
                         <div className="modals-content">
-                            <h2>Hobbies</h2>
                             <ul>
                                 {listHobbies}
                             </ul>
