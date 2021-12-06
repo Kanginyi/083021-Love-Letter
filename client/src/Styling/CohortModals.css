@@ -35,6 +35,19 @@
     margin-bottom: 1rem;
 }
 
+.modals-content ul {
+    text-align: left;
+}
+
+.modals-content li {
+    padding-left: .5em;
+}
+
+.modals-content li::marker {
+    transition: 0.5s;
+    content: "⭐";
+}
+
 .modals-box button {
     padding: 10px 24px;
     background: #141414;
