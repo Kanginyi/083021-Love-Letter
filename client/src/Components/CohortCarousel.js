@@ -10,7 +10,6 @@ function CohortCarousel({personInfo, handleImageClick}) {
         return <CohortPerson key={person.id} person={person} handleImageClick={handleImageClick}/>
     });
 
-
     return (
         <div>
             <h1 style={{textAlign: "center", color: "white"}}>Bing Bong</h1>
