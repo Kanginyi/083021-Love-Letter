@@ -1,0 +1,2 @@
+class Unfortunate < ApplicationRecord
+end
