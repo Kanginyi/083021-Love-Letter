@@ -2,10 +2,67 @@ import React from 'react';
 import "../Styling/MonopolyBoard.scss";
 
 function MonopolyBoard() {
+    const flipChance = () => {
+        const card = document.querySelector(".board-card-inner");
+        card.classList.toggle("is-flipped");
+    }
+
+    const flipCommunity = () => {
+        const card = document.querySelector(".board-card-inner2");
+        card.classList.toggle("is-flipped2");
+    }
+
     return (
         <>
+           {/* Monopoly Board */}
            <div className="table">
             <div className="board">
+
+                <div className="board-card chance1">
+                    Chance
+                </div>
+                <div className="board-card chance2">
+                    Chance
+                </div>
+                <div className="board-card chance3">
+                    Chance
+                </div>
+                <div className="board-card main-chance" onClick={flipChance}>
+                    <div className="board-card-inner">
+                        <div className="board-card-face board-card-front">
+                            <h4>Chance</h4>
+                        </div>
+                        <div className="board-card-face board-card-back">
+                            <div className="board-card-content">
+                                <p>There's always a chance to learn and grow. Take those challenges and fuck them up. ❤</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="board-card community1">
+                    Community Chest
+                </div>
+                <div className="board-card community2">
+                    Community Chest
+                </div>
+                <div className="board-card community3">
+                    Community Chest
+                </div>
+                <div className="board-card main-community" onClick={flipCommunity}>
+                    <div className="board-card-inner2">
+                        <div className="board-card-face board-card-front">
+                            <h4>Community Chest</h4>
+                        </div>
+                        <div className="board-card-face board-card-back">
+                            <div className="board-card-content">
+                                <p>Thanks for being such a great community for me to grow in. ❤</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div className="center">
                     <div className="community-chest-deck">
                         <h2 className="label">Community Chest</h2>
@@ -30,7 +87,7 @@ function MonopolyBoard() {
                     <div className="space property">
                         <div className="monopoly-container">
                             <div className="color-bar light-blue"></div>
-                            <div className="name">Sowande's <br/> Poems</div>
+                            <div className="name">Sowande's <br/> Mannequin</div>
                             <div className="price">PRICE $120</div>
                         </div>
                     </div>
