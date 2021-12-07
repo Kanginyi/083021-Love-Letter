@@ -393,6 +393,7 @@ alex_mandalar = Student.create(
     github: "https://github.com/mandalarian93",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
+)
 
 ben_yang = Student.create(
     name: "Ben Yang",
@@ -408,6 +409,7 @@ ben_yang = Student.create(
     github: "https://github.com/byang1998",
     flatiron_rating: 8.5,
     instructor_id: greg_dwyer.id
+)
 
 # chris_aguirre = Student.create(
 #     name: ,
@@ -422,7 +424,7 @@ ben_yang = Student.create(
 #     favorite_food: ,
 #     github: ,
 #     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
+#     instructor_id: greg_dwyer.id
 # )
 
 devin_mullin = Student.create(
@@ -439,6 +441,7 @@ devin_mullin = Student.create(
     github: "https://github.com/devin-mullin",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
+)
 
 # duvly_simeon = Student.create(
 #     name: ,
@@ -453,7 +456,7 @@ devin_mullin = Student.create(
 #     favorite_food: ,
 #     github: ,
 #     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
+#     instructor_id: greg_dwyer.id
 # )
 
 # hathor_hamilton = Student.create(
@@ -469,7 +472,7 @@ devin_mullin = Student.create(
 #     favorite_food: ,
 #     github: ,
 #     flatiron_rating: ,
-#     instructor_id: dumb_bitch.id
+#     instructor_id: greg_dwyer.id
 # )
 
 jon_courtier = Student.create(
@@ -486,6 +489,7 @@ jon_courtier = Student.create(
     github: "https://github.com/QwertyJon25",
     flatiron_rating: 7,
     instructor_id: greg_dwyer.id
+)
 
 mary_aninzo = Student.create(
     name: "Mary Aninzo",
@@ -501,6 +505,7 @@ mary_aninzo = Student.create(
     github: "https://github.com/maninzo1",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
+)
 
 matt_law = Student.create(
     name: "Matt Law",
@@ -516,6 +521,7 @@ matt_law = Student.create(
     github: "https://github.com/aboutmattlaw",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
+)
 
 nicholas_ruzicka = Student.create(
     name: "Nicholas Ruzicka",
@@ -531,6 +537,7 @@ nicholas_ruzicka = Student.create(
     github: "https://github.com/nick-ruzicka",
     flatiron_rating: 8.5,
     instructor_id: greg_dwyer.id
+)
 
 patrick_wu = Student.create(
     name: "Patrick Wu",
@@ -546,6 +553,7 @@ patrick_wu = Student.create(
     github: "https://github.com/UncleDadMom",
     flatiron_rating: 9,
     instructor_id: greg_dwyer.id
+)
 
 pranay_sankineni = Student.create(
     name: "Pranay Sankineni",
@@ -561,6 +569,7 @@ pranay_sankineni = Student.create(
     github: "https://github.com/pranayrao475",
     flatiron_rating: 9,
     instructor_id: greg_dwyer.id
+)
 
 scott_donnan = Student.create(
     name: "Scott Donnan",
@@ -576,6 +585,7 @@ scott_donnan = Student.create(
     github: "https://github.com/ScottDonnan",
     flatiron_rating: 10,
     instructor_id: greg_dwyer.id
+)
 
 yewei_chen = Student.create(
     name: "Yewei Chen",
@@ -591,6 +601,7 @@ yewei_chen = Student.create(
     github: "https://github.com/hyzr0525",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
+)
 
 xee = Student.create(
     name: "Alyxandria Meadows (Xee)",
@@ -606,6 +617,7 @@ xee = Student.create(
     github: "https://github.com/AlyxKM",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
+)
 
 puts "Seeding Playlist"
 playlist = Playlist.create(likes: 68, dislikes: 2);
