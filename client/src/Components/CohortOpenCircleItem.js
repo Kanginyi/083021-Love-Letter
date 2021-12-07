@@ -6,7 +6,7 @@ function CohortOpenCircleItem() {
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </div> 
     );
 }
 
