@@ -22,34 +22,19 @@ adam_johnson = Instructor.create(
     years_worked: 1
 )
 
-# greg_dwyer = Instructor.create(
-#     name: ,
-#     age: ,
-#     description: ,
-#     song: ,
-#     current_location: ,
-#     location_from: ,
-#     interesting_fact: ,
-#     hobbies: ,
-#     picture: ,
-#     favorite_food: ,
-#     github: ,
-#     years_worked:
-# )
-
-dumb_bitch = Instructor.create(
-    name: "Dumb Bitch",
-    age: 69,
-    description: "Fucking Dumb bitch",
-    song: "Real You - Twice",
-    current_location: "Texas",
-    location_from: "Fairfax, Virginia",
-    interesting_fact: "I'm actually a dumb bitch",
-    hobbies: "dumb, fucking, cunt",
-    picture: "https://ih1.redbubble.net/image.403079332.1072/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg",
-    favorite_food: "McDonald's",
-    github: "https://www.google.com/",
-    years_worked: 2
+greg_dwyer = Instructor.create(
+    name: "Gregory Dwyer",
+    age: 32,
+    description: "5'9\"ish white male with a hair length that varies based on my last haircut.",
+    song: "https://open.spotify.com/embed/track/7qubZ8if1MLxDuMOF9N4et?utm_source=generator&theme=0",
+    current_location: "Rhode Island",
+    location_from: "Rhode Island",
+    interesting_fact: "I am deathly terrified of filling out surveys.",
+    hobbies: "Gaming, Coding, Reading, Golf",
+    picture: "https://i.imgur.com/hRBBYva.png",
+    favorite_food: "Middle Eastern Food",
+    github: "https://github.com/Dwire",
+    years_worked: 3
 )
 
 
@@ -720,10 +705,27 @@ Comment.create([
 ])
 
 puts "J-CREW"
-# jui_hsu = ":("
-# jason_brown = ":("
-# jose_lanza = ":("
-# justin_sohn = ":("
-
+Unfortunate.create([
+    {
+        name: "Jason Brown",
+        picture: "https://i.imgur.com/L3j1FL7.png"
+    },
+    {
+        name: "Jose Lanza",
+        picture: "https://i.imgur.com/zRJcumo.png"
+    },
+    {
+        name: "Jui Hsu" ,
+        picture: "https://i.imgur.com/b018oU3.png"
+    },
+    {
+        name: "Justin Sohn",
+        picture: "https://i.imgur.com/9K7CQaM.png"
+    },
+    {
+        name: "Malcolm Heggie",
+        picture: "https://i.imgur.com/496d3HA.png"
+    },
+])
 
 puts "Done seeding data!"
