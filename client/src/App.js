@@ -5,6 +5,7 @@ import Cohort from "./Components/Cohort";
 import Playlist from "./Components/Playlist";
 import Locations from "./Components/Locations";
 import Comments from "./Components/Comments";
+import MonopolyBoard from "./Components/MonopolyBoard";
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -47,6 +48,7 @@ function App() {
               />
               }/>
             <Route path="comments" element={<Comments/>}/>
+            <Route path="monopoly" element={<MonopolyBoard/>}/>
           </Routes>
         </div>
       </Router>
