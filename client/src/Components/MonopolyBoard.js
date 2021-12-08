@@ -149,7 +149,7 @@ function MonopolyBoard() {
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar dark-purple"></div>
-							<div className="name three-line-name"> Fear <br/> of the <br/> Unknown </div>
+							<div className="name three-line-name"> Joined <br/> East-SE <br/> 083021 </div>
 							<div className="price">Price $50</div>
 						</div>
 					</div>
