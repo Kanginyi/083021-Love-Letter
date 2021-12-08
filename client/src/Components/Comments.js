@@ -153,7 +153,7 @@ function Comments() {
                 </input>
             </label>
 
-            <h2>Shift + Scroll to Look Through The Comments</h2><br/>
+            <h2>Shift + Scroll to Look Through The Comments</h2>
             
         </div>
 
