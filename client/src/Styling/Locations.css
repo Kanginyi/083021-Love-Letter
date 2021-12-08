@@ -395,16 +395,16 @@
     background: linear-gradient(60deg, #00af00, #67df67, white); 
 }
 .georgia li:nth-child(odd) {
-    background: linear-gradient(60deg, #ffabb9, #ffdbe1, white); 
+    background: linear-gradient(60deg, #ffabb9, #fcc4ce, white); 
 }
 .illinois li:nth-child(odd) {
     background: linear-gradient(60deg, #dfdb0b, #fffd85, white); 
 }
 .maryland li:nth-child(odd) {
-    background: linear-gradient(60deg, #ad00ad, #ff65ff, white); 
+    background: linear-gradient(60deg, #ad00ad, #fd72fd, white); 
 }
 .michigan li:nth-child(odd) {
-    background: linear-gradient(60deg, #000080, #0000eb, white); 
+    background: linear-gradient(60deg, #000080, #3737e0, white); 
 }
 .new-jersey li:nth-child(odd) {
     background: linear-gradient(60deg, #f50000, #ff6060, white); 
@@ -416,11 +416,11 @@
     background: linear-gradient(60deg, #00b5c2, #6ff5ff, white); 
 }
 .texas li:nth-child(odd) {
-    background: linear-gradient(60deg, #800000, #b13d3d, white); 
+    background: linear-gradient(60deg, #800000, #c44141, white); 
 }
 .virginia li:nth-child(odd) {
     background: linear-gradient(60deg, #ffa600, #ffc965, white); 
 }
 .buckinghamshire li:nth-child(odd) {
-    background: linear-gradient(60deg, #a0a0ff, #cbcbff, white); 
+    background: linear-gradient(60deg, #a0a0ff, #c7c7ff, white); 
 }
