@@ -547,16 +547,6 @@ $dark-blue: #5a6dba;
 	z-index: 30;
 }
 
-.main-chance:hover {
-	transform: scale(2);
-	transition: transform 1s;
-}
-
-.main-community:hover {
-	transform: scale(2);
-	transition: transform 1s;
-}
-
 .board-card-content {
 	width: 100%;
 	height: 100%;
@@ -572,7 +562,6 @@ $dark-blue: #5a6dba;
 	padding: 0 10px;
 }
 
-
 .chance1 {
 	background: #FFCCCC;
 	position: relative;
@@ -580,6 +569,7 @@ $dark-blue: #5a6dba;
 	left: 610px;
 	transform: rotate(-30deg);
 }
+
 .chance2 {
 	background: #FFCCCC;
 	position: relative;
@@ -587,6 +577,7 @@ $dark-blue: #5a6dba;
 	left: 500px;
 	transform: rotate(-65deg);
 }
+
 .chance3 {
 	background: #FFCCCC;
 	position: relative;
@@ -594,12 +585,14 @@ $dark-blue: #5a6dba;
 	left: 420px;
 	transform: rotate(-15deg);
 }
+
 .main-chance {
 	background: #FFCCCC;
 	position: relative;
 	bottom: 350px;
 	left: 325px;
 	transform: rotate(-45deg);
+    transition: transform 1s;
 	z-index: 11;
 }
 
@@ -610,6 +603,7 @@ $dark-blue: #5a6dba;
 	right: 170px;
 	transform: rotate(130deg);
 }
+
 .community2 {
 	background: #CCFFFF;
 	position: relative;
@@ -617,6 +611,7 @@ $dark-blue: #5a6dba;
 	right: 240px;
 	transform: rotate(150deg);
 }
+
 .community3 {
 	background: #CCFFFF;
 	position: relative;
@@ -624,11 +619,23 @@ $dark-blue: #5a6dba;
 	right: 310px;
 	transform: rotate(140deg);
 }
+
 .main-community {
 	background: #CCFFFF;
 	position: relative;
 	bottom: 750px;
 	right: 405px;
 	transform: rotate(135deg);
+    transition: transform 1s;
 	z-index: 11;
+}
+
+.main-chance:hover {
+	transform: scale(2);
+	transition: transform 1s;
+}
+
+.main-community:hover {
+	transform: scale(2);
+	transition: transform 1s;
 }
