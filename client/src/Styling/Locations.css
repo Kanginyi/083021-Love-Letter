@@ -134,11 +134,12 @@
 
 /* States Bubbles */
 #connecticut {
-    left: 87%;
-    top: 25.5%;
+    left: 86.5%;
+    top: 26.5%;
     background: rgb(0, 175, 0);
     color: black;
     animation: connecticutflash 3.75s infinite;
+    z-index: 6;
 }
 
 #georgia {
@@ -187,6 +188,13 @@
     background: black;
     color: white;
     animation: newyorkflash 3s infinite;
+}
+
+#rhode-island {
+    left: 89%;
+    top: 25.5%;
+    background: rgb(128, 62, 9);
+    animation: rhodeislandflash 4.5s infinite;
 }
 
 #tennessee {
@@ -376,6 +384,21 @@
     }
 }
 
+@keyframes rhodeislandflash {
+    96% {
+        background: rgb(128, 62, 9);
+    }
+    97% {
+        background: linear-gradient(to top right, white, white, rgb(128, 62, 9));
+    }
+    98% {
+        background: white;
+    }
+    99% {
+        background: linear-gradient(to top right, rgb(128, 62, 9), rgb(128, 62, 9), white);
+    }
+}
+
 @keyframes tennesseeflash {
     96% {
         background: rgb(0, 181, 194);
@@ -411,6 +434,9 @@
 }
 .new-york li:nth-child(odd) {
     background: linear-gradient(60deg, #000000, #8f8f8f, white); 
+}
+.rhode-island li:nth-child(odd) {
+    background: linear-gradient(60deg, rgb(128, 62, 9), rgb(150, 88, 38), white);
 }
 .tennessee li:nth-child(odd) {
     background: linear-gradient(60deg, #00b5c2, #6ff5ff, white); 
