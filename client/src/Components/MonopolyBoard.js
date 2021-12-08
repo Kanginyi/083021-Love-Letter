@@ -314,10 +314,11 @@ function MonopolyBoard() {
 					</div>
 				</div>
 
-				<div className="space corner go-to-jail">
+                <div className="space corner go-to-jail">
 					<div className="monopoly-container">
-						<div className="name"><br/>Retake Code Challenge</div>
-                        <div className="drawing" style={{display: "flex", justifyContent: "center", alignContent: "center", color: "#f50c2b", marginTop: "-20px"}}><GrPowerCycle style={{fontSize: "25px", marginTop: "20px"}}/></div>
+						<div className="name" style={{marginTop: "10px"}}><br/>Retake Code</div>
+						<div className="name" style={{marginTop: "10px"}}>Challenge</div>
+                        <div className="name" style={{display: "flex", justifyContent: "center", alignContent: "center", color: "#f50c2b", marginTop: "-20px"}}><GrPowerCycle style={{fontSize: "25px", marginTop: "30px"}}/></div>
 					</div>
 				</div>
 
