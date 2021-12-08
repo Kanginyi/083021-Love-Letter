@@ -240,9 +240,10 @@ function MonopolyBoard() {
 
 				<div className="space corner free-parking">
 					<div className="monopoly-container">
-						<div className="name">Great</div>
+						<div className="name">Friday</div>
 						<i className="drawing fa fa-car"></i>
-						<div className="name">Friendships</div>
+						<div className="name">Feels</div>
+						<div className="name" style={{marginTop: "10px"}}>❤❤❤</div>
 					</div>
 				</div>
 
@@ -315,7 +316,7 @@ function MonopolyBoard() {
 
 				<div className="space corner go-to-jail">
 					<div className="monopoly-container">
-						<div className="name">Retake Code Challenge</div>
+						<div className="name"><br/>Retake Code Challenge</div>
                         <div className="drawing" style={{display: "flex", justifyContent: "center", alignContent: "center", color: "#f50c2b", marginTop: "-20px"}}><GrPowerCycle style={{fontSize: "25px", marginTop: "20px"}}/></div>
 					</div>
 				</div>
@@ -338,7 +339,7 @@ function MonopolyBoard() {
 					<div className="space community-chest">
 						<div className="monopoly-container">
 							<div className="name">Phase 4</div>
-                            <div className="drawing" style={{display: "flex", justifyContent: "center", alignContent: "center", color: "#f50c2b"}}><SiRubyonrails style={{fontSize: "60px"}}/></div> <br/>
+                            <div className="drawing" style={{display: "flex", justifyContent: "center", alignContent: "center", color: "#f50c2b"}}><SiRubyonrails style={{fontSize: "60px", marginBottom: "-20px"}}/></div> <br/>
 							<div className="instructions">Ruby <br/> Railed Me</div>
 						</div>
 					</div>
