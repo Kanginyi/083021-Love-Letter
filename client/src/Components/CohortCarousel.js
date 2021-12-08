@@ -48,22 +48,23 @@ function CohortCarousel({personInfo, handleImageClick}) {
         </div>;
 
     // Fetch instructors
-    // const [instructorInfo, setInstructorInfo] = useState([]);
+    const [instructorInfo, setInstructorInfo] = useState([]);
 
-    // useEffect(() => {
-    //     fetch("/instructors")
-    //         .then(resp => resp.json())
-    //         .then(data => setInstructorInfo(data));
-    // }, []);
+    useEffect(() => {
+        fetch("/instructors")
+            .then(resp => resp.json())
+            .then(data => setInstructorInfo(data));
+    }, []);
 
     const sectionA = personInfo?.filter(person => person.instructor.name === "Adam Johnson" && person.id !== 20);
     const sectionB = personInfo?.filter(person => person.instructor.name === "Gregory Dwyer");
     
+    console.log(instructorInfo);
 
     const renderSectionA =
         <>
         <div id="adam-johnson">
-            {/* {<CohortPerson person={personInfo[0]?.instructor} handleImageClick={handleImageClick}/>} */}
+            {/* <CohortPerson person={instructorInfo[0]} handleImageClick={handleImageClick}/> */}
         </div>
         <div id="render-sectionA" className="carousel-render-divs">
             {sectionA?.map(person => {
@@ -74,7 +75,7 @@ function CohortCarousel({personInfo, handleImageClick}) {
     const renderSectionB =
         <>
         <div id="greg-dwyer">
-            {/* {<CohortPerson person={instructorInfo[1]} handleImageClick={handleImageClick}/>} */}
+            {<CohortPerson person={instructorInfo[1]} handleImageClick={handleImageClick}/>}
         </div>
         <div id="render-sectionB" className="carousel-render-divs">
             {sectionB?.map(person => {
@@ -88,8 +89,8 @@ function CohortCarousel({personInfo, handleImageClick}) {
         </div>
 
 
-    const c = <div>c</div>
-    const array = [renderSectionA, renderSectionB, renderAlan, renderUnfort];
+    const renderArray = [renderUnfort, renderAlan, renderSectionB, renderSectionA, ];
+    // const renderArray = [renderSectionA, renderSectionB, renderAlan, renderUnfort];
 
 
     // Slider's Setting Props
@@ -111,7 +112,7 @@ function CohortCarousel({personInfo, handleImageClick}) {
     return (
         <div className="cohort-carousel-container">
             <Slider {...settings}>
-                {array.map((slide, index) => (
+                {renderArray.map((slide, index) => (
                     <div className={index === slideIndex ? "slide active-slide" : "slide"}>
                         {slide}
                     </div>
