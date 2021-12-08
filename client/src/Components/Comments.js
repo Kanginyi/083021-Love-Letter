@@ -12,19 +12,22 @@ function Comments() {
     useEffect(() => {
         fetch("/comments")
             .then(resp => resp.json())
-            .then(data => setCommentData(data))
+            .then(data => {
+                data?.map(comment => comment.created_at = (new Date(comment.created_at)));
+                setCommentData(data);
+            })
     }, []);
+
+    // console.log(commentData)
 
     const renderComments = commentData?.map(comment => {
         return <CommentsCard
-            firstName={comment.first_name}
-            lastName={comment.last_name}
-            comment={comment.comment}
-            likes={comment.likes}
-            dislikes={comment.dislikes}
-            time={Date(comment.created_at)}
+            commentInfo={comment}
+            // commentData={[commentData]}
+            setCommentData={setCommentData}
         />
     })
+
 
     //  Comments Form
     const [newComment, setNewComment] = useState({
@@ -62,7 +65,11 @@ function Comments() {
         setSearchValue(e.target.value);
     }
 
-    const filterComments = searchValue === "" ? renderComments : renderComments?.filter(comment => comment?.props?.firstName.toLowerCase()?.includes(searchValue.toLowerCase()) || comment?.props?.lastName.toLowerCase()?.includes(searchValue.toLowerCase()));
+    const filterComments = searchValue === "" ? renderComments : renderComments?.filter(comment => comment?.props?.commentInfo?.first_name?.toLowerCase().includes(searchValue.toLowerCase()) || comment?.props?.commentInfo?.last_name?.toLowerCase().includes(searchValue.toLowerCase()));
+
+    const sortComments = filterComments?.sort((a, b) => (a.props?.commentInfo?.created_at - b.props?.commentInfo?.created_at));
+
+    // const commentDate = (new Date(created_at).toLocaleString());
 
     return (
         <>
@@ -156,7 +163,8 @@ function Comments() {
 
         {/* Where the comments are rendered */}
         <section id="show-comments" className="comment-list">
-            {filterComments}
+            {sortComments}
+            {/* {filterComments} */}
         </section>
 
         </>
