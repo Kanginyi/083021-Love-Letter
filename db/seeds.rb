@@ -346,7 +346,7 @@ mohammad_hasan = Student.create(
 )
 
 alan_cinsavich = Student.create(
-    name: "Alan L. Cinsavich",
+    name: "Alan L. Cinsavich Jr.",
     age: 34,
     description: "I'm finally back to my favorite pre-covid profession: photography.",
     song: "https://open.spotify.com/embed/track/3hb2ScEVkGchcAQqrPLP0R?utm_source=generator&theme=0",
@@ -626,32 +626,32 @@ playlist = Playlist.create(likes: 68, dislikes: 2);
 puts "Seeding Comments"
 Comment.create([
     {
-        first_name: "Alan",
-        last_name: "Cinsavich",
-        comment: "I'm cute af",
-        likes: 68,
+        first_name: "Alan L.",
+        last_name: "Cinsavich Jr",
+        comment: "I'm extremely handsome",
+        likes: 4444,
         dislikes: 3 
     },
     {
-        first_name: "Schmeric",
+        first_name: "Shmeric",
         last_name: "Shmee",
         comment: "Where is my cat, Mr. Henri :^(",
         likes: 10,
-        dislikes: 10 
+        dislikes: 0 
     },
     {
         first_name: "Mister",
         last_name: "Barley",
-        comment: "I am a tall, handsome dumbass",
-        likes: 11,
-        dislikes: 7 
+        comment: "I am a tall, handsome dingus",
+        likes: 14,
+        dislikes: 2 
     },
     {
         first_name: "Beneeya",
         last_name: "Cookies",
-        comment: "woman",
-        likes: 6,
-        dislikes: 8
+        comment: "pewpewpew",
+        likes: 11,
+        dislikes: 4
     },
     {
         first_name: "Paul",
@@ -664,22 +664,22 @@ Comment.create([
         first_name: "Dilshan Mutant",
         last_name: "Ninja Turtle",
         comment: "I like myself",
-        likes: 1,
-        dislikes: 2
+        likes: 22,
+        dislikes: 4
     },
     {
         first_name: "Quankerooskies",
         last_name: "Donuts",
         comment: "I'm the best coder here",
-        likes: 3,
-        dislikes: 7 
+        likes: 0,
+        dislikes: 68 
     },
     {
         first_name: "Samothy",
         last_name: "Lee",
         comment: "I'm a kindboi",
-        likes: 14,
-        dislikes: 4
+        likes: 24,
+        dislikes: 2
     },
     {
         first_name: "Xinyeezy",
@@ -691,16 +691,23 @@ Comment.create([
     {
         first_name: "Badam",
         last_name: "Bohnson",
-        comment: "Bingo Bango Bongo",
-        likes: 9,
-        dislikes: 1
+        comment: "Bing Bong",
+        likes: 82,
+        dislikes: 0
     },
     {
         first_name: "Mister",
         last_name: "Henri",
         comment: "Meow",
         likes: 10,
-        dislikes: 2
+        dislikes: 0
+    },
+    {
+        first_name: "Yoojin",
+        last_name: "Moon",
+        comment: "Nihao the hell did that happen",
+        likes: 31,
+        dislikes: 0
     },
 ])
 
