@@ -5,13 +5,13 @@ Rails.application.routes.draw do
   resources :students, only: [:index, :show]
   resources :instructors, only: [:index, :show]
 
-  #get "comments/likes", to "comments#get_likes"
+  get "comments/likes/:id", to: "comments#get_likes"
 
-  # patch "comments/likes", to "comments#increment_likes"
-  # patch "comments/dislikes", to "comments#increment_dislikes"
+  patch "comments/likes/:id", to: "comments#increment_likes"
+  patch "comments/dislikes/:id", to: "comments#increment_dislikes"
 
-  # patch "comments/minus_likes", to "comments#decrement_likes"
-  # patch "comments/minus_dislikes", to "comments#decrement_likes"
+  patch "comments/minus_likes/:id", to: "comments#decrement_likes"
+  patch "comments/minus_dislikes/:id", to: "comments#decrement_dislikes"
 
   get "playlist/likes", to: "playlist#get_likes"
 
