@@ -8,8 +8,12 @@ function Locations({personInfo}) {
 
     const [clickedState, setClickedState] = useState("");
 
+    // Add instructors to the students array
+    const totalArray = personInfo?.concat([personInfo[0]?.instructor], [personInfo[31]?.instructor]);
+    console.log(totalArray);
+
     const openModal = e => {
-        const matchLocation = personInfo?.filter(person => {
+        const matchLocation = totalArray?.filter(person => {
             if (person?.current_location.includes(" ")) {
                 const spacedState = person?.current_location.replace(" ", "-");
                 if (spacedState.toLowerCase() === e.target.id.toLowerCase()) {
@@ -65,6 +69,11 @@ function Locations({personInfo}) {
             {/* New York */}
             <div id="new-york" className="locations-states" onClick={openModal}>
                 NY
+            </div>
+
+            {/* Rhode Island */}
+            <div id="rhode-island" className="locations-states" onClick={openModal}>
+                RI
             </div>
 
             {/* Tennessee */}
