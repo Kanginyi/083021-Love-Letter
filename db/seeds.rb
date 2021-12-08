@@ -16,7 +16,7 @@ adam_johnson = Instructor.create(
     location_from: "Maine",
     interesting_fact: "I play trumpet",
     hobbies: "Gunpla, Video games, Jazz",
-    picture: "https://media-exp1.licdn.com/dms/image/C4E03AQEejOwJNedRGQ/profile-displayphoto-shrink_400_400/0/1579183758618?e=1643846400&v=beta&t=iJVMSa9tz9c1naOsYjIk4s-QYrI8QS8vjzUmp7Rch2s",
+    picture: "https://i.imgur.com/QzStrAY.png",
     favorite_food: "Donuts",
     github: "https://github.com/adamwjo",
     years_worked: 1
