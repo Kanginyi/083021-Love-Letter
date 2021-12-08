@@ -436,7 +436,7 @@
     background: linear-gradient(60deg, #000000, #8f8f8f, white); 
 }
 .rhode-island li:nth-child(odd) {
-    background: linear-gradient(60deg, rgb(128, 62, 9), rgb(150, 88, 38), white);
+    background: linear-gradient(60deg, #803e09, #965826, white);
 }
 .tennessee li:nth-child(odd) {
     background: linear-gradient(60deg, #00b5c2, #6ff5ff, white); 
