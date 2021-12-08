@@ -5,7 +5,8 @@
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box; 
+	box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
   box-sizing: border-box;
 
   background: url("https://j.gifs.com/G65MKL.gif");
-  /* backgr */
   /* background: linear-gradient(-45deg, blue, black, red); */
   /* background: linear-gradient(-45deg, #CCFFFF, white, #FFCCCC); */
   animation: gradient 120s ease infinite;
