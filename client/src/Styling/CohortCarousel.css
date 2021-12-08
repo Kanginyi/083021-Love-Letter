@@ -3,12 +3,12 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 
-
 .cohort-carousel-container {
     width: 50%;
     margin: 6rem auto;
-    height: 800px;
-    background: white;
+    height: 820px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
 }
 
 .slide {
@@ -71,27 +71,58 @@
 .carousel-render-divs {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 4px;
+    /* gap: 4px; */
     justify-content: center;
     align-items: center;
 }
 
 #render-unfort {
-    position: relative;
-    top: 320px;
+    /* position: relative;
+    top: 320px; */
+    height: 100%;
+    display: flex;
+    margin-top: 340px;
+    gap: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
 }
 
 #adam-johnson {
-    position: relative;
-    left: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#render-sectionA {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #greg-dwyer {
-    position: relative;
-    left: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#render-sectionB {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 #render-sectionB {
     grid-template-columns: repeat(4, 1fr);
     position: relative;
+}
+
+#alan-cinsavich {
+    margin-top: 340px;
+    display: flex;
+}
+
+#alan-cinsavich img {
+    transform: scale(3);
 }
