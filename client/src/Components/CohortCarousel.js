@@ -58,13 +58,11 @@ function CohortCarousel({personInfo, handleImageClick}) {
 
     const sectionA = personInfo?.filter(person => person.instructor.name === "Adam Johnson" && person.id !== 20);
     const sectionB = personInfo?.filter(person => person.instructor.name === "Gregory Dwyer");
-    
-    console.log(instructorInfo);
 
     const renderSectionA =
         <>
         <div id="adam-johnson">
-            {/* <CohortPerson person={instructorInfo[0]} handleImageClick={handleImageClick}/> */}
+            <CohortPerson person={instructorInfo[0]} handleImageClick={handleImageClick}/>
         </div>
         <div id="render-sectionA" className="carousel-render-divs">
             {sectionA?.map(person => {
@@ -84,13 +82,11 @@ function CohortCarousel({personInfo, handleImageClick}) {
         </>
     
     const renderAlan = 
-        <div className="carousel-render-divs">
+        <div id="alan-cinsavich" className="carousel-render-divs">
             {<CohortPerson person={personInfo[19]} handleImageClick={handleImageClick}/>}
         </div>
 
-
-    const renderArray = [renderUnfort, renderAlan, renderSectionB, renderSectionA, ];
-    // const renderArray = [renderSectionA, renderSectionB, renderAlan, renderUnfort];
+    const renderArray = [renderSectionA, renderSectionB, renderUnfort, renderAlan];
 
 
     // Slider's Setting Props
@@ -107,7 +103,6 @@ function CohortCarousel({personInfo, handleImageClick}) {
         prevArrow: <PrevArrow/>,
         beforeChange: (current, next) => setSlideIndex(next)
     }
-
 
     return (
         <div className="cohort-carousel-container">
