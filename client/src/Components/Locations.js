@@ -6,21 +6,7 @@ function Locations({personInfo}) {
     const [showModal, setShowModal] = useState(false);
     const [renderPeople, setRenderPeople] = useState("");
 
-    // const listColors = [
-    //     ["connecticut", "#00af00", "#67df67"],
-    //     ["georgia", "#ffabb9", "#ffdbe1"],
-    //     ["illinois", "#dfdb0b", "#fffd85"],
-    //     ["maryland", "#ad00ad", "#ff65ff"],
-    //     ["michigan", "#000080", "#0000eb"],
-    //     ["new-jersey", "#f50000", "#ff6060"],
-    //     ["new-york", "#000000", "#8f8f8f"],
-    //     ["tennessee", "#00b5c2", "#6ff5ff"],
-    //     ["texas", "#800000", "#b13d3d"],
-    //     ["virginia", "#ffa600", "#ffc965"],
-    //     ["buckinghamshire", "#a0a0ff", "#cbcbff"],
-    // ];
-
-    // const [gradientColor, setGradientColor] = useState([]);
+    const [clickedState, setClickedState] = useState("");
 
     const openModal = e => {
         const matchLocation = personInfo?.filter(person => {
@@ -34,8 +20,7 @@ function Locations({personInfo}) {
             }
         });
 
-        // const chooseColor = listColors?.filter(array => array[0] === e.target.id);
-        // setGradientColor(chooseColor);
+        setClickedState(e.target.id);
 
         setRenderPeople(matchLocation);
 
@@ -44,8 +29,8 @@ function Locations({personInfo}) {
 
     return (
         <>
-        <LocationsModal showModal={showModal} setShowModal={setShowModal} renderPeople={renderPeople} openModal={openModal}/>
-        {/*  gradientColor={gradientColor} */}
+        <LocationsModal showModal={showModal} setShowModal={setShowModal} renderPeople={renderPeople} openModal={openModal} clickedState={clickedState}/>
+        
         <div id="united-states-map-container">
             {/* Connecticut */}
             <div id="connecticut" className="locations-states" onClick={openModal}>
