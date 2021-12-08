@@ -101,25 +101,23 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
                     </button>
                 </>
 
-    
-
     return (
         <article className="comments-card">
-            <header>
                 <div className="comments-card-header">
                     <h2>{first_name} {last_name}</h2>
-                    <p>{comment}</p>
+                    <div className="comments-card-content">
+                        <p>{comment}</p>
+                    </div>
+                    <div className="comments-card-button-container">
+                        {isClicked === 1 ? noPressed :
+                        isClicked === 2 ? likesPressed :
+                        dislikesPressed}
+                    </div>
                 </div>
                 
-                <div className="comments-card-button-container">
-                     {isClicked === 1 ? noPressed :
-                     isClicked === 2 ? likesPressed :
-                     dislikesPressed}
-                </div>
-                <div>
+                <div className="comments-card-date">
                     <p>Posted at {created_at.toLocaleString()} </p>
                 </div>
-            </header>
         </article>
     );
 }
