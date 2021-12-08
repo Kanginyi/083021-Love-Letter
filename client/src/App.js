@@ -31,8 +31,7 @@ function App() {
         <div id="main-content">
           <Routes>
             <Route path="/" element={
-              <Homepage
-              />
+              <Homepage/>
               }/>
             <Route path="cohort" element={
               <Cohort
