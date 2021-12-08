@@ -83,6 +83,10 @@
     height: 100%;
 }
 
+.comments-card-header h2{
+    margin-top: 10px;
+}
+
 .comments-card-content {
     display: flex;
     flex-direction: column;
@@ -101,4 +105,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -10px;
 }
