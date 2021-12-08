@@ -2,7 +2,7 @@ import React, {useRef, useEffect, useCallback} from 'react';
 import LocationsPeople from './LocationsPeople';
 import {useSpring, animated} from "react-spring";
 
-function LocationsModal({showModal, setShowModal, renderPeople}) {
+function LocationsModal({showModal, setShowModal, renderPeople, clickedState}) {
     // Using this to close the modal when clicking outside of the modal
     const modalRef = useRef();
     const closeModal = e => {
@@ -43,7 +43,7 @@ function LocationsModal({showModal, setShowModal, renderPeople}) {
                     </h1>
                     <hr/>
 
-                    <ul className="locations-modal-ul">
+                    <ul className={`locations-modal-ul ${clickedState}`}>
                         {renderPeople?.map(person => {
                             return <LocationsPeople
                                 key={person?.name}
