@@ -1,7 +1,10 @@
+/* DM SANS BOLD 700 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
 #homepage-title-background {
 	mix-blend-mode: screen;
 	width: 980px;
-	height: 12vh;
+	height: 11vh;
 	margin: auto;
 	margin-bottom: 20px;
 
@@ -12,6 +15,8 @@
 }
 
 #homepage-transparent-title {
+    font-family: 'DM Sans', sans-serif;
+
 	font-size: 4vw;
 	mix-blend-mode: screen;
 	
