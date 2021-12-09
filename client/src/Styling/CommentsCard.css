@@ -107,3 +107,45 @@
     align-items: center;
     margin-bottom: -10px;
 }
+
+.comments-card-button-container button {
+    letter-spacing: .5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* .playlist-buttons-container button {
+    width: 30.1%;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(20, 19, 19), rgb(71, 65, 65));
+    color: white;
+    text-align: center;
+    box-shadow: 2.5px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.playlist-buttons-container button:active {
+    opacity: 0.9;
+    transform: translateX(2px) translateY(2px);
+}
+
+#like-pressed {
+    box-shadow: none;
+    background: linear-gradient(to top left, rgb(15, 129, 0), rgb(141, 255, 126));
+}
+
+#dislike-pressed {
+    box-shadow: none;
+    background: linear-gradient(to top left, rgb(170, 0, 0), rgb(255, 100, 100));
+}
+
+.like-button-hover:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 12px 4px rgba(0, 255, 55, 0.8);
+    animation: likehover infinite 6.5s;
+} */
