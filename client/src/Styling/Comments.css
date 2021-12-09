@@ -168,13 +168,13 @@
   text-align: center;
 }
 
-#new-contract-button {
+#new-comment-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#new-contract-button button {
+#new-comment-button button {
   border-radius: 6px;
 }
 
