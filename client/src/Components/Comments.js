@@ -22,6 +22,7 @@ function Comments() {
 
     const renderComments = commentData?.map(comment => {
         return <CommentsCard
+            key={comment.id}
             commentInfo={comment}
             // commentData={[commentData]}
             setCommentData={setCommentData}
@@ -51,7 +52,10 @@ function Comments() {
             body: JSON.stringify(newComment)
         })
             .then(resp => resp.json())
-            .then(data => setCommentData([...commentData, data]))
+            .then(data => {
+                data.created_at = (new Date(data.created_at));
+                return setCommentData([...commentData, data])
+            })
         
         setNewComment({
             first_name: "", last_name: "", comment: ""
