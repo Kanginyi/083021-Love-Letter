@@ -132,7 +132,7 @@ function Comments() {
                     </div>
 
                     <div className="row100">
-                        <div id="new-contract-button" className="col">
+                        <div id="new-comment-button" className="col">
                             <button type="submit">Post Your Comment</button>
                         </div>
                     </div>
