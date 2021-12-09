@@ -265,7 +265,7 @@ function MonopolyBoard() {
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar red"></div>
-							<div className="name">Devin's <br/> Comedy <br/> Show</div>
+							<div className="name">Devin's <br/> Podcasts </div>
 							<div className="price">Price $220</div>
 						</div>
 					</div>
@@ -361,7 +361,7 @@ function MonopolyBoard() {
 					<div className="space community-chest">
 						<div className="monopoly-container">
 							<div className="name">Phase 5</div>
-							<i className="drawing fa fa-cube"></i>
+							<i className="drawing" style={{color: "black"}}>)^:</i>
 							<div className="name">Where is everyone?</div>
 						</div>
 					</div>
