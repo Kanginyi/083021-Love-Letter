@@ -8,9 +8,7 @@ function Locations({personInfo}) {
 
     const [clickedState, setClickedState] = useState("");
 
-    // Add instructors to the students array
-    const totalArray = personInfo?.concat([personInfo[0]?.instructor], [personInfo[31]?.instructor]);
-    console.log(totalArray);
+    const totalArray = [personInfo[0]?.instructor]?.concat(personInfo, [personInfo[31]?.instructor]);
 
     const openModal = e => {
         const matchLocation = totalArray?.filter(person => {
