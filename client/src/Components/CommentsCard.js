@@ -111,8 +111,8 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
                     </div>
                     <div className="comments-card-button-container">
                         {isClicked === 1 ? noPressed :
-                        isClicked === 2 ? likesPressed :
-                        dislikesPressed}
+                         isClicked === 2 ? likesPressed :
+                         dislikesPressed}
                     </div>
                 </div>
                 
