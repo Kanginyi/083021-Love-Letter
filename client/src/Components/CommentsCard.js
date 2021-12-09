@@ -62,7 +62,7 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
                             onClick={handleLikes}
                         > 🤍 {commentsLikes} Likes
                         </button>
-
+                        &nbsp; {/* This is the same as doing {" "} */}
                         <button
                             className="dislike-button-hover"
                             onClick={handleDislikes}
@@ -78,7 +78,7 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
                         onClick={handleLikes}
                     >💚 {commentsLikes} Likes
                     </button> 
-
+                    &nbsp; {/* This is the same as doing {" "} */}
                     <button
                         className="dislike-button-hover"
                         onClick={handleDislikes}
@@ -92,7 +92,7 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
                         onClick={handleLikes}
                     >🤍 {commentsLikes} Likes
                     </button>
-
+                    &nbsp; {/* This is the same as doing {" "} */}
                     <button
                         id="dislike-pressed"
                         // className="dislike-button-hover"
