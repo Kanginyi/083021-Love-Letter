@@ -55,33 +55,34 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
         setIsClicked(3);
     }
 
+    // like-button-hover & dislike-button-hover are inside of Playlist.css
     const noPressed = <>
                         <button
                             className="like-button-hover"
                             onClick={handleLikes}
-                        >{commentsLikes} Likes
+                        > 🤍 {commentsLikes} Likes
                         </button>
 
                         <button
                             className="dislike-button-hover"
                             onClick={handleDislikes}
-                        >{commentsDislikes} Dislikes
+                        >{commentsDislikes} Dislikes 🤍
                         </button>
                     </>
 
     const likesPressed = <>
                     <button
                         id="like-pressed"
-                        className="like-button-hover"
+                        // className="like-button-hover"
                         disabled="disabled"
                         onClick={handleLikes}
-                    >{commentsLikes} Likes
+                    >💚 {commentsLikes} Likes
                     </button> 
 
                     <button
                         className="dislike-button-hover"
                         onClick={handleDislikes}
-                    >{commentsDislikes} Dislikes
+                    >{commentsDislikes} Dislikes 🤍
                     </button>
                 </>
 
@@ -89,15 +90,15 @@ function CommentsCard({commentInfo, commentData, setCommentData}) {
                     <button
                         className="like-button-hover"
                         onClick={handleLikes}
-                    >{commentsLikes} Likes
+                    >🤍 {commentsLikes} Likes
                     </button>
 
                     <button
                         id="dislike-pressed"
-                        className="dislike-button-hover"
+                        // className="dislike-button-hover"
                         disabled="disabled"
                         onClick={handleDislikes}
-                    >{commentsDislikes} Dislikes
+                    >{commentsDislikes} Dislikes 💔
                     </button>
                 </>
 
