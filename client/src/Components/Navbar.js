@@ -48,12 +48,7 @@ function Navbar() {
                     fill="currentColor"
                     d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"
                     className="fa-primary"
-                ></path>  
-                {/* <path
-                    fill="currentColor"
-                    d="M376 144a16 16 0 1 0 16 16 16 16 0 0 0-16-16zm80 0a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM131.06 273.53L192 304l-23.52-70.56a192.06 192.06 0 0 0-37.42 40.09zM256 272v-77.11a198.62 198.62 0 0 0-43.15 12.38z"
-                    className="fa-secondary"
-                ></path> */}
+                ></path>
                 </g>
                 </svg>
                 <span className="link-text">Cohort</span>
@@ -108,31 +103,6 @@ function Navbar() {
                 <span className="link-text">Playlist</span>
             </a>
           </li>
-
-          {/* Regular Playlist Logo */}
-          {/* <li className="nav-item">
-            <a href="/playlist" className="nav-link">
-                <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="play-circle"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    className="svg-inline--fa fa-play-circle fa-w-16"
-                >
-                <g className="fa-group">
-                <path
-                    fill="currentColor"
-                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"
-                    className="fa-primary"
-                ></path>
-                </g>
-                </svg>
-                <span className="link-text">Playlist</span>
-            </a>
-          </li> */}
 
           <li className="nav-item">
             <a href="/comments" className="nav-link">
