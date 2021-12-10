@@ -109,17 +109,102 @@
 }
 
 .comments-card-button-container button {
-    letter-spacing: .5px;
     cursor: pointer;
+    letter-spacing: .05em;
+    border: .5px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    outline: none;
 }
+
+.comments-card-button-container button:active {
+    background-color:rgba(220, 220, 220, 0.5); 
+    transform: translateX(1px) translateY(1px);
+}
+
+.comments-likes-pressed {
+    background: #80C080;
+    color: white;
+}
+
+.comments-dislikes-pressed {
+    background: #FF8080;
+    color: white;
+}
+
+.comments-like-button:active {
+    animation: likesactive 1.75s 1;
+}
+
+@keyframes likesactive {
+    0% {
+        background: linear-gradient(to top right, green, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5));
+    }
+    2% {
+        background: linear-gradient(to top right, rgba(220, 220, 220, 0.5), green, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5));
+    }
+    4% {
+        background: linear-gradient(to top right, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), green, rgba(220, 220, 220, 0.5));
+    }
+    6% {
+        background: linear-gradient(to top right, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), green);
+    }
+    8% {
+        background: rgba(220, 220, 220, 0.5);
+    }
+}
+
+.comments-dislike-button:active {
+    animation: dislikesactive 1.75s 1;
+}
+
+@keyframes dislikesactive {
+    0% {
+        background: linear-gradient(to top right, red, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5));
+    }
+    2% {
+        background: linear-gradient(to top right, rgba(220, 220, 220, 0.5), red, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5));
+    }
+    4% {
+        background: linear-gradient(to top right, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), red, rgba(220, 220, 220, 0.5));
+    }
+    6% {
+        background: linear-gradient(to top right, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0.5), red);
+    }
+    8% {
+        background: rgba(220, 220, 220, 0.5);
+    }
+}
+
+
+
+/* One animation for the likes button/one for the dislikes button */
+
+/*
+.container .row100 .col button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 40px;
+  cursor: pointer;
+  outline: none;
+  background: white;
+  color: rgba(223, 29, 29, 0.7);
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+.container .row100 .col button:active {
+  background-color: rgb(228, 228, 240);
+  color: rgba(223, 29, 29, 0.7);
+} */
 
 /* .playlist-buttons-container button {
     width: 30.1%;
     border: 1px solid transparent;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    cursor: pointer;
     margin-top: 10px;
     font-weight: 700;
     border-radius: 20px;
