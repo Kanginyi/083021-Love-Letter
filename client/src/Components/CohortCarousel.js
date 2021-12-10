@@ -88,7 +88,7 @@ function CohortCarousel({personInfo, handleImageClick}) {
         <div className="cohort-carousel-container">
             <Slider {...settings}>
                 {renderArray.map((slide, index) => (
-                    <div className={index === slideIndex ? "slide active-slide" : "slide"}>
+                    <div key={index} className={index === slideIndex ? "slide active-slide" : "slide"}>
                         {slide}
                     </div>
                 ))}
