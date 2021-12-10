@@ -3,7 +3,6 @@ import "../Styling/CohortCarousel.css"
 import Slider from "react-slick";
 
 import CohortPerson from './CohortPerson';
-import CohortUnfort from './CohortUnfort';
 
 import {FaArrowAltCircleLeft, FaArrowAltCircleRight} from "react-icons/fa";
 
@@ -27,25 +26,6 @@ function CohortCarousel({personInfo, handleImageClick}) {
 
     // Essentially, which is the selected image?
     const [slideIndex, setSlideIndex] = useState(0);
-    
-    // const renderPerson = personInfo?.map(person => {
-    //     return <CohortPerson key={person.id} person={person} handleImageClick={handleImageClick}/>
-    // });
-
-    // Fetch the Unforts
-    const [unfortInfo, setUnfortInfo] = useState([]);
-
-    useEffect(() => {
-        fetch("/unfortunates")
-            .then(resp => resp.json())
-            .then(data => setUnfortInfo(data));
-    }, []);
-
-    const renderUnfort = 
-        <div id="render-unfort" className="carousel-render-divs">
-            {unfortInfo?.map(person => {
-                return <CohortUnfort key={person.id} name={person.name} picture={person.picture}/>})}
-        </div>;
 
     // Fetch instructors
     const [instructorInfo, setInstructorInfo] = useState([]);
@@ -86,7 +66,7 @@ function CohortCarousel({personInfo, handleImageClick}) {
             {<CohortPerson person={personInfo[19]} handleImageClick={handleImageClick}/>}
         </div>
 
-    const renderArray = [renderSectionA, renderSectionB, renderUnfort, renderAlan];
+    const renderArray = [renderSectionA, renderSectionB, renderAlan];
 
 
     // Slider's Setting Props
