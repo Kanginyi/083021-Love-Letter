@@ -1,2 +1,0 @@
-class Unfortunate < ApplicationRecord
-end
