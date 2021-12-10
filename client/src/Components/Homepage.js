@@ -53,7 +53,7 @@ function Homepage() {
 						<figcaption>
 							<h2>Comments <span>Board</span></h2>
 							<p>Add and view comments left by cohort members.</p>
-							<a href="/comments">Comments</a>
+							<a href="/comments_board">Comments</a>
 						</figcaption>
 					</figure>
 				</div>
