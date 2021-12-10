@@ -15,7 +15,6 @@ function ModalRating({personRating, instructorYears, openRating, setOpenRating})
 
     const yearOrYears = instructorYears === 1 ? `${instructorYears} Year` : `${instructorYears} Years`;
 
-
     return (
         <>
             {openRating ?
