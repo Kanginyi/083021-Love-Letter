@@ -4,7 +4,6 @@ import "../Styling/Comments.css";
 
 import {BsArrowDownCircle} from "react-icons/bs";
 
-
 function Comments() {
     // Fetch comments information
     const [commentData, setCommentData] = useState([]);
@@ -26,7 +25,6 @@ function Comments() {
             setCommentData={setCommentData}
         />
     })
-
 
     //  Comments Form
     const [newComment, setNewComment] = useState({
