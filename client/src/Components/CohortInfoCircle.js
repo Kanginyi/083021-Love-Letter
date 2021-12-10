@@ -46,8 +46,7 @@ function CohortInfoCircle({personInfo, clickedName}) {
     }
 
     // Click this to open the modal
-    const [openModal, setOpenModal] = useState(false);
-    
+   
     const [openGithub, setOpenGithub] = useState(false);
     const [openFood, setOpenFood] = useState(false);
     const [openHobbies, setOpenHobbies] = useState(false);

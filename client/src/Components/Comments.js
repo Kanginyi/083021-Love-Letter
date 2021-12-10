@@ -18,8 +18,6 @@ function Comments() {
             })
     }, []);
 
-    // console.log(commentData)
-
     const renderComments = commentData?.map(comment => {
         return <CommentsCard
             key={comment.id}
