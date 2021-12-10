@@ -711,28 +711,4 @@ Comment.create([
     },
 ])
 
-puts "J-CREW"
-Unfortunate.create([
-    {
-        name: "Jason Brown",
-        picture: "https://i.imgur.com/L3j1FL7.png"
-    },
-    {
-        name: "Jose Lanza",
-        picture: "https://i.imgur.com/zRJcumo.png"
-    },
-    {
-        name: "Jui Hsu" ,
-        picture: "https://i.imgur.com/b018oU3.png"
-    },
-    {
-        name: "Justin Sohn",
-        picture: "https://i.imgur.com/9K7CQaM.png"
-    },
-    {
-        name: "Malcolm Heggie",
-        picture: "https://i.imgur.com/496d3HA.png"
-    },
-])
-
 puts "Done seeding data!"
