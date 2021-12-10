@@ -42,7 +42,10 @@ function CohortCarousel({personInfo, handleImageClick}) {
     const renderSectionA =
         <>
         <div className="section-identifier section-a-identifier">
-            <span>Section A</span>
+            <span>SECTION A</span>
+        </div>
+        <div className="select-member">
+            <span>SELECT A MEMBER</span>
         </div>
         <div id="adam-johnson">
             <CohortPerson person={instructorInfo[0]} handleImageClick={handleImageClick}/>
@@ -56,7 +59,10 @@ function CohortCarousel({personInfo, handleImageClick}) {
     const renderSectionB =
         <>
         <div className="section-identifier section-b-identifier">
-            Section B
+            SECTION B
+        </div>
+        <div className="select-member">
+            <span>SELECT A MEMBER</span>
         </div>
         <div id="greg-dwyer">
             {<CohortPerson person={instructorInfo[1]} handleImageClick={handleImageClick}/>}
