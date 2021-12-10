@@ -76,18 +76,6 @@
     align-items: center;
 }
 
-#render-unfort {
-    /* position: relative;
-    top: 320px; */
-    height: 100%;
-    display: flex;
-    margin-top: 340px;
-    gap: 10px;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-}
-
 #adam-johnson {
     display: flex;
     justify-content: center;
