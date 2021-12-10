@@ -2,7 +2,9 @@ import React from 'react';
 import "../Styling/CohortInfoBox.css"
 
 function CohortInfoBox({personInfo, clickedName, handleImageClick}) {
-    const choosePerson = personInfo?.find(person => person.name === clickedName)
+    const totalArray = [personInfo[0]?.instructor]?.concat(personInfo, [personInfo[31]?.instructor]);
+
+    const choosePerson = totalArray?.find(person => person?.name === clickedName)
 
     const flipCard = () => {
         const card = document.querySelector(".card-inner");
