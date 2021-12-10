@@ -1,7 +1,7 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalRating({personRating, openModal, setOpenModal}) {
+function ModalRating({personRating, instructorYears, openModal, setOpenModal}) {
     const escPress = useCallback(e => {
         if (e.key === "Escape" && openModal) {
             setOpenModal(false);
@@ -13,17 +13,18 @@ function ModalRating({personRating, openModal, setOpenModal}) {
         return () => document.removeEventListener("keydown", escPress);
     }, [escPress])
 
-    console.log(personRating);
+    const yearOrYears = instructorYears === 1 ? `${instructorYears} Year` : `${instructorYears} Years`;
+
 
     return (
         <>
             {openModal ?
                 <div className="modals">
                     <div id="modals-flatiron-rating" className="modals-box">
-                        <h2>Flatiron Rating</h2>
+                        <h2>{personRating ? "Flatiron Rating" : "Worked at Flatiron"}</h2>
                         <div className="modals-content">
                             <p>
-                                {personRating ? `${personRating}/10` : ""}
+                                {personRating ? `${personRating}/10` : yearOrYears}
                             </p>
                             <button onClick={() => setOpenModal(false)}>X</button>
                         </div>
