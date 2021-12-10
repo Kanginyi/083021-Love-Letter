@@ -8,7 +8,9 @@ import CohortInfoCircle from './CohortInfoCircle';
 function Cohort({personInfo, handleImageClick, clickedName}) {
     return (
         <>
-            <h1 style={{textAlign: "center", color: "white"}}>Welcome to 083021 Software Engineering</h1>
+            <h1 id="cohort-welcome-title">
+                COHORT&nbsp;MEMBERS
+            </h1>
             <div>
                 <CohortCarousel
                     personInfo={personInfo}
