@@ -77,54 +77,54 @@
 /* Modals colors and positions */
 #modals-github-link {
     position: absolute;
-    left: 561.9px;
+    left: 555px;
     background: linear-gradient(to top right, #3E84E6, #3E84E6, white);
 }
 
 #modals-favorite-foods {
     position: absolute;
     top: 113px;
-    left: 520px;
+    left: 500px;
     background: linear-gradient(to top right, #F2B705, #F2B705, white);
 }
 
 #modals-hobbies {
     position: absolute;
-    top: 200px;
-    left: 185px;
+    top: 215px;
+    left: 165px;
     background: linear-gradient(to top right, #EB5089, #EB5089, white);
 }
 
 #modals-current-location {
     position: absolute;
     top: 113px;
-    left: -150px;
+    left: -170px;
     background: linear-gradient(to top right, #AFD91A, #AFD91A, white);
 }
 
 #modals-age {
     position: absolute;
-    left: -191.1px;
+    left: -225px;
     background: linear-gradient(to top right, #F27127, #F27127, white);
 }
 
 #modals-flatiron-rating {
     position: absolute;
     bottom: 112px;
-    left: -150px;
+    left: -170px;
     background: linear-gradient(to top right, #07C7F2, #07C7F2, white);
 }
 
 #modals-interesting-fact {
     position: absolute;
-    bottom: 205px;
-    left: 185px;
+    bottom: 220px;
+    left: 165px;
     background: linear-gradient(to top right, #9768D1, #9768D1, white);
 }
 
 #modals-spotify-song {
     position: absolute;
     bottom: 112px;
-    left: 520px;
+    left: 500px;
     background: linear-gradient(to top right, #15AB88, #15AB88, white);
 }
