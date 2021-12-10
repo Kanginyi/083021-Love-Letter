@@ -83,7 +83,6 @@ function Playlist() {
     const likesPressed = <>
                     <button
                         id="like-pressed"
-                        // className="like-button-hover"
                         disabled="disabled"
                         onClick={handleLikes}
                     >{likes} Likes
@@ -105,7 +104,6 @@ function Playlist() {
 
                     <button
                         id="dislike-pressed"
-                        // className="dislike-button-hover"
                         disabled="disabled"
                         onClick={handleDislikes}
                     >{dislikes} Dislikes

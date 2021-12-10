@@ -41,24 +41,6 @@
     border-radius: 50%;
 }
 
-/* .comments-card-header h2 {
-    animation: namegradient 5s infinite;
-}
-
-@keyframes namegradient {
-    0% {
-        color: #FE4880;
-    }
-
-    50% {
-        color: #FFCE00;
-    }
-    
-    100% {
-        color: #FE4880;
-    }
-} */
-
 .next-arrow {
     right: -10%;
     top: 50%;

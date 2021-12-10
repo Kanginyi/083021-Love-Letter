@@ -50,7 +50,7 @@ alan_cinsavich = Student.create(
     hobbies: "Photography, Running through the forest, Enjoying my furniture",
     picture: "https://i.imgur.com/bt6C3tR.png",
     favorite_food: "Pasta, Cheetos",
-    github: "https://github.com/", # Get his actual GitHub link somehow you bitch
+    github: "https://github.com/", # Get his actual GitHub link somehow
     flatiron_rating: 6.9,
     instructor_id: adam_johnson.id
 )

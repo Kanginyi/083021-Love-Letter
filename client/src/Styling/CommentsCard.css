@@ -1,6 +1,5 @@
 .comment-list {
     display: flex;
-    /* justify-content: center; */
     padding: 3rem;
     color: white;
     overflow-x: scroll;
@@ -17,7 +16,6 @@
 }
 
 .comment-list::-webkit-scrollbar-thumb {
-    /* background: #201C29;  */
     background: whitesmoke;
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
@@ -60,24 +58,6 @@
 .comments-card:not(:first-child) {
     margin-left: -130px;
 }
-
-/* .comments-card-header h2 {
-    animation: namegradient 5s infinite;
-}
-
-@keyframes namegradient {
-    0% {
-        color: #FE4880;
-    }
-
-    50% {
-        color: #FFCE00;
-    }
-    
-    100% {
-        color: #FE4880;
-    }
-} */
 
 .comments-card-header {
     display: flex;
@@ -178,63 +158,3 @@
         background: rgba(220, 220, 220, 0.5);
     }
 }
-
-
-
-/* One animation for the likes button/one for the dislikes button */
-
-/*
-.container .row100 .col button {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 10px 40px;
-  cursor: pointer;
-  outline: none;
-  background: white;
-  color: rgba(223, 29, 29, 0.7);
-  font-weight: 600;
-  font-size: 18px;
-  border-radius: 2px;
-}
-
-.container .row100 .col button:active {
-  background-color: rgb(228, 228, 240);
-  color: rgba(223, 29, 29, 0.7);
-} */
-
-/* .playlist-buttons-container button {
-    width: 30.1%;
-    border: 1px solid transparent;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: 700;
-    border-radius: 20px;
-    background: linear-gradient(to top, rgb(20, 19, 19), rgb(71, 65, 65));
-    color: white;
-    text-align: center;
-    box-shadow: 2.5px 1px 1px rgba(255, 255, 255, 0.5);
-}
-
-.playlist-buttons-container button:active {
-    opacity: 0.9;
-    transform: translateX(2px) translateY(2px);
-}
-
-#like-pressed {
-    box-shadow: none;
-    background: linear-gradient(to top left, rgb(15, 129, 0), rgb(141, 255, 126));
-}
-
-#dislike-pressed {
-    box-shadow: none;
-    background: linear-gradient(to top left, rgb(170, 0, 0), rgb(255, 100, 100));
-}
-
-.like-button-hover:hover {
-    transform: scale(1.03);
-    box-shadow: 0 2px 12px 4px rgba(0, 255, 55, 0.8);
-    animation: likehover infinite 6.5s;
-} */

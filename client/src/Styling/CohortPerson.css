@@ -12,9 +12,3 @@
     opacity: 0.9;
     mix-blend-mode: unset;
 }
-
-/* .carousel-image-box:active {
-    transform: translateY(-1px);
-    box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
-    opacity: 0.8;
-} */

@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* z-index: 10001; Use this shit to bump it over the things */
 }
 
 .modals-box {
@@ -16,7 +15,6 @@
     position: relative;
     z-index: 100;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     flex-direction: column;
 }

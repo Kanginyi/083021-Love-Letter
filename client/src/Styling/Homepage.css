@@ -1,7 +1,6 @@
 /* RACING SANS ONE REGULAR 400 */
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
-
 #homepage-title-background {
 	mix-blend-mode: screen;
 	width: 980px;
@@ -23,7 +22,6 @@
 	mix-blend-mode: screen;
 	
 	background: rgb(201, 201, 201);
-	/* background: white; */
 	color: black;
 	padding: 5px;
 	text-align: center;

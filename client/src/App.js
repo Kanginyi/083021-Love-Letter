@@ -30,9 +30,7 @@ function App() {
         <Navbar />
         <div id="main-content">
           <Routes>
-            <Route path="/" element={
-              <Homepage/>
-              }/>
+            <Route path="/" element={<Homepage/>}/>
             <Route path="cohort" element={
               <Cohort
                 personInfo={personInfo}
