@@ -62,7 +62,6 @@ function CohortInfoCircle({personInfo, clickedName}) {
     const [openFact, setOpenFact] = useState(false);
     const [openSpotify, setOpenSpotify] = useState(false);
 
-
     const handleSetOpenModal = (id) => {
          switch (id) {
             case "modal-github":
