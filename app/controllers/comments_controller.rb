@@ -23,16 +23,6 @@ class CommentsController < ApplicationController
         end
     end
 
-    def destroy
-        comment = Comment.find_by(id: params[:id])
-        if comment
-            comment.destroy
-            head :no_content
-        else
-            render json: { errors: comments.errors.full_messages }, status: :unprocessable_entity
-        end
-    end
-
     # Handle Likes
     def get_likes
         comment = Comment.find_by(id: params[:id])
