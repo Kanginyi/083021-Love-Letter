@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalAge({personAge, openModal, setOpenModal}) {
+function ModalAge({personAge, openAge, setOpenAge}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openModal) {
-            setOpenModal(false);
+        if (e.key === "Escape" && openAge) {
+            setOpenAge(false);
         }
-    }, [openModal, setOpenModal]);
+    }, [openAge, setOpenAge]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -15,7 +15,7 @@ function ModalAge({personAge, openModal, setOpenModal}) {
 
     return (
         <>
-            {openModal ?
+            {openAge ?
                 <div className="modals">
                     <div id="modals-age" className="modals-box">
                             <h2>Age</h2>
@@ -24,7 +24,7 @@ function ModalAge({personAge, openModal, setOpenModal}) {
                                 {personAge}
                             </p>
                         </div>
-                        <button onClick={() => setOpenModal(false)}>X</button>
+                        <button onClick={() => setOpenAge(false)}>X</button>
                     </div>
                 </div>
             : null}

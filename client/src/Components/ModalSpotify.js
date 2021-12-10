@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalSpotify({personSpotify, openModal, setOpenModal}) {
+function ModalSpotify({personSpotify, openSpotify, setOpenSpotify}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openModal) {
-            setOpenModal(false);
+        if (e.key === "Escape" && openSpotify) {
+            setOpenSpotify(false);
         }
-    }, [openModal, setOpenModal]);
+    }, [openSpotify, setOpenSpotify]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -15,7 +15,7 @@ function ModalSpotify({personSpotify, openModal, setOpenModal}) {
 
     return (
         <>
-            {openModal ?
+            {openSpotify ?
                 <div className="modals">
                     <div id="modals-spotify-song" className="modals-box">
                         <h2>Song</h2>
@@ -29,7 +29,7 @@ function ModalSpotify({personSpotify, openModal, setOpenModal}) {
                                 allowfullscreen=""
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                             </iframe>
-                            <button onClick={() => setOpenModal(false)}>X</button>
+                            <button onClick={() => setOpenSpotify(false)}>X</button>
                         </div>
                     </div>
                 </div>

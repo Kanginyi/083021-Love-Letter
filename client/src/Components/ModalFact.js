@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalFact({personFact, openModal, setOpenModal}) {
+function ModalFact({personFact, openFact, setOpenFact}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openModal) {
-            setOpenModal(false);
+        if (e.key === "Escape" && openFact) {
+            setOpenFact(false);
         }
-    }, [openModal, setOpenModal]);
+    }, [openFact, setOpenFact]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -15,7 +15,7 @@ function ModalFact({personFact, openModal, setOpenModal}) {
 
     return (
         <>
-            {openModal ?
+            {openFact ?
                 <div className="modals">
                     <div id="modals-interesting-fact" className="modals-box">
                         <h2>Interesting Fact</h2>
@@ -23,7 +23,7 @@ function ModalFact({personFact, openModal, setOpenModal}) {
                             <p>
                                 {personFact}
                             </p>
-                            <button onClick={() => setOpenModal(false)}>X</button>
+                            <button onClick={() => setOpenFact(false)}>X</button>
                         </div>
                     </div>
                 </div>

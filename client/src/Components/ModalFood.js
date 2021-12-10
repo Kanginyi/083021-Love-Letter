@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalFood({personFood, openModal, setOpenModal}) {
+function ModalFood({personFood, openFood, setOpenFood}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openModal) {
-            setOpenModal(false);
+        if (e.key === "Escape" && openFood) {
+            setOpenFood(false);
         }
-    }, [openModal, setOpenModal]);
+    }, [openFood, setOpenFood]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -22,7 +22,7 @@ function ModalFood({personFood, openModal, setOpenModal}) {
 
     return (
         <>
-            {openModal ?
+            {openFood ?
                 <div className="modals">
                     <div id="modals-favorite-foods" className="modals-box">
                         <h2>Favorite Food</h2>
@@ -30,7 +30,7 @@ function ModalFood({personFood, openModal, setOpenModal}) {
                             <ul>
                                 {listFoods}
                             </ul>
-                            <button onClick={() => setOpenModal(false)}>X</button>
+                            <button onClick={() => setOpenFood(false)}>X</button>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalLocation({personLocation, openModal, setOpenModal}) {
+function ModalLocation({personLocation, openLocation, setOpenLocation}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openModal) {
-            setOpenModal(false);
+        if (e.key === "Escape" && openLocation) {
+            setOpenLocation(false);
         }
-    }, [openModal, setOpenModal]);
+    }, [openLocation, setOpenLocation]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
@@ -15,7 +15,7 @@ function ModalLocation({personLocation, openModal, setOpenModal}) {
 
     return (
         <>
-            {openModal ?
+            {openLocation ?
                 <div className="modals">
                     <div id="modals-current-location" className="modals-box">
                         <h2>Current Location</h2>
@@ -23,7 +23,7 @@ function ModalLocation({personLocation, openModal, setOpenModal}) {
                             <p>
                                 {personLocation}
                             </p>
-                            <button onClick={() => setOpenModal(false)}>X</button>
+                            <button onClick={() => setOpenLocation(false)}>X</button>
                         </div>
                     </div>
                 </div>

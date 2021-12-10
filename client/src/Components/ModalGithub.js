@@ -1,26 +1,21 @@
 import React, {useEffect, useCallback} from "react";
 import "../Styling/CohortModals.css"
 
-function ModalGithub({personGithub, openModal, setOpenModal}) {
+function ModalGithub({personGithub, openGithub, setOpenGithub}) {
     const escPress = useCallback(e => {
-        if (e.key === "Escape" && openModal) {
-            setOpenModal(false);
+        if (e.key === "Escape" && openGithub) {
+            setOpenGithub(false);
         }
-    }, [openModal, setOpenModal]);
+    }, [openGithub, setOpenGithub]);
 
     useEffect(() => {
         document.addEventListener("keydown", escPress);
         return () => document.removeEventListener("keydown", escPress);
     }, [escPress])
 
-    // console.log(personSpotify);
-    // Get this shit to render as the spotify link later
-    // const spotifyIFrames = personSpotify?.replace(/^\'<iframe[\s\S]+iframe>\'/gi, "");
-    
-
     return (
         <>
-            {openModal ?
+            {openGithub ?
                 <div className="modals">
                     <div id="modals-github-link" className="modals-box">
                         <h2>GitHub Link</h2>
@@ -30,7 +25,7 @@ function ModalGithub({personGithub, openModal, setOpenModal}) {
                                     {personGithub}
                                 </a>
                             </p>
-                            <button onClick={() => setOpenModal(false)}>X</button>
+                            <button onClick={() => setOpenGithub(false)}>X</button>
                         </div>
                     </div>
                 </div>
