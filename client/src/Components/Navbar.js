@@ -105,7 +105,7 @@ function Navbar() {
           </li>
 
           <li className="nav-item">
-            <a href="/comments" className="nav-link">
+            <a href="/comments_board" className="nav-link">
               <svg
                 aria-hidden="true"
                 focusable="false"

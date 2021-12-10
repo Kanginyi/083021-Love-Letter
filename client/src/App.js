@@ -44,7 +44,7 @@ function App() {
                 personInfo={personInfo}
               />
               }/>
-            <Route path="comments" element={<Comments/>}/>
+            <Route path="comments_board" element={<Comments/>}/>
             <Route path="monopoly" element={<MonopolyBoard/>}/>
           </Routes>
         </div>
