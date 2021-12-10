@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "../Styling/CommentsCard.css";
 
-function CommentsCard({commentInfo, commentData, setCommentData}) {
+function CommentsCard({commentInfo}) {
     const {id, likes, dislikes, created_at, first_name, last_name, comment} = commentInfo;
 
     const [isClicked, setIsClicked] = useState(1);
