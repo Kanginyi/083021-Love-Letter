@@ -21,8 +21,6 @@ function Comments() {
         return <CommentsCard
             key={comment.id}
             commentInfo={comment}
-            // commentData={[commentData]}
-            setCommentData={setCommentData}
         />
     })
 
