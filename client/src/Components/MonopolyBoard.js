@@ -97,6 +97,7 @@ function MonopolyBoard() {
 							<div className="price">PRICE $120</div>
 						</div>
 					</div>
+                    
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar light-blue"></div>
@@ -104,6 +105,7 @@ function MonopolyBoard() {
 							<div className="price">Price $100</div>
 						</div>
 					</div>
+
 					<div className="space chance">
 						<div className="monopoly-container">
 							<div className="name">Phase 1</div>
@@ -111,6 +113,7 @@ function MonopolyBoard() {
                             <div className="name">Make it stop</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar light-blue"></div>
@@ -118,6 +121,7 @@ function MonopolyBoard() {
 							<div className="price">Price $100</div>
 						</div>
 					</div>
+
 					<div className="space railroad">
 						<div className="monopoly-container">
 							<div className="name">Joseph's <br/> Jeep</div>
@@ -125,6 +129,7 @@ function MonopolyBoard() {
 							<div className="price">Price $200</div>
 						</div>
 					</div>
+
 					<div className="space fee income-tax">
 						<div className="monopoly-container">
 							<div className="name">Lecture Time</div>
@@ -132,6 +137,7 @@ function MonopolyBoard() {
 							<div className="instructions">Sleep <br/> or <br/> Cry</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar dark-purple"></div>
@@ -139,6 +145,7 @@ function MonopolyBoard() {
 							<div className="price">Price $50</div>
 						</div>
 					</div>
+
 					<div className="space community-chest">
 						<div className="monopoly-container">
 							<div className="name">PreWork</div>
@@ -146,6 +153,7 @@ function MonopolyBoard() {
 							<div className="instructions">Start of it all</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar dark-purple"></div>
@@ -180,6 +188,7 @@ function MonopolyBoard() {
 							<div className="price">Price $200</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar orange"></div>
@@ -187,6 +196,7 @@ function MonopolyBoard() {
 							<div className="price">Price $180</div>
 						</div>
 					</div>
+
 					<div className="space community-chest">
 						<div className="monopoly-container">
 							<div className="name">Phase 2</div>
@@ -194,6 +204,7 @@ function MonopolyBoard() {
 							<div className="instructions">Did not <br/> React well</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar orange"></div>
@@ -201,6 +212,7 @@ function MonopolyBoard() {
 							<div className="price">Price $180</div>
 						</div>
 					</div>
+
 					<div className="space railroad">
 						<div className="monopoly-container">
 							<div className="name long-name">Quang's Spaceship</div>
@@ -208,6 +220,7 @@ function MonopolyBoard() {
 							<div className="price">Price $200</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar purple"></div>
@@ -215,6 +228,7 @@ function MonopolyBoard() {
 							<div className="price">Price $160</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar purple"></div>
@@ -222,6 +236,7 @@ function MonopolyBoard() {
 							<div className="price">Price $140</div>
 						</div>
 					</div>
+
 					<div className="space utility electric-company">
 						<div className="monopoly-container">
 							<div className="name">Great Idea!</div>
@@ -229,6 +244,7 @@ function MonopolyBoard() {
 							<div className="price">Price $150</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar purple"></div>
@@ -255,6 +271,7 @@ function MonopolyBoard() {
 							<div className="price">Price $220</div>
 						</div>
 					</div>
+
 					<div className="space chance">
 						<div className="monopoly-container">
 							<div className="name">Phase 3</div><br/>
@@ -262,6 +279,7 @@ function MonopolyBoard() {
                             <div className="name">Ruby or <br/> not Ruby</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar red"></div>
@@ -269,6 +287,7 @@ function MonopolyBoard() {
 							<div className="price">Price $220</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar red"></div>
@@ -276,6 +295,7 @@ function MonopolyBoard() {
 							<div className="price">Price $200</div>
 						</div>
 					</div>
+
 					<div className="space railroad">
 						<div className="monopoly-container">
 							<div className="name">Sam's <br/> Running <br/> Shoes</div>
@@ -284,6 +304,7 @@ function MonopolyBoard() {
 							<div className="price">Price $200</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar yellow"></div>
@@ -291,6 +312,7 @@ function MonopolyBoard() {
 							<div className="price">Price $260</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar yellow"></div>
@@ -298,6 +320,7 @@ function MonopolyBoard() {
 							<div className="price">Price $260</div>
 						</div>
 					</div>
+
 					<div className="space utility waterworks">
 						<div className="monopoly-container">
 							<div className="name">Mental <br/> Boom</div>
@@ -305,6 +328,7 @@ function MonopolyBoard() {
 							<div className="price">Price $120</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar yellow"></div>
@@ -330,6 +354,7 @@ function MonopolyBoard() {
 							<div className="price">Price $300</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar green"></div>
@@ -337,6 +362,7 @@ function MonopolyBoard() {
 							<div className="price">Price $300</div>
 						</div>
 					</div>
+
 					<div className="space community-chest">
 						<div className="monopoly-container">
 							<div className="name">Phase 4</div>
@@ -344,6 +370,7 @@ function MonopolyBoard() {
 							<div className="instructions">Ruby <br/> Railed Me</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar green"></div>
@@ -351,6 +378,7 @@ function MonopolyBoard() {
 							<div className="price">Price $320</div>
 						</div>
 					</div>
+
 					<div className="space railroad">
 						<div className="monopoly-container">
 							<div className="name">Ruby on <br/> Rails</div>
@@ -358,6 +386,7 @@ function MonopolyBoard() {
 							<div className="price">Price $200</div>
 						</div>
 					</div>
+
 					<div className="space community-chest">
 						<div className="monopoly-container">
 							<div className="name">Phase 5</div>
@@ -365,6 +394,7 @@ function MonopolyBoard() {
 							<div className="name">Where is everyone?</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar dark-blue"></div>
@@ -372,6 +402,7 @@ function MonopolyBoard() {
 							<div className="price">Price $350</div>
 						</div>
 					</div>
+
 					<div className="space fee luxury-tax">
 						<div className="monopoly-container">
 							<div className="name">Flatiron <br/> Fee</div>
@@ -379,6 +410,7 @@ function MonopolyBoard() {
 							<div className="instructions">Pay $16,900</div>
 						</div>
 					</div>
+
 					<div className="space property">
 						<div className="monopoly-container">
 							<div className="color-bar dark-blue"></div>
@@ -386,6 +418,7 @@ function MonopolyBoard() {
 							<div className="price">Price $400</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
