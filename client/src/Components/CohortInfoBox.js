@@ -9,10 +9,6 @@ function CohortInfoBox({personInfo, clickedName, handleImageClick}) {
     const flipCard = () => {
         const card = document.querySelector(".card-inner");
         card.classList.toggle("is-flipped");
-
-        // if (clickedName) {
-        //     handleImageClick("")
-        // }
     }
 
     // Add a thing where it'll erase the front part of the card when you send it to the back
