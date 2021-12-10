@@ -39,6 +39,22 @@ greg_dwyer = Instructor.create(
 
 
 puts "Seeding Section A Students >:^)"
+alan_cinsavich = Student.create(
+    name: "Alan L. Cinsavich Jr.",
+    age: 34,
+    description: "I'm finally back to my favorite pre-covid profession: photography.",
+    song: "https://open.spotify.com/embed/track/3hb2ScEVkGchcAQqrPLP0R?utm_source=generator&theme=0",
+    current_location: "Maryland",
+    location_from: "Columbia, Maryland",
+    interesting_fact: "I used to be in an acapella group in university!",
+    hobbies: "Photography, Running through the forest, Enjoying my furniture",
+    picture: "https://i.imgur.com/bt6C3tR.png",
+    favorite_food: "Pasta, Cheetos",
+    github: "https://github.com/", # Get his actual GitHub link somehow you bitch
+    flatiron_rating: 6.9,
+    instructor_id: adam_johnson.id
+)
+
 brice_jokung = Student.create(
     name: "Brice Jokung",
     age: 34,
@@ -169,6 +185,22 @@ jon_pilarski = Student.create(
     instructor_id: adam_johnson.id
 )
 
+joseph_fulkerson = Student.create(
+    name: "Joseph Fulkerson",
+    age: 26,
+    description: "Software engineering student or something.",
+    song: "https://open.spotify.com/embed/track/5Mw9bXG1dLNhbjofkVS2oR?utm_source=generator&theme=0",
+    current_location: "Tennessee",
+    location_from: "Tennessee",
+    interesting_fact: "I'm a certified teacher in gifted education, special education, and economics.",
+    hobbies: "Axes, Ford Trucks, Reading, Stock Market, Basketball",
+    picture: "https://i.imgur.com/7VQl99M.png",
+    favorite_food: "Sushi",
+    github: "https://github.com/josephafulkerson",
+    flatiron_rating: 11,
+    instructor_id: adam_johnson.id
+)
+
 joshua_allford = Student.create(
     name: "Josh Allford",
     age: 30,
@@ -214,6 +246,22 @@ matt_blank = Student.create(
     favorite_food: "Pizza",
     github: "github.com/about3lank",
     flatiron_rating: 9,
+    instructor_id: adam_johnson.id
+)
+
+mohammad_hasan = Student.create(
+    name: "Mohammad Hasan",
+    age: 26,
+    description: "Ambivert.",
+    song: "https://open.spotify.com/embed/track/52ekzF7DfQBszZq87MIbPY?utm_source=generator&theme=0",
+    current_location: "New York",
+    location_from: "Bangladesh",
+    interesting_fact: "I can speak English, Bengali, Hindi, Urdu, and Arabic",
+    hobbies: "Video games, Sports, Swimming, Cycling",
+    picture: "https://i.imgur.com/2lttnHZ.png",
+    favorite_food: "Mexican, Thai",
+    github: "https://github.com/MHasan159",
+    flatiron_rating: 8,
     instructor_id: adam_johnson.id
 )
 
@@ -281,22 +329,6 @@ sam_lee = Student.create(
     instructor_id: adam_johnson.id
 )
 
-xinyi_yao = Student.create(
-    name: "Xinyi Yao",
-    age: 24,
-    description: "Wife, corgi mama, chill af, sometimes introverted, thoughtful, has a smart mouth and I love to EAT!",
-    song: "https://open.spotify.com/embed/track/3Ofmpyhv5UAQ70mENzB277?utm_source=generator&theme=0",
-    current_location: "Texas",
-    location_from: "Wuhan, China",
-    interesting_fact: "I was born with two thumbs on my left hand",
-    hobbies: "Watching tv/movies, Cooking, Baking, Tennis",
-    picture: "https://i.imgur.com/JzLP37j.jpg",
-    favorite_food: "Noodles, Pizza, But not together",
-    github: "https://github.com/xinyiyao823",
-    flatiron_rating: 6.9,
-    instructor_id: adam_johnson.id
-)
-
 seneiya_cooke = Student.create(
     name: "Seneiya Cooke",
     age: 21,
@@ -313,50 +345,18 @@ seneiya_cooke = Student.create(
     instructor_id: adam_johnson.id
 )
 
-joseph_fulkerson = Student.create(
-    name: "Joseph Fulkerson",
-    age: 26,
-    description: "Software engineering student or something.",
-    song: "https://open.spotify.com/embed/track/5Mw9bXG1dLNhbjofkVS2oR?utm_source=generator&theme=0",
-    current_location: "Tennessee",
-    location_from: "Tennessee",
-    interesting_fact: "I'm a certified teacher in gifted education, special education, and economics.",
-    hobbies: "Axes, Ford Trucks, Reading, Stock Market, Basketball",
-    picture: "https://i.imgur.com/7VQl99M.png",
-    favorite_food: "Sushi",
-    github: "https://github.com/josephafulkerson",
-    flatiron_rating: 11,
-    instructor_id: adam_johnson.id
-)
-
-mohammad_hasan = Student.create(
-    name: "Mohammad Hasan",
-    age: 26,
-    description: "Ambivert.",
-    song: "https://open.spotify.com/embed/track/52ekzF7DfQBszZq87MIbPY?utm_source=generator&theme=0",
-    current_location: "New York",
-    location_from: "Bangladesh",
-    interesting_fact: "I can speak English, Bengali, Hindi, Urdu, and Arabic",
-    hobbies: "Video games, Sports, Swimming, Cycling",
-    picture: "https://i.imgur.com/2lttnHZ.png",
-    favorite_food: "Mexican, Thai",
-    github: "https://github.com/MHasan159",
-    flatiron_rating: 8,
-    instructor_id: adam_johnson.id
-)
-
-alan_cinsavich = Student.create(
-    name: "Alan L. Cinsavich Jr.",
-    age: 34,
-    description: "I'm finally back to my favorite pre-covid profession: photography.",
-    song: "https://open.spotify.com/embed/track/3hb2ScEVkGchcAQqrPLP0R?utm_source=generator&theme=0",
-    current_location: "Maryland",
-    location_from: "Columbia, Maryland",
-    interesting_fact: "I used to be in an acapella group in university!",
-    hobbies: "Photography, Running through the forest, Enjoying my furniture",
-    picture: "https://i.imgur.com/bt6C3tR.png",
-    favorite_food: "Pasta, Cheetos",
-    github: "https://github.com/", # Get his actual GitHub link somehow you bitch
+xinyi_yao = Student.create(
+    name: "Xinyi Yao",
+    age: 24,
+    description: "Wife, corgi mama, chill af, sometimes introverted, thoughtful, has a smart mouth and I love to EAT!",
+    song: "https://open.spotify.com/embed/track/3Ofmpyhv5UAQ70mENzB277?utm_source=generator&theme=0",
+    current_location: "Texas",
+    location_from: "Wuhan, China",
+    interesting_fact: "I was born with two thumbs on my left hand",
+    hobbies: "Watching tv/movies, Cooking, Baking, Tennis",
+    picture: "https://i.imgur.com/JzLP37j.jpg",
+    favorite_food: "Noodles, Pizza, But not together",
+    github: "https://github.com/xinyiyao823",
     flatiron_rating: 6.9,
     instructor_id: adam_johnson.id
 )
@@ -391,6 +391,22 @@ alex_mandalar = Student.create(
     picture: "https://i.imgur.com/sKti6yf.png",
     favorite_food: "Nan-gyi Thoke",
     github: "https://github.com/mandalarian93",
+    flatiron_rating: 8,
+    instructor_id: greg_dwyer.id
+)
+
+xee = Student.create(
+    name: "Alyxandria Meadows (Xee)",
+    age: 26,
+    description: "Young woman from a non traditional tech background.",
+    song: "https://open.spotify.com/embed/track/2pkd8Vly63qo3zGJsnf5zr?utm_source=generator&theme=0",
+    current_location: "Tennessee",
+    location_from: "Kentucky",
+    interesting_fact: "I love writing and originally wanted to be an author, I have written/ typed two full novel length books that I will never publish",
+    hobbies: "I typically just play video games (Pokemon/LoZ/Stardew Valley),  Recently: (Eastward/Spirit Farer)",
+    picture: "https://i.imgur.com/YXa3Y8Y.png",
+    favorite_food: "Any variation of nachos",
+    github: "https://github.com/AlyxKM",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
 )
@@ -599,22 +615,6 @@ yewei_chen = Student.create(
     picture: "https://i.imgur.com/IRyWjym.png",
     favorite_food: "Hotpot",
     github: "https://github.com/hyzr0525",
-    flatiron_rating: 8,
-    instructor_id: greg_dwyer.id
-)
-
-xee = Student.create(
-    name: "Alyxandria Meadows (Xee)",
-    age: 26,
-    description: "Young woman from a non traditional tech background.",
-    song: "https://open.spotify.com/embed/track/2pkd8Vly63qo3zGJsnf5zr?utm_source=generator&theme=0",
-    current_location: "Tennessee",
-    location_from: "Kentucky",
-    interesting_fact: "I love writing and originally wanted to be an author, I have written/ typed two full novel length books that I will never publish",
-    hobbies: "I typically just play video games (Pokemon/LoZ/Stardew Valley),  Recently: (Eastward/Spirit Farer)",
-    picture: "https://i.imgur.com/YXa3Y8Y.png",
-    favorite_food: "Any variation of nachos",
-    github: "https://github.com/AlyxKM",
     flatiron_rating: 8,
     instructor_id: greg_dwyer.id
 )
