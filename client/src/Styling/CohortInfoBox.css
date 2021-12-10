@@ -6,7 +6,7 @@
 }
 
 .card {
-    margin: 50px 10px 0;
+    margin-left: -50px;
     width: 350px;
     height: 600px;
     perspective: 600px;
