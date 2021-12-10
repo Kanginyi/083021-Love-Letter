@@ -39,5 +39,3 @@ function ModalSpotify({personSpotify, openSpotify, setOpenSpotify}) {
 }
 
 export default ModalSpotify;
-
-// <iframe src="https://open.spotify.com/embed/track/51Ful1v7b81FchIFFTAQ05?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
