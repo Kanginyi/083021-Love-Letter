@@ -7,6 +7,10 @@
     margin-top: 48px;
 }
 
+.center-comments-cards {
+    justify-content: center;
+}
+
 .comment-list::-webkit-scrollbar {
     width: 10px;
     height: 10px;
