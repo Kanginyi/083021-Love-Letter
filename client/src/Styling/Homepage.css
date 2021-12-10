@@ -1,5 +1,6 @@
-/* DM SANS BOLD 700 */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+/* RACING SANS ONE REGULAR 400 */
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 
 #homepage-title-background {
 	mix-blend-mode: screen;
@@ -15,7 +16,8 @@
 }
 
 #homepage-transparent-title {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Racing Sans One', cursive;
+    letter-spacing: .2rem;
 
 	font-size: 4vw;
 	mix-blend-mode: screen;
