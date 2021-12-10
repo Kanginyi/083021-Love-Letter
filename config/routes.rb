@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :unfortunates, only: [:index, :show]
   resources :comments
   resources :students, only: [:index, :show]
   resources :instructors, only: [:index, :show]
