@@ -47,27 +47,48 @@ function CohortInfoCircle({personInfo, clickedName}) {
 
     // Click this to open the modal
     const [openModal, setOpenModal] = useState(false);
-
-    // const [selectedModal, setSelectedModal] = ("");
-
-    const handleSetOpenModal = e => {
-        // Switch to check which modal to open up
-        // switch (e.target.id) {
-        //     case "modal-github":
-        //         return <ModalGithub personGithub={personGithub} openModal={openModal} setOpenModal={setOpenModal}/>;
-        //         break;
-        // }
-
-        /***************************** HEY MAKE SURE TO CHANGE THE THING SO THAT IF WE CLICK THE OVERALL BLACK MODAL BUTTON, IT WILL CLOSE ALL MODALS */
+    
+    const [openGithub, setOpenGithub] = useState(false);
+    const [openFood, setOpenFood] = useState(false);
+    const [openHobbies, setOpenHobbies] = useState(false);
+    const [openLocation, setOpenLocation] = useState(false);
+    const [openAge, setOpenAge] = useState(false);
+    const [openRating, setOpenRating] = useState(false);
+    const [openFact, setOpenFact] = useState(false);
+    const [openSpotify, setOpenSpotify] = useState(false);
 
 
-        // console.log(e.target.id);
-        
-        setOpenModal(prevValue => !prevValue);
+    const handleSetOpenModal = (id) => {
+         switch (id) {
+            case "modal-github":
+                console.log("hiaosidhf")
+                setOpenGithub(prevValue => !prevValue);
+                break;
+            case "modal-food":
+                setOpenFood(prevValue => !prevValue);
+                break;
+            case "modal-hobbies":
+                setOpenHobbies(prevValue => !prevValue);
+                break;
+            case "modal-location":
+                setOpenLocation(prevValue => !prevValue);
+                break;
+            case "modal-age":
+                setOpenAge(prevValue => !prevValue);
+                break;
+            case "modal-rating":
+                setOpenRating(prevValue => !prevValue);
+                break;
+            case "modal-fact":
+                setOpenFact(prevValue => !prevValue);
+                break;
+            case "modal-spotify":
+                setOpenSpotify(prevValue => !prevValue);
+                break;
+        }
     }
-    // Here we're going to change this openModal thing to handle ALL of the modal clicks and then take over which one with the onclick function
 
-
+    // Array of arrays that we're mapping over
     const menuIcons = [
         ["modal-github", <AiFillGithub className="icon-font-size"/>, "#3E84E6"], //Github
         ["modal-food", <IoFastFoodOutline className="icon-font-size"/>, "#F2B705"], //Favorite Food
@@ -82,21 +103,21 @@ function CohortInfoCircle({personInfo, clickedName}) {
     return (
         <>
         {/* Github */}
-        {openModal && clickedName && <ModalGithub personGithub={personGithub} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openGithub && clickedName && <ModalGithub personGithub={personGithub} openGithub={openGithub} setOpenGithub={setOpenGithub} handleSetOpenModal={handleSetOpenModal}/>}
         {/* Food */}
-        {openModal && clickedName && <ModalFood personFood={personFood} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openFood && clickedName && <ModalFood personFood={personFood} openFood={openFood} setOpenFood={setOpenFood}/>}
         {/* Hobbies */}
-        {openModal && clickedName && <ModalHobbies personHobbies={personHobbies} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openHobbies && clickedName && <ModalHobbies personHobbies={personHobbies} openHobbies={openHobbies} setOpenHobbies={setOpenHobbies}/>}
         {/* Location */}
-        {openModal && clickedName && <ModalLocation personLocation={personLocation} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openLocation && clickedName && <ModalLocation personLocation={personLocation} openLocation={openLocation} setOpenLocation={setOpenLocation}/>}
         {/* Age */}
-        {openModal && clickedName && <ModalAge personAge={personAge} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openAge && clickedName && <ModalAge personAge={personAge} openAge={openAge} setOpenAge={setOpenAge}/>}
         {/* Rating */}
-        {openModal && clickedName && <ModalRating personRating={personRating} instructorYears={instructorYears} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openRating && clickedName && <ModalRating personRating={personRating} instructorYears={instructorYears} openRating={openRating} setOpenRating={setOpenRating}/>}
         {/* Fact */}
-        {openModal && clickedName && <ModalFact personFact={personFact} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openFact && clickedName && <ModalFact personFact={personFact} openFact={openFact} setOpenFact={setOpenFact}/>}
         {/* Spotify */}
-        {openModal && clickedName && <ModalSpotify personSpotify={personSpotify} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openSpotify && clickedName && <ModalSpotify personSpotify={personSpotify} openSpotify={openSpotify} setOpenSpotify={setOpenSpotify}/>}
 
         <div className="page-container">
             <div className="circular-menu">
@@ -108,7 +129,6 @@ function CohortInfoCircle({personInfo, clickedName}) {
                         <CohortInfoCircleItem
                             id={id}
                             key={index}
-                            openModal={openModal}
                             handleSetOpenModal={handleSetOpenModal}
                             icon={icon}
                             color={color}
