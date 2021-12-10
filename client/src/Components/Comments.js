@@ -73,7 +73,19 @@ function Comments() {
 
     const sortComments = filterComments?.sort((a, b) => (a.props?.commentInfo?.created_at - b.props?.commentInfo?.created_at));
 
-    // const commentDate = (new Date(created_at).toLocaleString());
+    console.log(sortComments);
+
+    const centerCards = () => {
+        const commentsList = document.querySelector(".comment-list");
+
+        if (sortComments?.length < 10) {
+            commentsList?.classList.add("center-comments-cards");
+        } else if (sortComments?.length > 10) {
+            commentsList?.classList.remove("center-comments-cards");
+        }
+    }
+    centerCards();
+
 
     return (
         <>
@@ -168,7 +180,6 @@ function Comments() {
         {/* Where the comments are rendered */}
         <section id="show-comments" className="comment-list">
             {sortComments}
-            {/* {filterComments} */}
         </section>
 
         </>
