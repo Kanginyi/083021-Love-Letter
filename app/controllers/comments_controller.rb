@@ -68,9 +68,3 @@ class CommentsController < ApplicationController
         params.permit(:first_name, :last_name, :comment, :likes, :dislikes)
     end
 end
-
-  # patch "comments/likes", to "comments#increment_likes"
-  # patch "comments/dislikes", to "comments#increment_dislikes"
-
-  # patch "comments/minus_likes", to "comments#decrement_likes"
-  # patch "comments/minus_dislikes", to "comments#decrement_likes"
