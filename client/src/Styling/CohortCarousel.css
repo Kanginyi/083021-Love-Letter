@@ -2,6 +2,8 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
 
 .cohort-carousel-container {
     width: 50%;
@@ -107,10 +109,23 @@
 }
 
 .section-identifier {
-    font-size: 35px;
+    font-size: 30px;
     position: absolute;
-    top: 8px;
-    left: 20px;
+    top: 25px;
+    left: 60px;
     color: white;
     text-shadow: 3px 3px black;
+    letter-spacing: 0.2rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.select-member {
+    font-size: 15.5px;
+    position: absolute;
+    top: 75px;
+    left: 61px;
+    color: white;
+    text-shadow: 3px 3px black;
+    letter-spacing: 0.2rem;
+    font-family: 'Kumbh Sans', sans-serif;
 }
