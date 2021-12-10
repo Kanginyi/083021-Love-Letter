@@ -42,11 +42,19 @@ function CohortInfoCircle({personInfo, clickedName}) {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleSetIsOpen = () => {
+        setOpenGithub(false);
+        setOpenFood(false);
+        setOpenHobbies(false);
+        setOpenLocation(false);
+        setOpenAge(false);
+        setOpenRating(false);
+        setOpenFact(false);
+        setOpenSpotify(false);
+
         setIsOpen(prevValue => !prevValue);
     }
 
-    // Click this to open the modal
-   
+    // Click this to open each modal
     const [openGithub, setOpenGithub] = useState(false);
     const [openFood, setOpenFood] = useState(false);
     const [openHobbies, setOpenHobbies] = useState(false);
@@ -60,7 +68,6 @@ function CohortInfoCircle({personInfo, clickedName}) {
     const handleSetOpenModal = (id) => {
          switch (id) {
             case "modal-github":
-                console.log("hiaosidhf")
                 setOpenGithub(prevValue => !prevValue);
                 break;
             case "modal-food":
