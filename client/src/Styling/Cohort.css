@@ -1,6 +1,19 @@
+/* Kumbh Sans Bold 700 Font */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
 .cohort-info-divs {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 50px 0 50px 0;
+}
+
+#cohort-welcome-title {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    letter-spacing: .6rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 25px;
+    margin-bottom: -55px;
 }
