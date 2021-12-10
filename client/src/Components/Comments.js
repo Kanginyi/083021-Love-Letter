@@ -73,8 +73,6 @@ function Comments() {
 
     const sortComments = filterComments?.sort((a, b) => (a.props?.commentInfo?.created_at - b.props?.commentInfo?.created_at));
 
-    console.log(sortComments);
-
     const centerCards = () => {
         const commentsList = document.querySelector(".comment-list");
 
