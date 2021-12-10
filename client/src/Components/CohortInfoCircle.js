@@ -22,7 +22,9 @@ import {MdDescription} from "react-icons/md";
 import {GoLocation} from "react-icons/go"
 
 function CohortInfoCircle({personInfo, clickedName}) {
-    const choosePerson = personInfo?.find(person => person.name === clickedName)
+    const totalArray = [personInfo[0]?.instructor]?.concat(personInfo, [personInfo[31]?.instructor]);
+
+    const choosePerson = totalArray?.find(person => person?.name === clickedName)
 
     // This is going to be the information that's passed in through for each person
     const personGithub = choosePerson?.github;
@@ -33,6 +35,8 @@ function CohortInfoCircle({personInfo, clickedName}) {
     const personRating = choosePerson?.flatiron_rating;
     const personFact = choosePerson?.interesting_fact;
     const personSpotify = choosePerson?.song;
+
+    const instructorYears = choosePerson?.years_worked;
 
     // Is the modal open or not?
     const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +61,7 @@ function CohortInfoCircle({personInfo, clickedName}) {
         /***************************** HEY MAKE SURE TO CHANGE THE THING SO THAT IF WE CLICK THE OVERALL BLACK MODAL BUTTON, IT WILL CLOSE ALL MODALS */
 
 
-        console.log(e.target.id);
+        // console.log(e.target.id);
         
         setOpenModal(prevValue => !prevValue);
     }
@@ -88,7 +92,7 @@ function CohortInfoCircle({personInfo, clickedName}) {
         {/* Age */}
         {openModal && clickedName && <ModalAge personAge={personAge} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Rating */}
-        {openModal && clickedName && <ModalRating personRating={personRating} openModal={openModal} setOpenModal={setOpenModal}/>}
+        {openModal && clickedName && <ModalRating personRating={personRating} instructorYears={instructorYears} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Fact */}
         {openModal && clickedName && <ModalFact personFact={personFact} openModal={openModal} setOpenModal={setOpenModal}/>}
         {/* Spotify */}
