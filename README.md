@@ -49,4 +49,4 @@ $ npm start --prefix client
 
 ### Data Relationships
 
-[!image](https://i.imgur.com/CrY3OBc.png)
+![image](https://i.imgur.com/CrY3OBc.png)
