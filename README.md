@@ -1,6 +1,7 @@
 # Software Engineering 083021 Love Letter
 
 ## Table of Contents
+
 * [Live Link](#live-link)
 * [Description](#description)
 * [Technologies](#technologies)
@@ -10,6 +11,7 @@
 <a name="live-link"/>
 
 ## Live Link
+
 http://se083021-love-letter.herokuapp.com/
 
 <a name="description"/>
@@ -19,6 +21,7 @@ http://se083021-love-letter.herokuapp.com/
 <a name="technologies"/>
 
 ## Technologies/Requirements
+
 - Ruby 2.7.4
 - React
 - NodeJS (v16) and npm
@@ -28,6 +31,7 @@ http://se083021-love-letter.herokuapp.com/
 <a name="setup"/>
 
 ## Setup
+
 Start by **forking** the project template repository and then clone the project:
 ```
 $ git clone git@github.com:**YOUR USERNAME**/083021-Love-Letter.git
@@ -43,4 +47,6 @@ $ npm start --prefix client
 
 ## Design
 
-### Wireframe
+### Data Relationships
+
+[!image](https://i.imgur.com/CrY3OBc.png)
