@@ -244,7 +244,7 @@ matt_blank = Student.create(
     hobbies: "Playing guitar, Video games, Lifting weights",
     picture: "https://i.imgur.com/iJZjEHn.jpg",
     favorite_food: "Pizza",
-    github: "github.com/about3lank",
+    github: "https://github.com/about3lank",
     flatiron_rating: 9,
     instructor_id: adam_johnson.id
 )
