@@ -35,9 +35,7 @@ $ cd 083021-Love-Letter
 $ npm install --prefix client
 $ sudo service postgresql start
 $ rails s
-
-<!--- Inside of a new terminal --->
-
+<!-- Inside of a new terminal -->
 $ npm start --prefix client
 ```
 
