@@ -50,3 +50,7 @@ $ npm start --prefix client
 ### Data Relationships
 
 ![image](https://i.imgur.com/CrY3OBc.png)
+
+### Component Hierarchy
+
+![image](https://i.imgur.com/VSKWDYt.png)
