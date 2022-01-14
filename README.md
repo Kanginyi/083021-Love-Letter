@@ -32,10 +32,11 @@ http://se083021-love-letter.herokuapp.com/
 
 ## Setup
 
-Start by **forking** the project template repository and then clone the project:
+First **fork** the project repository, then clone the project onto your local machine:
 ```
 $ git clone git@github.com:**YOUR USERNAME**/083021-Love-Letter.git
 $ cd 083021-Love-Letter
+$ bundle install
 $ npm install --prefix client
 $ sudo service postgresql start
 $ rails s
