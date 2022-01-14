@@ -10,4 +10,4 @@
 <a name="live-link"/>
 
 ## Live Link
-(http://se083021-love-letter.herokuapp.com/)
+http://se083021-love-letter.herokuapp.com/
