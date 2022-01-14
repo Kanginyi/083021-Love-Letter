@@ -10,30 +10,4 @@
 <a name="live-link"/>
 
 ## Live Link
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-asdf asdf asdf 
+(http://se083021-love-letter.herokuapp.com/)
