@@ -18,7 +18,9 @@ http://se083021-love-letter.herokuapp.com/
 
 ## Description
 
-**TL;DR:** Friends are cool, who knew?
+**TL;DR:** Friends are cool, who knew? A sentimental website that holds information about the people I went through Flatiron School with.
+
+________________________________________________________________________
 
 Before starting my first week at Flatiron School, I told myself to prepare for the upcoming journey. The next 15 weeks would be mentally taxing and I would be going through a type of stress that I hadn't experienced before.
 
@@ -28,7 +30,7 @@ There's a tradition at Flatiron School where at the end of every week, everyone 
 
 I first thought Friday Feels were useless and a waste of my time. Why would I spend time listening to a bunch of people talk about their feelings when I could rather focus on doing work instead? But the more and more I listened, the more humanizing everyone became and I really started to look forward to these Friday Feels. Soon, I started cracking jokes and making friends and really started to enjoy our cohort's banter and environment.
 
-I wouldn't have made it through this program without the people in our cohort. Everyone was kind and patient, supported each other when we were feeling down, and really brought out the best in me. So to everyone 
+I wouldn't have made it through this program without the people in our cohort. Everyone was kind and patient, supported each other when we were feeling down, and really brought out the best in me. So to everyone in our cohort, a love letter. ❤
 
 <a name="technologies"/>
 
