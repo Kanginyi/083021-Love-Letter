@@ -18,8 +18,7 @@ http://se083021-love-letter.herokuapp.com/
 
 ## Description
 
-**TL;DR:** Friends are cool, who knew?
-           A sentimental website that holds information about the people I went through Flatiron School with.
+**TL;DR:** Friends are cool, who knew? A sentimental website that holds information about the people I went through Flatiron School with.
 
 ________________________________________________________________________
 
