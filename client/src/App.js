@@ -23,7 +23,7 @@ function App() {
   const handleImageClick = (name) => {
       setClickedName(name);
   }
-
+ 
   return (
     <>
       <Router>
