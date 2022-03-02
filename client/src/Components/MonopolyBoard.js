@@ -41,7 +41,7 @@ function MonopolyBoard() {
 						</div>
 						<div className="board-card-face board-card-back">
 							<div className="board-card-content">
-								<p>There's always a chance to learn and grow. Take those challenges and fuck them up. ❤</p>
+								<p>There's always a chance to learn and grow. Take those challenges and f 'em up. ❤</p>
 							</div>
 						</div>
 					</div>
