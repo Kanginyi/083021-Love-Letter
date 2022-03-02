@@ -17,7 +17,7 @@ function CommentsCard({commentInfo}) {
             // body: JSON.stringify({likes: commentsLikes + 1})
         })
             .then(resp => resp.json())
-            .then(data => setCommentsLikes(() => data.likes))
+            .then(data => setCommentsLikes(data.likes))
 
         if (isClicked === 3) {
             fetch(`/comments/minus_dislikes/${id}`, {
@@ -26,7 +26,7 @@ function CommentsCard({commentInfo}) {
                 // body: JSON.stringify({dislikes: commentsDislikes + 1})
             })
                 .then(resp => resp.json())
-                .then(data => setCommentsDislikes(() => data.dislikes))
+                .then(data => setCommentsDislikes(data.dislikes))
         }
 
         setIsClicked(2);
@@ -40,7 +40,7 @@ function CommentsCard({commentInfo}) {
             // body: JSON.stringify({likes: commentsDislikes - 1})
         })
             .then(resp => resp.json())
-            .then(data => setCommentsDislikes(() => data.dislikes))
+            .then(data => setCommentsDislikes(data.dislikes))
 
         if (isClicked === 2) {
             fetch(`/comments/minus_likes/${id}`, {
@@ -49,11 +49,31 @@ function CommentsCard({commentInfo}) {
                 // body: JSON.stringify({likes: commentsLikes - 1})
             })
                 .then(resp => resp.json())
-                .then(data => setCommentsLikes(() => data.likes))
+                .then(data => setCommentsLikes(data.likes))
         }
 
         setIsClicked(3);
     }
+
+    const handleUnlike = () => {
+       fetch(`/comments/minus_likes/${id}`, {
+          method: "PATCH", 
+          headers: {"Content-Type": "application/json"}
+       })
+         .then(resp => resp.json())
+         .then(data => setCommentsLikes(data.likes));
+      setIsClicked(1);
+    }
+
+    const handleUndislike = () => {
+       fetch(`/comments/minus_dislikes/${id}`, {
+          method: "PATCH",
+          headers: {"Content-Type": "application/json"}
+       })
+         .then(resp => resp.json())
+         .then(data => setCommentsDislikes(data.dislikes));
+      setIsClicked(1);
+   }
 
     // like-button-hover & dislike-button-hover are inside of Playlist.css
     const noPressed = <>
@@ -73,8 +93,7 @@ function CommentsCard({commentInfo}) {
     const likesPressed = <>
                     <button
                         className="comments-likes-pressed"
-                        disabled="disabled"
-                        onClick={handleLikes}
+                        onClick={handleUnlike}
                     >💚 {commentsLikes} Likes
                     </button> 
                     &nbsp; {/* This is the same as doing {" "} */}
@@ -94,8 +113,7 @@ function CommentsCard({commentInfo}) {
                     &nbsp; {/* This is the same as doing {" "} */}
                     <button
                         className="comments-dislikes-pressed"
-                        disabled="disabled"
-                        onClick={handleDislikes}
+                        onClick={handleUndislike}
                     >{commentsDislikes} Dislikes 💔
                     </button>
                 </>
