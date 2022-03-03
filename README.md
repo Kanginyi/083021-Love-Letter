@@ -65,6 +65,7 @@ $ bundle install
 $ npm install --prefix client
 $ sudo service postgresql start
 $ rails s
+
 <!-- Inside of a new terminal -->
 $ npm start --prefix client
 ```
