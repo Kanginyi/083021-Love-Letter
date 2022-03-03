@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [Live Link](#live-link)
+* [Video Demo](#video-demo)
 * [Description](#description)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -12,7 +13,17 @@
 
 ## Live Link
 
+`Ctrl` + `Left Click` to open in a new tab!
+
 http://se083021-love-letter.herokuapp.com/
+
+<a name="video-demo"/>
+
+## Video Demo
+
+`Ctrl` + `Left Click` to open in a new tab!
+
+https://www.youtube.com/watch?v=ENeV4ZDzAuA
 
 <a name="description"/>
 
